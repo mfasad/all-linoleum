@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27><text y=%27.9em%27 font-size=%2790%27>🏠</text></svg>">
+    <title>Все разделы — Все о Линолеуме</title>
+    <meta name="description" content="Все тематические разделы сайта Все о Линолеуме. Удобная навигация по категориям.">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://all-linoleum.vercel.app/categories.html">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/style.css?v=1778001477">
+    <style>
+        .categories-hero {
+            background: linear-gradient(135deg, #eff6ff 0%, #f0f9ff 30%, #f8fafc 100%);
+            border-bottom: 1px solid var(--border);
+            padding: 48px 0 40px; text-align: center;
+        }
+        .categories-hero h1 { font-size: 2rem; color: var(--text); margin-bottom: 8px; }
+        .categories-hero p { color: var(--text-secondary); font-size: 1.1rem; }
+        .cat-page-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+            gap: 20px; padding: 40px 0 60px;
+        }
+        .cat-page-card {
+            display: flex; align-items: flex-start; gap: 16px;
+            padding: 24px; border-radius: 16px;
+            background: var(--card-bg, #fff);
+            border: 1px solid var(--border);
+            text-decoration: none; color: var(--text);
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        .cat-page-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 12px 32px rgba(0,0,0,0.08);
+            border-color: var(--primary);
+        }
+        .cat-page-icon {
+            font-size: 2.4rem; flex-shrink: 0;
+            width: 56px; height: 56px; display: flex;
+            align-items: center; justify-content: center;
+            background: linear-gradient(135deg, #eff6ff, #f0f9ff);
+            border-radius: 14px;
+        }
+        .cat-page-name { font-size: 1.15rem; font-weight: 700; margin-bottom: 4px; }
+        .cat-page-desc { font-size: 0.9rem; color: var(--text-secondary); line-height: 1.4; margin-bottom: 6px; }
+        .cat-page-count {
+            font-size: 0.82rem; font-weight: 600;
+            color: var(--primary); background: rgba(37,99,235,0.08);
+            padding: 3px 10px; border-radius: 20px; display: inline-block;
+        }
+        @media (max-width: 640px) {
+            .cat-page-grid { grid-template-columns: 1fr; gap: 12px; padding: 24px 0 40px; }
+            .cat-page-card { padding: 18px; }
+        }
+    </style>
+</head>
+<body>
+    <style>
+    .nav-dropdown { position: relative; display: inline-block; }
+    .dropdown-toggle {
+        background: none; border: none; cursor: pointer;
+        font: inherit; color: inherit; padding: 8px 12px;
+        border-radius: 8px; transition: background 0.2s;
+    }
+    .dropdown-toggle:hover { background: rgba(0,0,0,0.05); }
+    .dropdown-menu {
+        display: none; position: absolute; right: 0; top: 100%;
+        min-width: 240px; max-height: 70vh; overflow-y: auto;
+        background: var(--card-bg, #fff); border: 1px solid var(--border, #e5e7eb);
+        border-radius: 12px; box-shadow: 0 12px 40px rgba(0,0,0,0.12);
+        padding: 8px 0; z-index: 1000;
+    }
+    .nav-dropdown::after {
+        content: ''; position: absolute; left: 0; right: 0;
+        top: 100%; height: 12px;
+    }
+    .nav-dropdown:hover .dropdown-menu,
+    .nav-dropdown:focus-within .dropdown-menu { display: block; }
+    .dropdown-item {
+        display: block; padding: 10px 20px; color: var(--text, #1f2937);
+        text-decoration: none; font-size: 0.95rem; transition: background 0.15s;
+        white-space: nowrap;
+    }
+    .dropdown-item:hover { background: rgba(37,99,235,0.06); color: var(--primary, #2563eb); }
+    @media (max-width: 768px) {
+        .main-nav > .nav-link { display: none; }
+        .dropdown-toggle { display: none; }
+        .dropdown-menu {
+            display: block !important; position: static;
+            box-shadow: none; border: none; border-radius: 0;
+            min-width: auto; max-height: none; padding: 0;
+            background: transparent;
+        }
+        .dropdown-item {
+            padding: 8px 0; font-size: 1rem;
+        }
+    }
+    </style>
+    <style>
+    .nav-dropdown { position: relative; display: inline-block; }
+    .dropdown-toggle {
+        background: none; border: none; cursor: pointer;
+        font: inherit; color: inherit; padding: 8px 12px;
+        border-radius: 8px; transition: background 0.2s;
+    }
+    .dropdown-toggle:hover { background: rgba(0,0,0,0.05); }
+    .dropdown-menu {
+        display: none; position: absolute; right: 0; top: 100%;
+        min-width: 240px; max-height: 70vh; overflow-y: auto;
+        background: var(--card-bg, #fff); border: 1px solid var(--border, #e5e7eb);
+        border-radius: 12px; box-shadow: 0 12px 40px rgba(0,0,0,0.12);
+        padding: 8px 0; z-index: 1000;
+    }
+    .nav-dropdown::after {
+        content: ''; position: absolute; left: 0; right: 0;
+        top: 100%; height: 12px;
+    }
+    .nav-dropdown:hover .dropdown-menu,
+    .nav-dropdown:focus-within .dropdown-menu { display: block; }
+    .dropdown-item {
+        display: block; padding: 10px 20px; color: var(--text, #1f2937);
+        text-decoration: none; font-size: 0.95rem; transition: background 0.15s;
+        white-space: nowrap;
+    }
+    .dropdown-item:hover { background: rgba(37,99,235,0.06); color: var(--primary, #2563eb); }
+    @media (max-width: 768px) {
+        .main-nav > .nav-link { display: none; }
+        .dropdown-toggle { display: none; }
+        .dropdown-menu {
+            display: block !important; position: static;
+            box-shadow: none; border: none; border-radius: 0;
+            min-width: auto; max-height: none; padding: 0;
+            background: transparent;
+        }
+        .dropdown-item {
+            padding: 8px 0; font-size: 1rem;
+        }
+    }
+    </style>
+    <header class="site-header">
+        <div class="container header-inner">
+            <a href="/" class="logo">
+                <span class="logo-icon">🏠</span>
+                <span>Все о Линолеуме</span>
+            </a>
+            <button class="mobile-menu-btn" aria-label="Меню" id="menuBtn">☰</button>
+            <nav class="main-nav" id="mainNav">
+                <a href="/category/vybor-linoleuma/" class="nav-link">🧐 Выбор линолеума</a>
+<a href="/category/podgotovka-pola/" class="nav-link">🔨 Подготовка пола</a>
+<a href="/category/tekhnologiya-ukladki/" class="nav-link">📏 Технология укладки</a>
+<a href="/category/klej-i-svarka/" class="nav-link">🧴 Клей и сварка</a>
+<div class="nav-dropdown">
+            <button class="nav-link dropdown-toggle">📂 Все разделы ▾</button>
+            <div class="dropdown-menu"><a href="/category/vybor-linoleuma/" class="dropdown-item">🧐 Выбор линолеума</a>
+<a href="/category/podgotovka-pola/" class="dropdown-item">🔨 Подготовка пола</a>
+<a href="/category/tekhnologiya-ukladki/" class="dropdown-item">📏 Технология укладки</a>
+<a href="/category/klej-i-svarka/" class="dropdown-item">🧴 Клей и сварка</a>
+<a href="/category/rezka-i-raskroj/" class="dropdown-item">✂️ Резка и раскрой</a>
+<a href="/category/styki-i-porogi/" class="dropdown-item">🔗 Стыки и пороги</a>
+<a href="/category/ukhod-i-chistka/" class="dropdown-item">🧼 Уход и чистка</a>
+<a href="/category/udalenie-pyaten/" class="dropdown-item">🎨 Удаление пятен</a>
+<a href="/category/remont-povrezhdenij/" class="dropdown-item">🩹 Ремонт повреждений</a>
+<a href="/category/vyravnivanie-polotna/" class="dropdown-item">🌊 Выравнивание полотна</a>
+<a href="/category/linoleum-i-mebel/" class="dropdown-item">🛋️ Линолеум и мебель</a>
+<a href="/category/teplyj-pol/" class="dropdown-item">🔥 Теплый пол</a>
+<a href="/category/raschet-materialov/" class="dropdown-item">📐 Расчет материалов</a>
+<a href="/category/demontazh-pola/" class="dropdown-item">🚜 Демонтаж пола</a>
+<a href="/category/spetsifika-pomeshchenij/" class="dropdown-item">🚿 Специфика помещений</a>
+<a href="/category/problemy-i-zapakh/" class="dropdown-item">👃 Проблемы и запах</a>
+<a href="/category/drugoe/" class="dropdown-item">📁 Другое</a></div>
+        </div>
+            </nav>
+        </div>
+    </header>
+
+    <section class="categories-hero">
+        <div class="container">
+            <h1>📂 Все разделы</h1>
+            <p>Удобная навигация по всем тематическим разделам</p>
+        </div>
+    </section>
+
+    <main class="container">
+        <div class="cat-page-grid">
+            <a href="/category/vybor-linoleuma/" class="cat-page-card">
+            <div class="cat-page-icon">🧐</div>
+            <div class="cat-page-info">
+                <div class="cat-page-name">Выбор линолеума</div>
+                <div class="cat-page-desc">Как выбрать линолеум: классы, типы основы, толщина и сравнение с ламинатом.</div>
+            </div>
+        </a>
+<a href="/category/podgotovka-pola/" class="cat-page-card">
+            <div class="cat-page-icon">🔨</div>
+            <div class="cat-page-info">
+                <div class="cat-page-name">Подготовка пола</div>
+                <div class="cat-page-desc">Выравнивание бетонных и деревянных полов, выбор подложки и грунтовка основания.</div>
+            </div>
+        </a>
+<a href="/category/tekhnologiya-ukladki/" class="cat-page-card">
+            <div class="cat-page-icon">📏</div>
+            <div class="cat-page-info">
+                <div class="cat-page-name">Технология укладки</div>
+                <div class="cat-page-desc">Пошаговая инструкция как стелить линолеум своими руками на разные типы полов.</div>
+            </div>
+        </a>
+<a href="/category/klej-i-svarka/" class="cat-page-card">
+            <div class="cat-page-icon">🧴</div>
+            <div class="cat-page-info">
+                <div class="cat-page-name">Клей и сварка</div>
+                <div class="cat-page-desc">Чем приклеить линолеум, виды клея и технология холодной сварки стыков.</div>
+            </div>
+        </a>
+<a href="/category/rezka-i-raskroj/" class="cat-page-card">
+            <div class="cat-page-icon">✂️</div>
+            <div class="cat-page-info">
+                <div class="cat-page-name">Резка и раскрой</div>
+                <div class="cat-page-desc">Чем резать линолеум в домашних условиях, инструменты и правила раскроя полотна.</div>
+            </div>
+        </a>
+<a href="/category/styki-i-porogi/" class="cat-page-card">
+            <div class="cat-page-icon">🔗</div>
+            <div class="cat-page-info">
+                <div class="cat-page-name">Стыки и пороги</div>
+                <div class="cat-page-desc">Как соединить линолеум с плиткой или ламинатом, установка порожков и скрытие швов.</div>
+            </div>
+        </a>
+<a href="/category/ukhod-i-chistka/" class="cat-page-card">
+            <div class="cat-page-icon">🧼</div>
+            <div class="cat-page-info">
+                <div class="cat-page-name">Уход и чистка</div>
+                <div class="cat-page-desc">Чем мыть линолеум чтобы блестел, народные средства и бытовая химия для пола.</div>
+            </div>
+        </a>
+<a href="/category/udalenie-pyaten/" class="cat-page-card">
+            <div class="cat-page-icon">🎨</div>
+            <div class="cat-page-info">
+                <div class="cat-page-name">Удаление пятен</div>
+                <div class="cat-page-desc">Как вывести зеленку, йод, краску, чернила, ржавчину и другие сложные пятна.</div>
+            </div>
+        </a>
+<a href="/category/remont-povrezhdenij/" class="cat-page-card">
+            <div class="cat-page-icon">🩹</div>
+            <div class="cat-page-info">
+                <div class="cat-page-name">Ремонт повреждений</div>
+                <div class="cat-page-desc">Как заделать дыры, порезы, прожоги и вздутия на линолеуме без замены полотна.</div>
+            </div>
+        </a>
+<a href="/category/vyravnivanie-polotna/" class="cat-page-card">
+            <div class="cat-page-icon">🌊</div>
+            <div class="cat-page-info">
+                <div class="cat-page-name">Выравнивание полотна</div>
+                <div class="cat-page-desc">Как убрать волны, заломы и вмятины от мебели, расправление линолеума после укладки.</div>
+            </div>
+        </a>
+<a href="/category/linoleum-i-mebel/" class="cat-page-card">
+            <div class="cat-page-icon">🛋️</div>
+            <div class="cat-page-info">
+                <div class="cat-page-name">Линолеум и мебель</div>
+                <div class="cat-page-desc">Как переставить тяжелую мебель и холодильник, не порвав новое напольное покрытие.</div>
+            </div>
+        </a>
+<a href="/category/teplyj-pol/" class="cat-page-card">
+            <div class="cat-page-icon">🔥</div>
+            <div class="cat-page-info">
+                <div class="cat-page-name">Теплый пол</div>
+                <div class="cat-page-desc">Укладка инфракрасного и других видов теплого пола под линолеум, выбор материалов.</div>
+            </div>
+        </a>
+<a href="/category/raschet-materialov/" class="cat-page-card">
+            <div class="cat-page-icon">📐</div>
+            <div class="cat-page-info">
+                <div class="cat-page-name">Расчет материалов</div>
+                <div class="cat-page-desc">Калькулятор расхода линолеума, как рассчитать площадь комнаты и количество рулонов.</div>
+            </div>
+        </a>
+<a href="/category/demontazh-pola/" class="cat-page-card">
+            <div class="cat-page-icon">🚜</div>
+            <div class="cat-page-info">
+                <div class="cat-page-name">Демонтаж пола</div>
+                <div class="cat-page-desc">Как снять старый приклеенный линолеум, убрать остатки клея и подготовить основание.</div>
+            </div>
+        </a>
+<a href="/category/spetsifika-pomeshchenij/" class="cat-page-card">
+            <div class="cat-page-icon">🚿</div>
+            <div class="cat-page-info">
+                <div class="cat-page-name">Специфика помещений</div>
+                <div class="cat-page-desc">Какой линолеум лучше для кухни, ванной, спальни и помещений с высокой проходимостью.</div>
+            </div>
+        </a>
+<a href="/category/problemy-i-zapakh/" class="cat-page-card">
+            <div class="cat-page-icon">👃</div>
+            <div class="cat-page-info">
+                <div class="cat-page-name">Проблемы и запах</div>
+                <div class="cat-page-desc">Почему пахнет новый линолеум, как избавиться от запаха, скрипа и липкости покрытия.</div>
+            </div>
+        </a>
+<a href="/category/drugoe/" class="cat-page-card">
+            <div class="cat-page-icon">📁</div>
+            <div class="cat-page-info">
+                <div class="cat-page-name">Другое</div>
+                <div class="cat-page-desc">Прочие вопросы по эксплуатации, хранению и нестандартному использованию линолеума.</div>
+            </div>
+        </a>
+
+        </div>
+    </main>
+
+    <footer class="site-footer-premium">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="footer-brand">🏠 Все о Линолеуме</div>
+                    <p class="footer-about">Полное руководство по выбору, укладке, ремонту и уходу за линолеумом в доме.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Разделы</h4>
+                    <ul><li><a href="/category/vybor-linoleuma/">🧐 Выбор линолеума</a></li>
+<li><a href="/category/podgotovka-pola/">🔨 Подготовка пола</a></li>
+<li><a href="/category/tekhnologiya-ukladki/">📏 Технология укладки</a></li>
+<li><a href="/category/klej-i-svarka/">🧴 Клей и сварка</a></li>
+<li><a href="/category/rezka-i-raskroj/">✂️ Резка и раскрой</a></li>
+<li><a href="/category/styki-i-porogi/">🔗 Стыки и пороги</a></li></ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Информация</h4>
+                    <ul>
+                        <li><a href="/">Главная</a></li>
+                        <li><a href="/about.html">О проекте</a></li>
+                        <li><a href="/categories.html">Все разделы</a></li>
+                        <li><a href="/contact.html">Контакты</a></li>
+                        <li><a href="/privacy.html">Конфиденциальность</a></li>
+                        <li><a href="/sitemap.xml">Карта сайта</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© Все о Линолеуме. Все права защищены.</p>
+                <!--LiveInternet counter--><div style="margin-top:10px;"><a href="https://www.liveinternet.ru/click"
+                target="_blank"><img id="licnt06C4" width="88" height="15" style="border:0" 
+                title="LiveInternet: показано число посетителей за сегодня"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAEALAAAAAABAAEAAAIBTAA7"
+                alt=""/></a><script>(function(d,s){d.getElementById("licnt06C4").src=
+                "https://counter.yadro.ru/hit?t26.5;r"+escape(d.referrer)+
+                ((typeof(s)=="undefined")?"":";s"+s.width+"*"+s.height+"*"+
+                (s.colorDepth?s.colorDepth:s.pixelDepth))+";u"+escape(d.URL)+
+                ";h"+escape(d.title.substring(0,150))+";"+Math.random()})(document,screen)</script></div><!--/LiveInternet-->
+            </div>
+        </div>
+    </footer>
+    <div id="cookie-consent" class="cookie-popup">
+        <div class="cookie-inner">
+            <span>🍪 Мы используем файлы cookie для улучшения работы сайта.</span>
+            <button id="cookie-accept" class="cookie-btn">Принять</button>
+        </div>
+    </div>
+
+    <script>
+    document.getElementById('menuBtn')?.addEventListener('click', () => {
+        document.getElementById('mainNav')?.classList.toggle('open');
+    });
+    </script>
+</body>
+</html>

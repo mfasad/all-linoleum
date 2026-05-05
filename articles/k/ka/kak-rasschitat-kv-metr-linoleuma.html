@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27><text y=%27.9em%27 font-size=%2790%27>🏠</text></svg>">
+    <title>Как рассчитать линолеум: точный расчет квадратных метров и рулонов — Все о Линолеуме</title>
+    <meta name="description" content="Узнайте, как правильно рассчитать линолеум на комнату. Формулы, учет запаса на подрезку, расчеты для помещений сложной формы и таблица типовых размеров.">
+    <link rel="canonical" href="https://all-linoleum.vercel.app/articles/k/ka/kak-rasschitat-kv-metr-linoleuma.html">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Как рассчитать линолеум: точный расчет квадратных метров и рулонов">
+    <meta property="og:description" content="Узнайте, как правильно рассчитать линолеум на комнату. Формулы, учет запаса на подрезку, расчеты для помещений сложной формы и таблица типовых размеров.">
+    <meta property="og:locale" content="ru_RU">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/style.css?v=1778001477">
+    <style>
+    .site-footer-premium {
+        margin-top: 60px; padding: 40px 0 0; background: #1e293b; color: #94a3b8;
+    }
+    .footer-grid {
+        display: grid; grid-template-columns: 2fr 1fr 1fr; gap: 40px;
+        padding-bottom: 32px; border-bottom: 1px solid #334155;
+    }
+    .footer-brand { font-size: 1.2rem; font-weight: 700; color: #f1f5f9; margin-bottom: 12px; }
+    .footer-about { font-size: 0.9rem; line-height: 1.6; margin-bottom: 8px; }
+    .footer-updated { font-size: 0.8rem; color: #64748b; }
+    .footer-col h4 { color: #f1f5f9; font-size: 0.95rem; margin-bottom: 16px; }
+    .footer-col ul { list-style: none; }
+    .footer-col li { margin-bottom: 8px; }
+    .footer-col a { color: #94a3b8; font-size: 0.9rem; transition: color 0.2s; }
+    .footer-col a:hover { color: #60a5fa; }
+    .footer-bottom { padding: 20px 0; text-align: center; font-size: 0.85rem; }
+    @media (max-width: 640px) {
+        .footer-grid { grid-template-columns: 1fr; gap: 24px; }
+    }
+    .cookie-popup {
+        position: fixed; bottom: 0; left: 0; right: 0; background: #1e293b; color: #fff;
+        padding: 16px; transition: transform 0.5s ease; z-index: 9999; border-top: 2px solid #2563eb;
+        transform: translateY(100%);
+    }
+    .cookie-popup.visible { transform: translateY(0); }
+    .cookie-inner { max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; gap: 16px; font-size: 0.9rem; }
+    .cookie-btn { background: #2563eb; color: #fff; border: none; padding: 8px 20px; border-radius: 8px; font-weight: 600; cursor: pointer; white-space: nowrap; }
+    .cookie-btn:hover { background: #1d4ed8; }
+    @media (max-width: 640px) {
+        .cookie-inner { flex-direction: column; text-align: center; }
+    }
+</style>
+    
+    <!--#include virtual="/ssi/head.html" -->
+</head>
+<body>
+        <!--#include virtual="/ssi/body_top.html" -->
+    <style>
+    .nav-dropdown { position: relative; display: inline-block; }
+    .dropdown-toggle {
+        background: none; border: none; cursor: pointer;
+        font: inherit; color: inherit; padding: 8px 12px;
+        border-radius: 8px; transition: background 0.2s;
+    }
+    .dropdown-toggle:hover { background: rgba(0,0,0,0.05); }
+    .dropdown-menu {
+        display: none; position: absolute; right: 0; top: 100%;
+        min-width: 240px; max-height: 70vh; overflow-y: auto;
+        background: var(--card-bg, #fff); border: 1px solid var(--border, #e5e7eb);
+        border-radius: 12px; box-shadow: 0 12px 40px rgba(0,0,0,0.12);
+        padding: 8px 0; z-index: 1000;
+    }
+    .nav-dropdown::after {
+        content: ''; position: absolute; left: 0; right: 0;
+        top: 100%; height: 12px;
+    }
+    .nav-dropdown:hover .dropdown-menu,
+    .nav-dropdown:focus-within .dropdown-menu { display: block; }
+    .dropdown-item {
+        display: block; padding: 10px 20px; color: var(--text, #1f2937);
+        text-decoration: none; font-size: 0.95rem; transition: background 0.15s;
+        white-space: nowrap;
+    }
+    .dropdown-item:hover { background: rgba(37,99,235,0.06); color: var(--primary, #2563eb); }
+    @media (max-width: 768px) {
+        .main-nav > .nav-link { display: none; }
+        .dropdown-toggle { display: none; }
+        .dropdown-menu {
+            display: block !important; position: static;
+            box-shadow: none; border: none; border-radius: 0;
+            min-width: auto; max-height: none; padding: 0;
+            background: transparent;
+        }
+        .dropdown-item {
+            padding: 8px 0; font-size: 1rem;
+        }
+    }
+    </style>
+    <header class="site-header">
+        <div class="container header-inner">
+            <a href="/" class="logo">
+                <span class="logo-icon">🏠</span>
+                <span>Все о Линолеуме</span>
+            </a>
+            <button class="mobile-menu-btn" aria-label="Меню" id="menuBtn">☰</button>
+            <nav class="main-nav" id="mainNav">
+                <a href="/category/vybor-linoleuma/" class="nav-link">🧐 Выбор линолеума</a>
+<a href="/category/podgotovka-pola/" class="nav-link">🔨 Подготовка пола</a>
+<a href="/category/tekhnologiya-ukladki/" class="nav-link">📏 Технология укладки</a>
+<a href="/category/klej-i-svarka/" class="nav-link">🧴 Клей и сварка</a>
+<div class="nav-dropdown">
+            <button class="nav-link dropdown-toggle">📂 Все разделы ▾</button>
+            <div class="dropdown-menu"><a href="/category/vybor-linoleuma/" class="dropdown-item">🧐 Выбор линолеума</a>
+<a href="/category/podgotovka-pola/" class="dropdown-item">🔨 Подготовка пола</a>
+<a href="/category/tekhnologiya-ukladki/" class="dropdown-item">📏 Технология укладки</a>
+<a href="/category/klej-i-svarka/" class="dropdown-item">🧴 Клей и сварка</a>
+<a href="/category/rezka-i-raskroj/" class="dropdown-item">✂️ Резка и раскрой</a>
+<a href="/category/styki-i-porogi/" class="dropdown-item">🔗 Стыки и пороги</a>
+<a href="/category/ukhod-i-chistka/" class="dropdown-item">🧼 Уход и чистка</a>
+<a href="/category/udalenie-pyaten/" class="dropdown-item">🎨 Удаление пятен</a>
+<a href="/category/remont-povrezhdenij/" class="dropdown-item">🩹 Ремонт повреждений</a>
+<a href="/category/vyravnivanie-polotna/" class="dropdown-item">🌊 Выравнивание полотна</a>
+<a href="/category/linoleum-i-mebel/" class="dropdown-item">🛋️ Линолеум и мебель</a>
+<a href="/category/teplyj-pol/" class="dropdown-item">🔥 Теплый пол</a>
+<a href="/category/raschet-materialov/" class="dropdown-item">📐 Расчет материалов</a>
+<a href="/category/demontazh-pola/" class="dropdown-item">🚜 Демонтаж пола</a>
+<a href="/category/spetsifika-pomeshchenij/" class="dropdown-item">🚿 Специфика помещений</a>
+<a href="/category/problemy-i-zapakh/" class="dropdown-item">👃 Проблемы и запах</a>
+<a href="/category/drugoe/" class="dropdown-item">📁 Другое</a></div>
+        </div>
+            </nav>
+        </div>
+    </header>
+
+    <nav class="breadcrumbs" aria-label="Навигация">
+        <div class="container"><a href="/">Главная</a><span class="breadcrumb-sep">›</span><a href="/category/raschet-materialov/">Расчет материалов</a><span class="breadcrumb-sep">›</span><span class="breadcrumb-current">Как рассчитать линолеум: точный расчет квадратных метров и рулонов</span></div>
+    </nav>
+
+    <main class="site-main">
+        <div class="container">
+            <div class="article-layout">
+                <article class="article-main">
+                    
+                    <h1>Как рассчитать линолеум: точный расчет квадратных метров и рулонов</h1>
+                    <nav class="mobile-toc"><details><summary>📋 Содержание</summary><ul><li><a href="#замеры-помещения-точность-до-сантиметра">Замеры помещения: точность до сантиметра</a></li><li><a href="#выбор-ширины-рулона-и-расчет-погонных-метров">Выбор ширины рулона и расчет погонных метров</a></li><li><a href="#учет-запаса-на-подрезку-и-усадку">Учет запаса на подрезку и усадку</a></li><li><a href="#расчет-для-помещений-сложной-формы">Расчет для помещений сложной формы</a></li><li><a href="#особенности-расчета-линолеума-с-рисунком">Особенности расчета линолеума с рисунком</a></li><li><a href="#типичные-ошибки-при-вычислении-площади">Типичные ошибки при вычислении площади</a></li><li><a href="#итоговая-смета-и-проверка-расчетов">Итоговая смета и проверка расчетов</a></li></ul></details></nav>
+                    <!--#include virtual="/ssi/article_before.html" -->
+                    <div class="article-body">
+<p>Планирование ремонта часто начинается с приятных моментов: выбора цвета, текстуры и коллекции напольного покрытия. Однако за эстетикой скрывается суровая математика, игнорирование которой может привести к финансовым потерям или остановке работ. <strong>Правильный расчет линолеума</strong> — это не просто умножение длины на ширину, а сложный процесс, учитывающий геометрию рулонов, направление рисунка и технологические припуски. Ошибка даже в несколько сантиметров может стоить вам покупки дополнительного рулона, который потом будет лежать без дела годами.</p>
+
+<p>В этой статье мы разберем все нюансы вычисления площади, от простых прямоугольных комнат до помещений с эркерами и нишами. Вы научитесь определять, сколько погонных метров материала нужно заказать, чтобы избежать стыков посреди комнаты или нехватки полотна у стен. <em>Точность расчетов</em> напрямую влияет на внешний вид готового пола и ваш бюджет.</p>
+
+<p>Прежде чем брать в руки рулетку, важно понимать, что рынок предлагает покрытия разной ширины, и это ключевой параметр. <mark>Стандартная ширина рулона варьируется от 1.5 до 5 метров с шагом в 50 см</mark>, и выбор конкретного размера определяет стратегию раскроя. Если вы купите слишком узкий рулон, придется делать шов, а если слишком широкий — переплатите за обрезки.</p>
+
+<h2 id="замеры-помещения-точность-до-сантиметра">Замеры помещения: точность до сантиметра</h2>
+<p>Первый этап любого расчета — это получение достоверных исходных данных. Многие новички совершают ошибку, полагаясь на план БТИ или примерные замеры «на глаз». Стены в старых домах часто завалены, а углы далеки от 90 градусов, поэтому <strong>рулетка</strong> должна быть вашим главным инструментом. Измерять нужно не в одном месте, а минимум в трех точках: у входа, посередине и в глубине комнаты, выбирая для расчетов максимальное значение.</p>
+
+<p>Особое внимание следует уделить дверным проемам и нишам. Если линолеум заводится под дверное полотно или в нишу под батарею, эти участки обязательно включаются в общую длину. <em>Технологический зазор</em> у стен также требует учета, хотя обычно он перекрывается плинтусом, но при расчетах большого полотна лучше иметь запас.</p>
+
+<div class="attention-box attention-tip"><span class="attention-icon">💡</span><p>Всегда округляйте полученные замеры в большую сторону до ближайших 10 сантиметров. Это компенсирует возможную кривизну стен и упростит раскрой материала.</p></div>
+
+<p>Не забывайте про сложные элементы планировки. Эркер, выступы вентиляционных коробов или колонны требуют отдельного подхода. В таких случаях помещение мысленно делят на простые геометрические фигуры, рассчитывают площадь каждой и суммируют результаты. Такой метод позволяет не упустить ни одного сантиметра полезной площади.</p>
+
+<ul>
+<li>📏 Измеряйте длину и ширину комнаты по полу, а не по плинтусам, чтобы учесть реальные габариты.</li>
+<li>📐 Записывайте все размеры на бумагу, рисуя схематичный план помещения с указанием всех выступов.</li>
+<li>🔍 Проверьте диагонали комнаты: если они отличаются, значит, помещение имеет неправильную форму.</li>
+<li>🚪 Не забудьте измерить ширину дверного проема, если планируете заводить покрытие в соседнюю комнату.</li>
+</ul>
+
+<h2 id="выбор-ширины-рулона-и-расчет-погонных-метров">Выбор ширины рулона и расчет погонных метров</h2>
+<p>После получения точных размеров комнаты начинается самый ответственный момент — выбор ширины рулона. Линолеум продается погонными метрами, но его цена часто привязана к квадратному метру. Главная задача — подобрать ширину полотна так, чтобы она перекрывала ширину комнаты с запасом. Например, для комнаты шириной 3.2 метра рулона шириной 3 метра будет недостаточно, придется брать 3.5 или 4 метра.</p>
+
+<p>Если ширина комнаты превышает максимально доступную ширину рулона (обычно это 5 метров), неизбежно встает вопрос стыковки полотен. В этом случае расчет ведется иначе: суммируется ширина необходимых полос плюс запас на совмещение рисунка. <strong>Коммерческий линолеум</strong> часто выпускается в узких рулонах, что подразумевает обязательную сварку швов, тогда как бытовой вариант стараются укладывать цельным куском.</p>
+
+<div class="poll-widget" id="poll-7763b435"><div class="poll-widget-question">📊 Какая у вас площадь помещения для укладки?</div><div class="poll-widget-option" data-poll="7763b435" data-idx="0" onclick="pbPollVote(this)"><span class="poll-widget-label">До 10 кв.м</span><span class="poll-widget-bar"></span><span class="poll-widget-pct"></span></div><div class="poll-widget-option" data-poll="7763b435" data-idx="1" onclick="pbPollVote(this)"><span class="poll-widget-label">10-20 кв.м</span><span class="poll-widget-bar"></span><span class="poll-widget-pct"></span></div><div class="poll-widget-option" data-poll="7763b435" data-idx="2" onclick="pbPollVote(this)"><span class="poll-widget-label">20-30 кв.м</span><span class="poll-widget-bar"></span><span class="poll-widget-pct"></span></div><div class="poll-widget-option" data-poll="7763b435" data-idx="3" onclick="pbPollVote(this)"><span class="poll-widget-label">Более 30 кв.м</span><span class="poll-widget-bar"></span><span class="poll-widget-pct"></span></div></div>
+
+<p>Важно учитывать направление ворса или рисунка. Если вы берете несколько кусков, они должны быть отрезаны с одного рулона или с разных, но с одной партии и в одном направлении. <em>Разнотон</em> — частая проблема, когда куски, отрезанные перпендикулярно друг другу, выглядят как разные цвета при боковом освещении.</p>
+
+<blockquote>⚠️ Внимание: Покупая линолеум с абстрактным или хаотичным рисунком, можно не беспокоиться о стыковке узора. Однако для имитации доски, плитки или сложной геометрии запас на подгонку рисунка может составлять до 10-15% от общей длины.</blockquote>
+
+<h2 id="учет-запаса-на-подрезку-и-усадку">Учет запаса на подрезку и усадку</h2>
+<p>Ни один профессионал не скажет вам покупать материал «впритык». <strong>Технологический запас</strong> необходим для нескольких целей: выравнивание краев, обход труб, подрезка в углах и компенсация усадки материала после раскатки. Линолеум, особенно на основе ПВХ или войлока, имеет свойство менять линейные размеры под воздействием температуры и влажности.</p>
+
+<p>Стандартный рекомендуемый запас составляет 5-10 см с каждой стороны. Для комнаты 4х5 метров это означает, что покупать нужно кусок примерно 4.1х5.1 метра. Если вы планируете делать <em>фигурную подрезку</em> вокруг труб отопления или сложных архитектурных элементов, запас лучше увеличить.</p>
+
+<div class="checklist-block"><h4>☑️ Контрольный список перед покупкой</h4><label class="check-item"><input type="checkbox"><span>Измерена максимальная длина и ширина комнаты:Учтены ниши и дверные проемы:Выбрана ширина рулона с запасом:Рассчитан процент запаса на подрезку:Проверено направление рисунка на всех кусках</span></label><div class="check-progress">Выполнено: <span class="check-count">0</span> / 1</div></div>
+
+<p>Ошибочно думать, что остатки можно использовать где-то еще. Обрезки шириной менее 15-20 см практически не применимы для полноценной укладки и часто отправляются в мусор. Поэтому лучше сразу заложить в смету чуть больше материала, чем потом искать подходящий кусок для заделки дыры у порога.</p>
+
+<h2 id="расчет-для-помещений-сложной-формы">Расчет для помещений сложной формы</h2>
+<p>Комнаты с эркерами, Г-образные кухни или помещения с колоннами требуют дробления на простые фигуры. Представьте, что пол — это пазл. Вы делите его на прямоугольники и треугольники, считаете площадь каждого и суммируете. Однако при покупке линолеума суммировать площади недостаточно, нужно учитывать целостность полотна.</p>
+
+<p>Если у вас Г-образная комната, часто выгоднее и проще купить один широкий кусок, перекрывающий максимальную ширину и длину помещения, чем пытаться состыковывать два узких. <strong>Стык</strong> в узком месте коридора или на входе в эркер будет выглядеть неэстетично и быстрее придет в негодность.</p>
+
+<p>Для сложных случаев можно использовать метод «развертки». На бумаге в масштабе рисуется контур комнаты и накладывается сетка, соответствующая ширине рулонов. Это позволяет визуально оценить количество отходов и оптимальное расположение швов.</p>
+
+<table>
+<thead>
+<tr>
+<th>Тип помещения</th>
+<th>Рекомендуемый запас</th>
+<th>Особенности расчета</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Прямоугольная комната</td>
+<td>5-10 см с каждой стороны</td>
+<td>Простое умножение длины на ширину</td>
+</tr>
+<tr>
+<td>Комната с эркером</td>
+<td>10-15 см</td>
+<td>Требуется фигурный раскрой по контуру</td>
+</tr>
+<tr>
+<td>Г-образная кухня</td>
+<td>Зависит от ширины рулона</td>
+<td>Лучше брать цельный кусок по макс. габаритам</td>
+</tr>
+<tr>
+<td>Офис с колоннами</td>
+<td>До 20 см</td>
+<td>Необходима точная обводка препятствий</td>
+</tr>
+</tbody>
+</table>
+
+<h2 id="особенности-расчета-линолеума-с-рисунком">Особенности расчета линолеума с рисунком</h2>
+<p>Покрытия с геометрическим или растительным орнаментом требуют особого подхода. Здесь вступает в силу понятие «раппорт» — расстояние, через которое повторяется рисунок. Если вы покупаете несколько кусков или один длинный отрез для большой комнаты, шаг рисунка должен совпадать на стыках.</p>
+
+<p>При расчете длины необходимого полотна к чистовому размеру добавляют высоту раппорта. Например, если длина комнаты 6 метров, а раппорт составляет 40 см, то покупать нужно 6.4 метра, чтобы иметь возможность сдвинуть рисунок для идеальной стыковки. <em>Диагональная укладка</em> увеличивает расход материала на 15-20% и требует еще более тщательных расчетов.</p>
+
+<details class="faq-item"><summary>Что такое смещение рисунка?</summary><div class="faq-answer"><p>Это расстояние, на которое нужно сдвинуть одно полотнище относительно другого, чтобы узор совпал. Обычно составляет половину или полную длину раппорта.</p></div></details>
+
+<p>Игнорирование этого правила приведет к тому, что линии узора на полу будут «ломаться», создавая визуальный шум и ощущение некачественной работы. Всегда спрашивайте у продавца размер раппорта перед покупкой.</p>
+
+<h2 id="типичные-ошибки-при-вычислении-площади">Типичные ошибки при вычислении площади</h2>
+<p>Самая распространенная ошибка — путаница между квадратными и погонными метрами. Продавцы часто называют цену за квадрат, но отпускают товар в погонах. Если вы заказываете 20 квадратных метров, продавец отрежет вам кусок, соответствующий этой площади при данной ширине рулона, но вам нужно контролировать именно длину отреза.</p>
+
+<p>Вторая ошибка — игнорирование кривизны стен. Полагаясь на стандартные размеры панельных домов (например, 3.0 или 3.3 метра), люди забывают, что реальная ширина может быть 3.05 или 3.25. В результате купленный 3-метровый линолеум не достает до стены 5 сантиметров, и нарастить его уже невозможно.</p>
+
+<blockquote>⚠️ Внимание: Никогда не округляйте размеры комнаты в меньшую сторону. Лучше иметь 10 см обрезков, чем искать способ закрыть щель у стены, которую невозможно замаскировать плинтусом.</blockquote>
+
+<p>Также часто забывают про <strong>акклиматизацию</strong>. Линолеум должен полежать в комнате 24-48 часов перед укладкой. За это время он расправится, и его реальные размеры могут немного измениться, что также стоит учитывать при очень точной подгонке.</p>
+
+<div class="attention-box attention-tip"><span class="attention-icon">💡</span><p>Золотое правило закупки: всегда берите линолеум с запасом минимум 5-10 см по ширине и длине от максимальных размеров комнаты.</p></div>
+
+<h2 id="итоговая-смета-и-проверка-расчетов">Итоговая смета и проверка расчетов</h2>
+<p>Перед оплатой обязательно перепроверьте свои вычисления. Сложите все припуски, учтите направление ворса и наличие рисунка. Хорошей практикой будет создание простой таблицы в смартфоне или на бумаге, где будут указаны: размеры комнаты, выбранная ширина рулона, необходимая длина в погонных метрах и итоговая площадь.</p>
+
+<p>Если расчеты показывают, что одного куска не хватает и нужна стыковка, заранее спланируйте, где пройдет шов. Он должен быть параллелен стене и находиться в зоне с наименьшей проходимостью, чтобы минимизировать риск расхождения кромок. <em>Холодная сварка</em> или пороги помогут замаскировать соединение, но лучше все же стремиться к цельному покрытию.</p>
+
+<p>Помните, что правильный расчет — это баланс между экономией и качеством. Попытка сэкономить на 10-15 сантиметрах может привести к браку всей укладки. Трезвый подход к цифрам гарантирует, что ваш новый пол будет радовать глаз долгие годы.</p>
+
+<details>
+<summary>Нужно ли покупать линолеум с запасом, если комната идеально прямоугольная?</summary>
+<p>Да, обязательно. Даже в идеальной комнате стены могут иметь микро-неровности, а сам материал требует подрезки для заведения под плинтус. Кроме того, линолеум может немного «гулять» в размерах при изменении температуры.</p>
+</details>
+
+<details>
+<summary>Можно ли стыковать линолеум разных партий?</summary>
+<p>Крайне не рекомендуется. Даже в рамках одной модели разные партии могут отличаться оттенком (разнотон). На полу это будет выглядеть как две разные полосы. Всегда требуйте материал из одной партии или партии с близкими номерами.</p>
+</details>
+
+<details>
+<summary>Как рассчитать линолеум, если ширина комнаты 3.10 м, а рулоны только 3.00 и 3.50 м?</summary>
+<p>Вам необходимо покупать рулон шириной 3.50 м. Рулона 3.00 м будет недостаточно, так как останется щель в 10 см, которую невозможно закрыть плинтусом без подрезки самого покрытия, что испортит внешний вид.</p>
+</details>
+
+<details>
+<summary>Влияет ли основа линолеума (войлок, ПВХ) на расчет?</summary>
+<p>Напрямую на площадь — нет, но на технологию расчета запаса — да. Линолеум на вспененной основе менее стабилен и сильнее реагирует на температуру, требуя чуть большего технологического зазора по сравнению с коммерческим гомогенным покрытием.</p>
+</details>
+
+<details>
+<summary>Что делать, если продавец отрезал меньше, чем нужно?</summary>
+<p>Проверяйте длину отреза в магазине с помощью рулетки до оплаты. Если нехватка обнаружилась дома, докупить точно такой же кусок из той же партии будет практически невозможно. В случае критической нехватки придется делать вставку, что является браком укладки.</p>
+</details></div>
+                    <!--#include virtual="/ssi/article_after.html" -->
+
+                </article>
+                <aside class="article-sidebar"><!--#include virtual="/ssi/sidebar_top.html" --><nav class="sidebar-search"><div class="sidebar-search-box"><input type="text" id="globalSearchInput" placeholder="🔍 Поиск статей..." autocomplete="off"><div class="search-dropdown" id="globalSearchDropdown"></div></div></nav><!--#include virtual="/ssi/sidebar_before_toc.html" --><nav class="sidebar-toc" id="sidebarToc"><h3>Содержание</h3><ul><li><a href="#замеры-помещения-точность-до-сантиметра">Замеры помещения: точность до сантиметра</a></li><li><a href="#выбор-ширины-рулона-и-расчет-погонных-метров">Выбор ширины рулона и расчет погонных метров</a></li><li><a href="#учет-запаса-на-подрезку-и-усадку">Учет запаса на подрезку и усадку</a></li><li><a href="#расчет-для-помещений-сложной-формы">Расчет для помещений сложной формы</a></li><li><a href="#особенности-расчета-линолеума-с-рисунком">Особенности расчета линолеума с рисунком</a></li><li><a href="#типичные-ошибки-при-вычислении-площади">Типичные ошибки при вычислении площади</a></li><li><a href="#итоговая-смета-и-проверка-расчетов">Итоговая смета и проверка расчетов</a></li></ul></nav><!--#include virtual="/ssi/sidebar_before_related.html" --><nav class="sidebar-related"><h3>Похожие статьи</h3><ul><li><a href="/articles/k/ka/kak-izmerit-ploshchad-komnaty-v-kvadratnykh-metrakh-dlya-linoleuma.html" class="related-card">Как точно измерить площадь комнаты для линолеума: формулы</a></li><li><a href="/articles/k/ka/kak-vyschitat-linoleum-v-pogonnykh-metrakh.html" class="related-card">Как рассчитать линолеум в погонных метрах: точная формула</a></li><li><a href="/articles/k/ka/kak-rasschityvaetsya-pogonnyj-metr-linoleuma.html" class="related-card">Как рассчитать погонный метр линолеума: формулы и примеры</a></li><li><a href="/articles/k/ka/kak-perevezti-linoleum-4-metra-v-pritsepe.html" class="related-card">Как перевезти линолеум 4 метра в прицепе: инструкция</a></li><li><a href="/articles/s/sk/skolko-linoleuma-nuzhno-na-20-kv-m.html" class="related-card">Сколько линолеума нужно на 20 кв м: точный расчет с запасом</a></li></ul></nav><!--#include virtual="/ssi/sidebar_after_related.html" --></aside>
+            </div>
+        </div>
+    </main>
+
+    <!--#include virtual="/ssi/before_related_bottom.html" -->
+    <section class="related-bottom">
+        <div class="container">
+            <h2 class="related-bottom-heading">📖 Читайте также</h2>
+            <div class="related-bottom-grid"><a href="/articles/k/ka/kak-izmerit-ploshchad-komnaty-v-kvadratnykh-metrakh-dlya-linoleuma.html" class="related-bottom-card"><span class="related-bottom-title">Как точно измерить площадь комнаты для линолеума: формулы</span><span class="related-bottom-desc">Подробная инструкция, как измерить площадь комнаты в квадратных метрах для покупки линолеума. Формул</span></a><a href="/articles/k/ka/kak-vyschitat-linoleum-v-pogonnykh-metrakh.html" class="related-bottom-card"><span class="related-bottom-title">Как рассчитать линолеум в погонных метрах: точная формула</span><span class="related-bottom-desc">Узнайте, как правильно посчитать линолеум в погонных метрах. Формулы расчета, учет запаса на подрезк</span></a><a href="/articles/k/ka/kak-rasschityvaetsya-pogonnyj-metr-linoleuma.html" class="related-bottom-card"><span class="related-bottom-title">Как рассчитать погонный метр линолеума: формулы и примеры</span><span class="related-bottom-desc">Узнайте, как правильно рассчитывается погонный метр линолеума. Формулы, примеры вычислений, учет зап</span></a><a href="/articles/k/ka/kak-perevezti-linoleum-4-metra-v-pritsepe.html" class="related-bottom-card"><span class="related-bottom-title">Как перевезти линолеум 4 метра в прицепе: инструкция</span><span class="related-bottom-desc">Правильная укладка рулона длиной 4 метра в прицеп. Защита от заломов, способы крепления и выбор марш</span></a><a href="/articles/s/sk/skolko-linoleuma-nuzhno-na-20-kv-m.html" class="related-bottom-card"><span class="related-bottom-title">Сколько линолеума нужно на 20 кв м: точный расчет с запасом</span><span class="related-bottom-desc">Узнайте, сколько линолеума купить на 20 кв м. Подробный расчет с учетом запаса на подрезку, усадку и</span></a><a href="/articles/k/ka/kak-poschitat-kolichestvo-linoleuma-v-pogonnykh-metrakh.html" class="related-bottom-card"><span class="related-bottom-title">Как посчитать линолеум в погонных метрах: формулы и примеры</span><span class="related-bottom-desc">Подробная инструкция, как точно рассчитать количество линолеума в погонных метрах. Формулы, учет зап</span></a></div>
+        </div>
+    </section>
+    <!--#include virtual="/ssi/after_related_bottom.html" -->
+
+    <footer class="site-footer-premium">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="footer-brand">🏠 Все о Линолеуме</div>
+                    <p class="footer-about">Полное руководство по выбору, укладке, ремонту и уходу за линолеумом в доме.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Разделы</h4>
+                    <ul><li><a href="/category/vybor-linoleuma/">🧐 Выбор линолеума</a></li>
+<li><a href="/category/podgotovka-pola/">🔨 Подготовка пола</a></li>
+<li><a href="/category/tekhnologiya-ukladki/">📏 Технология укладки</a></li>
+<li><a href="/category/klej-i-svarka/">🧴 Клей и сварка</a></li>
+<li><a href="/category/rezka-i-raskroj/">✂️ Резка и раскрой</a></li>
+<li><a href="/category/styki-i-porogi/">🔗 Стыки и пороги</a></li></ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Информация</h4>
+                    <ul>
+                        <li><a href="/">Главная</a></li>
+                        <li><a href="/about.html">О проекте</a></li>
+                        <li><a href="/categories.html">Все разделы</a></li>
+                        <li><a href="/contact.html">Контакты</a></li>
+                        <li><a href="/privacy.html">Конфиденциальность</a></li>
+                        <li><a href="/sitemap.xml">Карта сайта</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© Все о Линолеуме. Все права защищены.</p>
+                <!--LiveInternet counter--><div style="margin-top:10px;"><a href="https://www.liveinternet.ru/click"
+                target="_blank"><img id="licnt06C4" width="88" height="15" style="border:0" 
+                title="LiveInternet: показано число посетителей за сегодня"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAEALAAAAAABAAEAAAIBTAA7"
+                alt=""/></a><script>(function(d,s){d.getElementById("licnt06C4").src=
+                "https://counter.yadro.ru/hit?t26.5;r"+escape(d.referrer)+
+                ((typeof(s)=="undefined")?"":";s"+s.width+"*"+s.height+"*"+
+                (s.colorDepth?s.colorDepth:s.pixelDepth))+";u"+escape(d.URL)+
+                ";h"+escape(d.title.substring(0,150))+";"+Math.random()})(document,screen)</script></div><!--/LiveInternet-->
+            </div>
+        </div>
+    </footer>
+    <div id="cookie-consent" class="cookie-popup">
+        <div class="cookie-inner">
+            <span>🍪 Мы используем файлы cookie для улучшения работы сайта.</span>
+            <button id="cookie-accept" class="cookie-btn">Принять</button>
+        </div>
+    </div>
+    <script src="/static/js/main.js"></script>
+    <script>
+    (function() {
+        const popup = document.getElementById('cookie-consent');
+        const btn = document.getElementById('cookie-accept');
+        if (popup && btn && !localStorage.getItem('cookie-accepted')) {
+            popup.classList.add('visible');
+            btn.onclick = () => {
+                localStorage.setItem('cookie-accepted', 'true');
+                popup.classList.remove('visible');
+            };
+        }
+    })();
+    </script>
+    <script>
+    function pbPollVote(el) {
+        var poll = el.closest('.poll-widget');
+        if (poll.classList.contains('voted')) return;
+        poll.classList.add('voted');
+        el.classList.add('selected');
+        var opts = poll.querySelectorAll('.poll-widget-option');
+        var n = opts.length;
+        var raw = [];
+        var sum = 0;
+        for (var i = 0; i < n; i++) {
+            var v = Math.random() * 50 + 5;
+            if (opts[i] === el) v += 30;
+            raw.push(v);
+            sum += v;
+        }
+        var pcts = raw.map(function(v) { return Math.round(v / sum * 100); });
+        var diff = 100 - pcts.reduce(function(a,b){ return a+b; }, 0);
+        pcts[Array.from(opts).indexOf(el)] += diff;
+        setTimeout(function() {
+            opts.forEach(function(opt, i) {
+                opt.querySelector('.poll-widget-bar').style.width = pcts[i] + '%';
+                opt.querySelector('.poll-widget-pct').textContent = pcts[i] + '%';
+            });
+        }, 50);
+    }
+    </script>
+    <!--#include virtual="/ssi/body_bottom.html" -->
+    <script src="/static/js/inject.js" defer></script>
+</body>
+</html>

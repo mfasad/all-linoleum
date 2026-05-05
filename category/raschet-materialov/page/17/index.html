@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27><text y=%27.9em%27 font-size=%2790%27>🏠</text></svg>">
+    <title>Расчет материалов — страница 17 — Все о Линолеуме</title>
+    <meta name="description" content="Калькулятор расхода линолеума, как рассчитать площадь комнаты и количество рулонов.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/style.css?v=1778001477">
+    <style>
+        .cat-hero {
+            background: linear-gradient(135deg, #1e293b 0%, #334155 50%, #1e3a5f 100%);
+            border-bottom: none;
+            padding: 48px 0 40px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        .cat-hero::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle at 30% 40%, rgba(37,99,235,0.15) 0%, transparent 50%),
+                        radial-gradient(circle at 70% 60%, rgba(139,92,246,0.1) 0%, transparent 50%);
+            animation: heroShimmer 8s ease-in-out infinite alternate;
+        }
+        @keyframes heroShimmer {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(3deg); }
+        }
+        .cat-hero .container { position: relative; z-index: 1; }
+        .cat-hero-icon {
+            font-size: 3.5rem; display: block; margin-bottom: 16px;
+            filter: drop-shadow(0 4px 12px rgba(0,0,0,0.3));
+        }
+        .cat-hero h1 {
+            font-size: 2rem; font-weight: 800; color: #f1f5f9;
+            margin-bottom: 10px; letter-spacing: -0.02em;
+        }
+        .cat-hero p {
+            color: #94a3b8; font-size: 1.05rem; max-width: 600px;
+            margin: 0 auto; line-height: 1.6;
+        }
+        .cat-benefits {
+            display: flex; justify-content: center; gap: 12px;
+            margin-top: 24px; flex-wrap: wrap;
+        }
+        .cat-benefit {
+            display: flex; align-items: center; gap: 8px;
+            background: rgba(255,255,255,0.08); backdrop-filter: blur(8px);
+            border: 1px solid rgba(255,255,255,0.12);
+            border-radius: 10px; padding: 8px 18px;
+            font-size: 0.88rem; color: #e2e8f0; font-weight: 500;
+            transition: all 0.25s;
+        }
+        .cat-benefit:hover {
+            background: rgba(255,255,255,0.15);
+            border-color: rgba(255,255,255,0.25);
+            transform: translateY(-2px);
+        }
+        .benefit-icon { font-size: 1.15em; }
+
+        .cat-grid {
+            display: grid; grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+            gap: 16px; padding: 32px 0 24px;
+        }
+        .article-home-card {
+            background: #fff; border: 1px solid #e2e8f0; border-radius: 12px;
+            padding: 0; text-decoration: none; color: #1e293b;
+            transition: all 0.25s ease; display: flex; flex-direction: column;
+            overflow: hidden; position: relative;
+        }
+        .article-home-card:hover {
+            border-color: #bfdbfe;
+            box-shadow: 0 8px 24px rgba(37,99,235,0.1);
+            transform: translateY(-4px);
+        }
+        .card-top {
+            display: flex; justify-content: space-between; align-items: center;
+            padding: 14px 20px 0;
+        }
+        .card-icon {
+            font-size: 1.4em;
+            background: linear-gradient(135deg, #eff6ff, #e0f2fe);
+            width: 36px; height: 36px; border-radius: 10px;
+            display: flex; align-items: center; justify-content: center;
+            box-shadow: 0 2px 6px rgba(37,99,235,0.1);
+        }
+        .card-read-time {
+            font-size: 0.78rem; color: #94a3b8; font-weight: 500;
+        }
+        .article-home-title {
+            font-weight: 600; font-size: 0.97rem; line-height: 1.4;
+            padding: 12px 20px 0; transition: color 0.2s;
+        }
+        .article-home-card:hover .article-home-title { color: #2563eb; }
+        .article-home-desc {
+            font-size: 0.84rem; color: #64748b; line-height: 1.5;
+            padding: 6px 20px 0; flex: 1;
+        }
+        .card-footer {
+            display: flex; justify-content: flex-end; align-items: center;
+            padding: 12px 20px; margin-top: auto;
+            border-top: 1px solid #f1f5f9;
+        }
+        .card-read-more {
+            font-size: 0.82rem; font-weight: 600; color: #94a3b8;
+            transition: all 0.2s;
+        }
+        .article-home-card:hover .card-read-more {
+            color: #2563eb; letter-spacing: 0.02em;
+        }
+
+        .pagination {
+            display: flex; justify-content: center; gap: 6px;
+            padding: 8px 0 48px; flex-wrap: wrap; align-items: center;
+        }
+        .pag-link {
+            padding: 10px 16px; border-radius: 10px; border: 1px solid #e2e8f0;
+            color: #64748b; font-size: 0.9rem; text-decoration: none;
+            transition: all 0.2s; font-weight: 500;
+        }
+        .pag-link:hover { border-color: #2563eb; color: #2563eb; background: #eff6ff; }
+        .pag-active {
+            background: linear-gradient(135deg, #2563eb, #3b82f6);
+            color: #fff !important; border-color: #2563eb;
+            box-shadow: 0 3px 10px rgba(37,99,235,0.3);
+        }
+        .pag-edge { font-size: 1rem; font-weight: 700; }
+        .pag-dots { color: #94a3b8; padding: 0 4px; }
+
+        
+    .site-footer-premium {
+        margin-top: 60px; padding: 40px 0 0; background: #1e293b; color: #94a3b8;
+    }
+    .footer-grid {
+        display: grid; grid-template-columns: 2fr 1fr 1fr; gap: 40px;
+        padding-bottom: 32px; border-bottom: 1px solid #334155;
+    }
+    .footer-brand { font-size: 1.2rem; font-weight: 700; color: #f1f5f9; margin-bottom: 12px; }
+    .footer-about { font-size: 0.9rem; line-height: 1.6; margin-bottom: 8px; }
+    .footer-updated { font-size: 0.8rem; color: #64748b; }
+    .footer-col h4 { color: #f1f5f9; font-size: 0.95rem; margin-bottom: 16px; }
+    .footer-col ul { list-style: none; }
+    .footer-col li { margin-bottom: 8px; }
+    .footer-col a { color: #94a3b8; font-size: 0.9rem; transition: color 0.2s; }
+    .footer-col a:hover { color: #60a5fa; }
+    .footer-bottom { padding: 20px 0; text-align: center; font-size: 0.85rem; }
+    @media (max-width: 640px) {
+        .footer-grid { grid-template-columns: 1fr; gap: 24px; }
+    }
+    .cookie-popup {
+        position: fixed; bottom: 0; left: 0; right: 0; background: #1e293b; color: #fff;
+        padding: 16px; transition: transform 0.5s ease; z-index: 9999; border-top: 2px solid #2563eb;
+        transform: translateY(100%);
+    }
+    .cookie-popup.visible { transform: translateY(0); }
+    .cookie-inner { max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; gap: 16px; font-size: 0.9rem; }
+    .cookie-btn { background: #2563eb; color: #fff; border: none; padding: 8px 20px; border-radius: 8px; font-weight: 600; cursor: pointer; white-space: nowrap; }
+    .cookie-btn:hover { background: #1d4ed8; }
+    @media (max-width: 640px) {
+        .cookie-inner { flex-direction: column; text-align: center; }
+    }
+
+        @media (max-width: 640px) {
+            .cat-grid { grid-template-columns: 1fr; }
+            .cat-hero h1 { font-size: 1.5rem; }
+        }
+    </style>
+    <!--#include virtual="/ssi/head.html" -->
+</head>
+<body>
+        <!--#include virtual="/ssi/body_top.html" -->
+    <style>
+    .nav-dropdown { position: relative; display: inline-block; }
+    .dropdown-toggle {
+        background: none; border: none; cursor: pointer;
+        font: inherit; color: inherit; padding: 8px 12px;
+        border-radius: 8px; transition: background 0.2s;
+    }
+    .dropdown-toggle:hover { background: rgba(0,0,0,0.05); }
+    .dropdown-menu {
+        display: none; position: absolute; right: 0; top: 100%;
+        min-width: 240px; max-height: 70vh; overflow-y: auto;
+        background: var(--card-bg, #fff); border: 1px solid var(--border, #e5e7eb);
+        border-radius: 12px; box-shadow: 0 12px 40px rgba(0,0,0,0.12);
+        padding: 8px 0; z-index: 1000;
+    }
+    .nav-dropdown::after {
+        content: ''; position: absolute; left: 0; right: 0;
+        top: 100%; height: 12px;
+    }
+    .nav-dropdown:hover .dropdown-menu,
+    .nav-dropdown:focus-within .dropdown-menu { display: block; }
+    .dropdown-item {
+        display: block; padding: 10px 20px; color: var(--text, #1f2937);
+        text-decoration: none; font-size: 0.95rem; transition: background 0.15s;
+        white-space: nowrap;
+    }
+    .dropdown-item:hover { background: rgba(37,99,235,0.06); color: var(--primary, #2563eb); }
+    @media (max-width: 768px) {
+        .main-nav > .nav-link { display: none; }
+        .dropdown-toggle { display: none; }
+        .dropdown-menu {
+            display: block !important; position: static;
+            box-shadow: none; border: none; border-radius: 0;
+            min-width: auto; max-height: none; padding: 0;
+            background: transparent;
+        }
+        .dropdown-item {
+            padding: 8px 0; font-size: 1rem;
+        }
+    }
+    </style>
+    <header class="site-header">
+        <div class="container header-inner">
+            <a href="/" class="logo">
+                <span class="logo-icon">🏠</span>
+                <span>Все о Линолеуме</span>
+            </a>
+            <button class="mobile-menu-btn" aria-label="Меню" id="menuBtn">☰</button>
+            <nav class="main-nav" id="mainNav">
+                <a href="/category/vybor-linoleuma/" class="nav-link">🧐 Выбор линолеума</a>
+<a href="/category/podgotovka-pola/" class="nav-link">🔨 Подготовка пола</a>
+<a href="/category/tekhnologiya-ukladki/" class="nav-link">📏 Технология укладки</a>
+<a href="/category/klej-i-svarka/" class="nav-link">🧴 Клей и сварка</a>
+<div class="nav-dropdown">
+            <button class="nav-link dropdown-toggle">📂 Все разделы ▾</button>
+            <div class="dropdown-menu"><a href="/category/vybor-linoleuma/" class="dropdown-item">🧐 Выбор линолеума</a>
+<a href="/category/podgotovka-pola/" class="dropdown-item">🔨 Подготовка пола</a>
+<a href="/category/tekhnologiya-ukladki/" class="dropdown-item">📏 Технология укладки</a>
+<a href="/category/klej-i-svarka/" class="dropdown-item">🧴 Клей и сварка</a>
+<a href="/category/rezka-i-raskroj/" class="dropdown-item">✂️ Резка и раскрой</a>
+<a href="/category/styki-i-porogi/" class="dropdown-item">🔗 Стыки и пороги</a>
+<a href="/category/ukhod-i-chistka/" class="dropdown-item">🧼 Уход и чистка</a>
+<a href="/category/udalenie-pyaten/" class="dropdown-item">🎨 Удаление пятен</a>
+<a href="/category/remont-povrezhdenij/" class="dropdown-item">🩹 Ремонт повреждений</a>
+<a href="/category/vyravnivanie-polotna/" class="dropdown-item">🌊 Выравнивание полотна</a>
+<a href="/category/linoleum-i-mebel/" class="dropdown-item">🛋️ Линолеум и мебель</a>
+<a href="/category/teplyj-pol/" class="dropdown-item">🔥 Теплый пол</a>
+<a href="/category/raschet-materialov/" class="dropdown-item">📐 Расчет материалов</a>
+<a href="/category/demontazh-pola/" class="dropdown-item">🚜 Демонтаж пола</a>
+<a href="/category/spetsifika-pomeshchenij/" class="dropdown-item">🚿 Специфика помещений</a>
+<a href="/category/problemy-i-zapakh/" class="dropdown-item">👃 Проблемы и запах</a>
+<a href="/category/drugoe/" class="dropdown-item">📁 Другое</a></div>
+        </div>
+            </nav>
+        </div>
+    </header>
+
+    <nav class="breadcrumbs" aria-label="Навигация">
+        <div class="container">
+            <a href="/">Главная</a>
+            <span class="breadcrumb-sep">›</span>
+            <span class="breadcrumb-current">Расчет материалов</span>
+        </div>
+    </nav>
+
+    <section class="cat-hero">
+        <div class="container">
+            <span class="cat-hero-icon">📐</span>
+            <h1>Расчет материалов</h1>
+            <p>Калькулятор расхода линолеума, как рассчитать площадь комнаты и количество рулонов. · страница 17 из 51</p>
+            <div class="cat-benefits"><div class="cat-benefit"><span class="benefit-icon">📖</span><span>Понятные инструкции</span></div><div class="cat-benefit"><span class="benefit-icon">✅</span><span>Проверенные решения</span></div><div class="cat-benefit"><span class="benefit-icon">⚡</span><span>Без лишних слов</span></div></div>
+        </div>
+    </section>
+
+    <main class="site-main">
+        <div class="container">
+            <div class="cat-grid">
+            <a href="/articles/k/ka/kak-poschitat-skolko-nuzhno-linoleuma-na-komnatu-kalkulyator-pravilno-rasschitat.html" class="article-home-card">
+                <div class="card-top">
+                    <span class="card-icon">📐</span>
+                    <span class="card-read-time">⏱ 9 мин</span>
+                </div>
+                <div class="article-home-title">Как рассчитать линолеум на комнату: формулы и калькулятор</div>
+                <div class="article-home-desc">Точный расчет линолеума на комнату. Формулы, учет запаса, раскладка и нюансы помещений сложной формы. Избегайте ошибок п</div>
+                <div class="card-footer">
+                    <span class="card-read-more">Читать →</span>
+                </div>
+            </a>
+            <a href="/articles/k/ka/kak-pravilno-kupit-linoleum-dlya-komnaty-po-razmeram-komnaty.html" class="article-home-card">
+                <div class="card-top">
+                    <span class="card-icon">📐</span>
+                    <span class="card-read-time">⏱ 10 мин</span>
+                </div>
+                <div class="article-home-title">Как купить линолеум по размерам комнаты: расчет и выбор</div>
+                <div class="article-home-desc">Как правильно купить линолеум для комнаты по размерам? Точный расчет, выбор ширины рулона, допуски на усадку и советы по</div>
+                <div class="card-footer">
+                    <span class="card-read-more">Читать →</span>
+                </div>
+            </a>
+            <a href="/articles/k/ka/kak-pravilno-pokupat-linoleum-po-kvadratnym-metram.html" class="article-home-card">
+                <div class="card-top">
+                    <span class="card-icon">📐</span>
+                    <span class="card-read-time">⏱ 10 мин</span>
+                </div>
+                <div class="article-home-title">Как правильно покупать линолеум по квадратным метрам: расчет и запас</div>
+                <div class="article-home-desc">Полный гид по покупке линолеума: как точно рассчитать площадь, учесть припуски на усадку, выбрать ширину рулона и избежа</div>
+                <div class="card-footer">
+                    <span class="card-read-more">Читать →</span>
+                </div>
+            </a>
+            <a href="/articles/k/ka/kak-pravilno-poschitat-linoleum-na-pol.html" class="article-home-card">
+                <div class="card-top">
+                    <span class="card-icon">📐</span>
+                    <span class="card-read-time">⏱ 12 мин</span>
+                </div>
+                <div class="article-home-title">Как правильно посчитать линолеум на пол: формулы, запас, ошибки</div>
+                <div class="article-home-desc">Подробный гид, как точно посчитать линолеум на пол. Расчет запаса на усадку, припуски на стены, особенности раскроя и та</div>
+                <div class="card-footer">
+                    <span class="card-read-more">Читать →</span>
+                </div>
+            </a>
+            <a href="/articles/k/ka/kak-pravilno-poschitat-tsenu-za-linoleum.html" class="article-home-card">
+                <div class="card-top">
+                    <span class="card-icon">📐</span>
+                    <span class="card-read-time">⏱ 11 мин</span>
+                </div>
+                <div class="article-home-title">Как посчитать цену за линолеум: формулы, примеры и скрытые расходы</div>
+                <div class="article-home-desc">Точный расчет стоимости линолеума: учитываем площадь, припуски на усадку, подложку и доставку. Калькулятор затрат и сове</div>
+                <div class="card-footer">
+                    <span class="card-read-more">Читать →</span>
+                </div>
+            </a>
+            <a href="/articles/k/ka/kak-pravilno-rasschitat-pogonnyj-metr-linoleuma.html" class="article-home-card">
+                <div class="card-top">
+                    <span class="card-icon">📐</span>
+                    <span class="card-read-time">⏱ 9 мин</span>
+                </div>
+                <div class="article-home-title">Как рассчитать погонный метр линолеума: формулы и примеры</div>
+                <div class="article-home-desc">Правильный расчет линолеума в погонных метрах. Учитываем припуски на усадку, стыковку рисунка и геометрию комнаты. Избег</div>
+                <div class="card-footer">
+                    <span class="card-read-more">Читать →</span>
+                </div>
+            </a>
+            <a href="/articles/k/ka/kak-pravilno-vyschitat-kvadratnye-metry-linoleuma.html" class="article-home-card">
+                <div class="card-top">
+                    <span class="card-icon">📐</span>
+                    <span class="card-read-time">⏱ 14 мин</span>
+                </div>
+                <div class="article-home-title">Как рассчитать линолеум: формулы и правила замера</div>
+                <div class="article-home-desc">Узнайте, как правильно высчитать квадратные метры линолеума с учетом запаса на усадку и подрезку. Точный расчет рулона и</div>
+                <div class="card-footer">
+                    <span class="card-read-more">Читать →</span>
+                </div>
+            </a>
+            <a href="/articles/k/ka/kak-rasschitat-linoleum-na-komnatu.html" class="article-home-card">
+                <div class="card-top">
+                    <span class="card-icon">📐</span>
+                    <span class="card-read-time">⏱ 10 мин</span>
+                </div>
+                <div class="article-home-title">Как рассчитать линолеум на комнату: формулы, запас и ошибки</div>
+                <div class="article-home-desc">Точный расчет линолеума на комнату по площади. Узнайте, как правильно посчитать материал, учесть запас на усадку и избеж</div>
+                <div class="card-footer">
+                    <span class="card-read-more">Читать →</span>
+                </div>
+            </a>
+            <a href="/articles/k/ka/kak-rasschitat-linoleum-v-pogonnykh-metrakh-kalkulyator.html" class="article-home-card">
+                <div class="card-top">
+                    <span class="card-icon">📐</span>
+                    <span class="card-read-time">⏱ 10 мин</span>
+                </div>
+                <div class="article-home-title">Как рассчитать линолеум в погонных метрах: калькулятор и формулы</div>
+                <div class="article-home-desc">Точный расчет линолеума в погонных метрах. Формулы, калькулятор, учет припусков на швы и усадку. Как избежать ошибок при</div>
+                <div class="card-footer">
+                    <span class="card-read-more">Читать →</span>
+                </div>
+            </a>
+            <a href="/articles/k/ka/kak-rasschitat-ploshchad-komnaty-dlya-linoleuma-v-kvadratnykh-metrakh.html" class="article-home-card">
+                <div class="card-top">
+                    <span class="card-icon">📐</span>
+                    <span class="card-read-time">⏱ 10 мин</span>
+                </div>
+                <div class="article-home-title">Как рассчитать площадь комнаты для линолеума: формулы и примеры</div>
+                <div class="article-home-desc">Полная инструкция по расчету площади пола под линолеум. Учитываем ниши, пороги и припуски. Таблицы расхода и чек-лист за</div>
+                <div class="card-footer">
+                    <span class="card-read-more">Читать →</span>
+                </div>
+            </a>
+            <a href="/articles/k/ka/kak-rasschitat-skolko-rulonov-linoleuma-nuzhno-na-komnatu.html" class="article-home-card">
+                <div class="card-top">
+                    <span class="card-icon">📐</span>
+                    <span class="card-read-time">⏱ 9 мин</span>
+                </div>
+                <div class="article-home-title">Расчет линолеума: сколько рулонов нужно на комнату</div>
+                <div class="article-home-desc">Узнайте, как точно рассчитать количество рулонов линолеума на комнату. Формулы, таблицы запаса на подрезку и советы по р</div>
+                <div class="card-footer">
+                    <span class="card-read-more">Читать →</span>
+                </div>
+            </a>
+            <a href="/articles/k/ka/kak-schitat-ploshchad-linoleuma.html" class="article-home-card">
+                <div class="card-top">
+                    <span class="card-icon">📐</span>
+                    <span class="card-read-time">⏱ 10 мин</span>
+                </div>
+                <div class="article-home-title">Как считать площадь линолеума: формулы, запас и раскрой</div>
+                <div class="article-home-desc">Правильный расчет линолеума на комнату: учет выступов, запаса на усадку и подгонку рисунка. Формулы для сложных помещени</div>
+                <div class="card-footer">
+                    <span class="card-read-more">Читать →</span>
+                </div>
+            </a>
+            <a href="/articles/k/ka/kak-sdelat-klumbu-korzinu-iz-linoleuma.html" class="article-home-card">
+                <div class="card-top">
+                    <span class="card-icon">📐</span>
+                    <span class="card-read-time">⏱ 11 мин</span>
+                </div>
+                <div class="article-home-title">Как сделать клумбу-корзину из линолеума своими руками</div>
+                <div class="article-home-desc">Мастер-класс: изготовление оригинальной клумбы-корзинки из остатков линолеума. Пошаговая инструкция, выбор материала, им</div>
+                <div class="card-footer">
+                    <span class="card-read-more">Читать →</span>
+                </div>
+            </a>
+            <a href="/articles/k/ka/kak-uznat-skolko-linoleuma-nado-dlya-pomeshcheniya-kalkulyator.html" class="article-home-card">
+                <div class="card-top">
+                    <span class="card-icon">📐</span>
+                    <span class="card-read-time">⏱ 7 мин</span>
+                </div>
+                <div class="article-home-title">Как рассчитать линолеум: точный калькулятор и формула</div>
+                <div class="article-home-desc">Узнайте, как рассчитать линолеум на комнату. Точная формула, учет запаса, таблицы расхода и советы по замерам для идеаль</div>
+                <div class="card-footer">
+                    <span class="card-read-more">Читать →</span>
+                </div>
+            </a>
+            <a href="/articles/k/ka/kak-uznat-skolko-linoleuma-nado-dlya-pomeshcheniya.html" class="article-home-card">
+                <div class="card-top">
+                    <span class="card-icon">📐</span>
+                    <span class="card-read-time">⏱ 10 мин</span>
+                </div>
+                <div class="article-home-title">Как рассчитать линолеум на комнату: формулы и примеры расчета</div>
+                <div class="article-home-desc">Узнайте, как точно вычислить количество линолеума для комнаты. Формулы расчета площади, учет запаса на подрезку и советы</div>
+                <div class="card-footer">
+                    <span class="card-read-more">Читать →</span>
+                </div>
+            </a>
+            <a href="/articles/k/ka/kak-vybirat-razmer-linoleuma.html" class="article-home-card">
+                <div class="card-top">
+                    <span class="card-icon">📐</span>
+                    <span class="card-read-time">⏱ 9 мин</span>
+                </div>
+                <div class="article-home-title">Как выбрать размер линолеума: расчет и раскрой без ошибок</div>
+                <div class="article-home-desc">Подробный гид: как правильно выбрать размер линолеума. Расчеты, припуски на усадку, ширина рулонов и таблица соответстви</div>
+                <div class="card-footer">
+                    <span class="card-read-more">Читать →</span>
+                </div>
+            </a>
+            <a href="/articles/k/ka/kak-vyschitat-razmer-linoleuma.html" class="article-home-card">
+                <div class="card-top">
+                    <span class="card-icon">📐</span>
+                    <span class="card-read-time">⏱ 10 мин</span>
+                </div>
+                <div class="article-home-title">Как высчитать размер линолеума: точный расчет и запас</div>
+                <div class="article-home-desc">Узнайте, как правильно высчитать размер линолеума для комнаты. Формулы расчета, учет запаса на усадку, раскрой и особенн</div>
+                <div class="card-footer">
+                    <span class="card-read-more">Читать →</span>
+                </div>
+            </a>
+            <a href="/articles/k/ka/kalkulyator-onlajn-linoleum-v-kvadratnykh-metrakh-kak-poschitat.html" class="article-home-card">
+                <div class="card-top">
+                    <span class="card-icon">📐</span>
+                    <span class="card-read-time">⏱ 10 мин</span>
+                </div>
+                <div class="article-home-title">Калькулятор линолеума: как посчитать квадратные метры точно</div>
+                <div class="article-home-desc">Как посчитать линолеум в квадратных метрах: формулы, правила раскроя, учет запаса на подрезку и подгонку рисунка. Точный</div>
+                <div class="card-footer">
+                    <span class="card-read-more">Читать →</span>
+                </div>
+            </a>
+            <a href="/articles/k/km/km2-linoleum-chto-znachit.html" class="article-home-card">
+                <div class="card-top">
+                    <span class="card-icon">📐</span>
+                    <span class="card-read-time">⏱ 9 мин</span>
+                </div>
+                <div class="article-home-title">Км2 линолеум: что значит и как рассчитать расход</div>
+                <div class="article-home-desc">Разбираем, что такое м2 линолеума, как переводить в погонные метры и правильно считать квадратуру. Таблицы, калькулятор </div>
+                <div class="card-footer">
+                    <span class="card-read-more">Читать →</span>
+                </div>
+            </a>
+            <a href="/articles/k/kv/kvadratnyj-metr-linoleuma-eto-skolko.html" class="article-home-card">
+                <div class="card-top">
+                    <span class="card-icon">📐</span>
+                    <span class="card-read-time">⏱ 10 мин</span>
+                </div>
+                <div class="article-home-title">Квадратный метр линолеума: расчеты, размеры и нюансы</div>
+                <div class="article-home-desc">Сколько стоит квадратный метр линолеума? Как правильно рассчитать площадь комнаты с учетом припусков и ширины рулона. Та</div>
+                <div class="card-footer">
+                    <span class="card-read-more">Читать →</span>
+                </div>
+            </a>
+            <a href="/articles/l/li/linoleum-kakaya-statya-raskhodov-byudzheta.html" class="article-home-card">
+                <div class="card-top">
+                    <span class="card-icon">📐</span>
+                    <span class="card-read-time">⏱ 9 мин</span>
+                </div>
+                <div class="article-home-title">Линолеум: какая статья расходов бюджета? Полный расчет</div>
+                <div class="article-home-desc">Линолеум: какая статья расходов бюджета? Узнайте, к какой категории отнести покупку напольного покрытия, как правильно с</div>
+                <div class="card-footer">
+                    <span class="card-read-more">Читать →</span>
+                </div>
+            </a>
+            <a href="/articles/l/li/linoleum-rulon-skolko.html" class="article-home-card">
+                <div class="card-top">
+                    <span class="card-icon">📐</span>
+                    <span class="card-read-time">⏱ 11 мин</span>
+                </div>
+                <div class="article-home-title">Сколько метров в рулоне линолеума: стандарты и размеры</div>
+                <div class="article-home-desc">Узнайте, сколько метров в рулоне линолеума. Стандартные ширины, вес, расчет количества для комнаты и правила транспортир</div>
+                <div class="card-footer">
+                    <span class="card-read-more">Читать →</span>
+                </div>
+            </a>
+            <a href="/articles/o/od/odin-pogonnyj-metr-eto-skolko-metrov-v-dlinu-i-shirinu-linoleum.html" class="article-home-card">
+                <div class="card-top">
+                    <span class="card-icon">📐</span>
+                    <span class="card-read-time">⏱ 9 мин</span>
+                </div>
+                <div class="article-home-title">Один погонный метр линолеума: сколько это в ширину и длину?</div>
+                <div class="article-home-desc">Разбираем, сколько метров в длину и ширину составляет один погонный метр линолеума. Точные формулы, таблицы и секреты эк</div>
+                <div class="card-footer">
+                    <span class="card-read-more">Читать →</span>
+                </div>
+            </a>
+            <a href="/articles/r/ra/rasschitat-skolko-kvadratnykh-metrov-komnata-dlya-linoleuma-kalkulyator.html" class="article-home-card">
+                <div class="card-top">
+                    <span class="card-icon">📐</span>
+                    <span class="card-read-time">⏱ 9 мин</span>
+                </div>
+                <div class="article-home-title">Расчет площади пола под линолеум: калькулятор и формулы</div>
+                <div class="article-home-desc">Как точно рассчитать, сколько квадратных метров нужно на комнату для покупки линолеума. Формулы, калькуляторы, учет прип</div>
+                <div class="card-footer">
+                    <span class="card-read-more">Читать →</span>
+                </div>
+            </a>
+            <a href="/articles/s/sk/skolko-linoleuma-nado-na-komnatu.html" class="article-home-card">
+                <div class="card-top">
+                    <span class="card-icon">📐</span>
+                    <span class="card-read-time">⏱ 9 мин</span>
+                </div>
+                <div class="article-home-title">Сколько линолеума надо на комнату: расчет с припуском</div>
+                <div class="article-home-desc">Узнайте, как точно рассчитать количество линолеума на комнату. Формулы, учет запаса на усадку и раскрой, таблица размеро</div>
+                <div class="card-footer">
+                    <span class="card-read-more">Читать →</span>
+                </div>
+            </a>
+            <a href="/articles/s/sk/skolko-linoleuma-v-rulone-3m-metrov.html" class="article-home-card">
+                <div class="card-top">
+                    <span class="card-icon">📐</span>
+                    <span class="card-read-time">⏱ 10 мин</span>
+                </div>
+                <div class="article-home-title">Сколько линолеума в рулоне 3м: размеры, вес и расчет</div>
+                <div class="article-home-desc">Узнайте, сколько метров линолеума в рулоне шириной 3 метра. Стандарты длины, вес погонного метра, таблица расчетов и сов</div>
+                <div class="card-footer">
+                    <span class="card-read-more">Читать →</span>
+                </div>
+            </a>
+            <a href="/articles/s/sk/skolko-nado-linoleuma-na-komnatu-6-na-6.html" class="article-home-card">
+                <div class="card-top">
+                    <span class="card-icon">📐</span>
+                    <span class="card-read-time">⏱ 10 мин</span>
+                </div>
+                <div class="article-home-title">Сколько надо линолеума на комнату 6 на 6: расчет и укладка</div>
+                <div class="article-home-desc">Точный расчет: сколько линолеума нужно на комнату 6х6 метров. Учитываем подрезку, швы, усадку и особенности раскроя. Таб</div>
+                <div class="card-footer">
+                    <span class="card-read-more">Читать →</span>
+                </div>
+            </a>
+            <a href="/articles/s/sk/skolko-sm-v-pogonnom-metre-linoleuma.html" class="article-home-card">
+                <div class="card-top">
+                    <span class="card-icon">📐</span>
+                    <span class="card-read-time">⏱ 10 мин</span>
+                </div>
+                <div class="article-home-title">Сколько см в погонном метре линолеума: точный расчет</div>
+                <div class="article-home-desc">Сколько см в погонном метре линолеума? Узнайте точную формулу перевода, особенности ширины рулонов и метод расчета для п</div>
+                <div class="card-footer">
+                    <span class="card-read-more">Читать →</span>
+                </div>
+            </a>
+            <a href="/articles/s/sk/skolko-vesit-kvadratnyj-metr-linoleuma.html" class="article-home-card">
+                <div class="card-top">
+                    <span class="card-icon">📐</span>
+                    <span class="card-read-time">⏱ 12 мин</span>
+                </div>
+                <div class="article-home-title">Сколько весит квадратный метр линолеума: точный расчет</div>
+                <div class="article-home-desc">Узнайте вес 1 м2 линолеума разных типов. Таблица плотности, влияние основы и толщины на массу покрытия. Расчет нагрузки </div>
+                <div class="card-footer">
+                    <span class="card-read-more">Читать →</span>
+                </div>
+            </a>
+            <a href="/articles/s/sk/skolko-vesit-linoleum-kommercheskij.html" class="article-home-card">
+                <div class="card-top">
+                    <span class="card-icon">📐</span>
+                    <span class="card-read-time">⏱ 9 мин</span>
+                </div>
+                <div class="article-home-title">Сколько весит линолеум коммерческий: расчет и таблицы</div>
+                <div class="article-home-desc">Узнайте, сколько весит коммерческий линолеум за м2. Таблицы веса, влияние плотности и толщины на нагрузку, расчет массы </div>
+                <div class="card-footer">
+                    <span class="card-read-more">Читать →</span>
+                </div>
+            </a></div>
+            <nav class="pagination" aria-label="Страницы"><a href="/category/raschet-materialov/" class="pag-link pag-edge" title="В начало">«</a><a href="/category/raschet-materialov/page/16/" class="pag-link">← Назад</a><a href="/category/raschet-materialov/" class="pag-link">1</a><span class="pag-dots">…</span><a href="/category/raschet-materialov/page/14/" class="pag-link">14</a><a href="/category/raschet-materialov/page/15/" class="pag-link">15</a><a href="/category/raschet-materialov/page/16/" class="pag-link">16</a><a href="/category/raschet-materialov/page/17/" class="pag-link pag-active">17</a><a href="/category/raschet-materialov/page/18/" class="pag-link">18</a><a href="/category/raschet-materialov/page/19/" class="pag-link">19</a><a href="/category/raschet-materialov/page/20/" class="pag-link">20</a><span class="pag-dots">…</span><a href="/category/raschet-materialov/page/51/" class="pag-link">51</a><a href="/category/raschet-materialov/page/18/" class="pag-link">Далее →</a><a href="/category/raschet-materialov/page/51/" class="pag-link pag-edge" title="В конец">»</a></nav>
+        </div>
+    </main>
+
+    <footer class="site-footer-premium">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="footer-brand">🏠 Все о Линолеуме</div>
+                    <p class="footer-about">Полное руководство по выбору, укладке, ремонту и уходу за линолеумом в доме.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Разделы</h4>
+                    <ul><li><a href="/category/vybor-linoleuma/">🧐 Выбор линолеума</a></li>
+<li><a href="/category/podgotovka-pola/">🔨 Подготовка пола</a></li>
+<li><a href="/category/tekhnologiya-ukladki/">📏 Технология укладки</a></li>
+<li><a href="/category/klej-i-svarka/">🧴 Клей и сварка</a></li>
+<li><a href="/category/rezka-i-raskroj/">✂️ Резка и раскрой</a></li>
+<li><a href="/category/styki-i-porogi/">🔗 Стыки и пороги</a></li></ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Информация</h4>
+                    <ul>
+                        <li><a href="/">Главная</a></li>
+                        <li><a href="/about.html">О проекте</a></li>
+                        <li><a href="/categories.html">Все разделы</a></li>
+                        <li><a href="/contact.html">Контакты</a></li>
+                        <li><a href="/privacy.html">Конфиденциальность</a></li>
+                        <li><a href="/sitemap.xml">Карта сайта</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© Все о Линолеуме. Все права защищены.</p>
+                <!--LiveInternet counter--><div style="margin-top:10px;"><a href="https://www.liveinternet.ru/click"
+                target="_blank"><img id="licnt06C4" width="88" height="15" style="border:0" 
+                title="LiveInternet: показано число посетителей за сегодня"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAEALAAAAAABAAEAAAIBTAA7"
+                alt=""/></a><script>(function(d,s){d.getElementById("licnt06C4").src=
+                "https://counter.yadro.ru/hit?t26.5;r"+escape(d.referrer)+
+                ((typeof(s)=="undefined")?"":";s"+s.width+"*"+s.height+"*"+
+                (s.colorDepth?s.colorDepth:s.pixelDepth))+";u"+escape(d.URL)+
+                ";h"+escape(d.title.substring(0,150))+";"+Math.random()})(document,screen)</script></div><!--/LiveInternet-->
+            </div>
+        </div>
+    </footer>
+    <div id="cookie-consent" class="cookie-popup">
+        <div class="cookie-inner">
+            <span>🍪 Мы используем файлы cookie для улучшения работы сайта.</span>
+            <button id="cookie-accept" class="cookie-btn">Принять</button>
+        </div>
+    </div>
+    <script>
+    document.getElementById('menuBtn')?.addEventListener('click', () => {
+        document.getElementById('mainNav')?.classList.toggle('open');
+    });
+    </script>
+    <!--#include virtual="/ssi/body_bottom.html" -->
+    <script src="/static/js/inject.js" defer></script>
+</body>
+</html>

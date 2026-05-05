@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27><text y=%27.9em%27 font-size=%2790%27>🏠</text></svg>">
+    <title>Расчет цены линолеума: погонный метр или квадратный? — Все о Линолеуме</title>
+    <meta name="description" content="Как точно рассчитать цену линолеума по погонному метру. Формулы пересчета, таблица размеров рулонов и секреты экономии при покупке.">
+    <link rel="canonical" href="https://all-linoleum.vercel.app/articles/k/ka/kak-rasschitat-tsenu-na-linoleum-pogonnyj-metr.html">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Расчет цены линолеума: погонный метр или квадратный?">
+    <meta property="og:description" content="Как точно рассчитать цену линолеума по погонному метру. Формулы пересчета, таблица размеров рулонов и секреты экономии при покупке.">
+    <meta property="og:locale" content="ru_RU">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/style.css?v=1778001477">
+    <style>
+    .site-footer-premium {
+        margin-top: 60px; padding: 40px 0 0; background: #1e293b; color: #94a3b8;
+    }
+    .footer-grid {
+        display: grid; grid-template-columns: 2fr 1fr 1fr; gap: 40px;
+        padding-bottom: 32px; border-bottom: 1px solid #334155;
+    }
+    .footer-brand { font-size: 1.2rem; font-weight: 700; color: #f1f5f9; margin-bottom: 12px; }
+    .footer-about { font-size: 0.9rem; line-height: 1.6; margin-bottom: 8px; }
+    .footer-updated { font-size: 0.8rem; color: #64748b; }
+    .footer-col h4 { color: #f1f5f9; font-size: 0.95rem; margin-bottom: 16px; }
+    .footer-col ul { list-style: none; }
+    .footer-col li { margin-bottom: 8px; }
+    .footer-col a { color: #94a3b8; font-size: 0.9rem; transition: color 0.2s; }
+    .footer-col a:hover { color: #60a5fa; }
+    .footer-bottom { padding: 20px 0; text-align: center; font-size: 0.85rem; }
+    @media (max-width: 640px) {
+        .footer-grid { grid-template-columns: 1fr; gap: 24px; }
+    }
+    .cookie-popup {
+        position: fixed; bottom: 0; left: 0; right: 0; background: #1e293b; color: #fff;
+        padding: 16px; transition: transform 0.5s ease; z-index: 9999; border-top: 2px solid #2563eb;
+        transform: translateY(100%);
+    }
+    .cookie-popup.visible { transform: translateY(0); }
+    .cookie-inner { max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; gap: 16px; font-size: 0.9rem; }
+    .cookie-btn { background: #2563eb; color: #fff; border: none; padding: 8px 20px; border-radius: 8px; font-weight: 600; cursor: pointer; white-space: nowrap; }
+    .cookie-btn:hover { background: #1d4ed8; }
+    @media (max-width: 640px) {
+        .cookie-inner { flex-direction: column; text-align: center; }
+    }
+</style>
+    
+    <!--#include virtual="/ssi/head.html" -->
+</head>
+<body>
+        <!--#include virtual="/ssi/body_top.html" -->
+    <style>
+    .nav-dropdown { position: relative; display: inline-block; }
+    .dropdown-toggle {
+        background: none; border: none; cursor: pointer;
+        font: inherit; color: inherit; padding: 8px 12px;
+        border-radius: 8px; transition: background 0.2s;
+    }
+    .dropdown-toggle:hover { background: rgba(0,0,0,0.05); }
+    .dropdown-menu {
+        display: none; position: absolute; right: 0; top: 100%;
+        min-width: 240px; max-height: 70vh; overflow-y: auto;
+        background: var(--card-bg, #fff); border: 1px solid var(--border, #e5e7eb);
+        border-radius: 12px; box-shadow: 0 12px 40px rgba(0,0,0,0.12);
+        padding: 8px 0; z-index: 1000;
+    }
+    .nav-dropdown::after {
+        content: ''; position: absolute; left: 0; right: 0;
+        top: 100%; height: 12px;
+    }
+    .nav-dropdown:hover .dropdown-menu,
+    .nav-dropdown:focus-within .dropdown-menu { display: block; }
+    .dropdown-item {
+        display: block; padding: 10px 20px; color: var(--text, #1f2937);
+        text-decoration: none; font-size: 0.95rem; transition: background 0.15s;
+        white-space: nowrap;
+    }
+    .dropdown-item:hover { background: rgba(37,99,235,0.06); color: var(--primary, #2563eb); }
+    @media (max-width: 768px) {
+        .main-nav > .nav-link { display: none; }
+        .dropdown-toggle { display: none; }
+        .dropdown-menu {
+            display: block !important; position: static;
+            box-shadow: none; border: none; border-radius: 0;
+            min-width: auto; max-height: none; padding: 0;
+            background: transparent;
+        }
+        .dropdown-item {
+            padding: 8px 0; font-size: 1rem;
+        }
+    }
+    </style>
+    <header class="site-header">
+        <div class="container header-inner">
+            <a href="/" class="logo">
+                <span class="logo-icon">🏠</span>
+                <span>Все о Линолеуме</span>
+            </a>
+            <button class="mobile-menu-btn" aria-label="Меню" id="menuBtn">☰</button>
+            <nav class="main-nav" id="mainNav">
+                <a href="/category/vybor-linoleuma/" class="nav-link">🧐 Выбор линолеума</a>
+<a href="/category/podgotovka-pola/" class="nav-link">🔨 Подготовка пола</a>
+<a href="/category/tekhnologiya-ukladki/" class="nav-link">📏 Технология укладки</a>
+<a href="/category/klej-i-svarka/" class="nav-link">🧴 Клей и сварка</a>
+<div class="nav-dropdown">
+            <button class="nav-link dropdown-toggle">📂 Все разделы ▾</button>
+            <div class="dropdown-menu"><a href="/category/vybor-linoleuma/" class="dropdown-item">🧐 Выбор линолеума</a>
+<a href="/category/podgotovka-pola/" class="dropdown-item">🔨 Подготовка пола</a>
+<a href="/category/tekhnologiya-ukladki/" class="dropdown-item">📏 Технология укладки</a>
+<a href="/category/klej-i-svarka/" class="dropdown-item">🧴 Клей и сварка</a>
+<a href="/category/rezka-i-raskroj/" class="dropdown-item">✂️ Резка и раскрой</a>
+<a href="/category/styki-i-porogi/" class="dropdown-item">🔗 Стыки и пороги</a>
+<a href="/category/ukhod-i-chistka/" class="dropdown-item">🧼 Уход и чистка</a>
+<a href="/category/udalenie-pyaten/" class="dropdown-item">🎨 Удаление пятен</a>
+<a href="/category/remont-povrezhdenij/" class="dropdown-item">🩹 Ремонт повреждений</a>
+<a href="/category/vyravnivanie-polotna/" class="dropdown-item">🌊 Выравнивание полотна</a>
+<a href="/category/linoleum-i-mebel/" class="dropdown-item">🛋️ Линолеум и мебель</a>
+<a href="/category/teplyj-pol/" class="dropdown-item">🔥 Теплый пол</a>
+<a href="/category/raschet-materialov/" class="dropdown-item">📐 Расчет материалов</a>
+<a href="/category/demontazh-pola/" class="dropdown-item">🚜 Демонтаж пола</a>
+<a href="/category/spetsifika-pomeshchenij/" class="dropdown-item">🚿 Специфика помещений</a>
+<a href="/category/problemy-i-zapakh/" class="dropdown-item">👃 Проблемы и запах</a>
+<a href="/category/drugoe/" class="dropdown-item">📁 Другое</a></div>
+        </div>
+            </nav>
+        </div>
+    </header>
+
+    <nav class="breadcrumbs" aria-label="Навигация">
+        <div class="container"><a href="/">Главная</a><span class="breadcrumb-sep">›</span><a href="/category/raschet-materialov/">Расчет материалов</a><span class="breadcrumb-sep">›</span><span class="breadcrumb-current">Расчет цены линолеума: погонный метр или квадратный?</span></div>
+    </nav>
+
+    <main class="site-main">
+        <div class="container">
+            <div class="article-layout">
+                <article class="article-main">
+                    
+                    <h1>Как рассчитать цену линолеума по погонный метр: формулы и примеры</h1>
+                    <nav class="mobile-toc"><details><summary>📋 Содержание</summary><ul><li><a href="#разница-между-погонным-и-квадратным-метром">Разница между погонным и квадратным метром</a></li><li><a href="#стандартные-размеры-рулонов-и-их-влияние-на-цену">Стандартные размеры рулонов и их влияние на цену</a></li><li><a href="#формула-пересчета-стоимости-от-погонного-к-квадратному">Формула пересчета стоимости: от погонного к квадратному</a></li><li><a href="#алгоритм-расчета-количества-материала-для-покупки">Алгоритм расчета количества материала для покупки</a></li><li><a href="#скрытые-расходы-и-дополнительные-факторы">Скрытые расходы и дополнительные факторы</a></li><li><a href="#советы-по-экономии-при-покупке-линолеума">Советы по экономии при покупке линолеума</a></li><li><a href="#часто-задаваемые-вопросы-faq">Часто задаваемые вопросы (FAQ)</a></li></ul></details></nav>
+                    <!--#include virtual="/ssi/article_before.html" -->
+                    <div class="article-body">
+
+<p>При посещении строительного гипермаркета или специализированного салона напольных покрытий покупатель часто сталкивается с ситуацией, когда ценники вводят в заблуждение. Продавец может называть стоимость за погонный метр, а ваш бюджет сверстан исходя из цены за квадратный метр, или наоборот. Понимание разницы между этими единицами измерения — это не просто теоретическая задача, а реальный способ сэкономить значительную сумму при закупке материалов для ремонта. <strong>Ошибка в расчетах</strong> может привести либо к нехватке дорогостоящего покрытия, либо к покупке лишнего, который останется ненужным обрезком.</p>
+
+<p>В этой статье мы разберем, как переводить одни величины в другие, какие параметры рулона влияют на итоговую стоимость и почему ширина полотна играет решающую роль в формировании чека. Вы научитесь быстро определять реальную цену квадратного метра, зная только стоимость погонного, и наоборот. Это знание даст вам преимущество в переговорах с поставщиками и позволит составить точную смету без участия специалистов.</p>
+
+<p>Существует распространенное заблуждение, что <em>линолеум</em> продается только квадратами, однако оптовые поставщики и производители часто оперируют именно погонными метрами. Это связано с логистикой и складским учетом рулонных материалов. Чтобы не стать жертвой недопонимания, важно сразу уточнять у менеджера, по какой системе ведется расчет в конкретном чеке.</p>
+
+<h2 id="разница-между-погонным-и-квадратным-метром">Разница между погонным и квадратным метром</h2>
+
+<p>Фундаментальное отличие заключается в том, что погонный метр учитывает только длину отрезаемого куска, игнорируя его ширину. Это линейная величина, которая равна одному метру длины изделия независимо от того, насколько оно широкое. <strong>Квадратный метр</strong> — это единица измерения площади, которая получается при умножении длины на ширину. Именно площадь определяет, сколько материала физически ляжет на пол вашей комнаты.</p>
+
+<p>Представьте себе два рулона <em>коммерческого линолеума</em>: один шириной 2 метра, другой — 4 метра. Если вы купите 1 погонный метр от каждого из них, вы получите два куска разной площади. В первом случае это будет 2 квадратных метра покрытия, а во втором — уже 4 квадратных метра. При одинаковой цене за погонный метр второй вариант окажется в два раза выгоднее по площади, но и стоить он будет соответственно дороже в пересчете на весь отрез.</p>
+
+<p>Многие покупатели забывают, что ширина рулона — это фиксированная величина, заданная производителем. Вы не можете произвольно изменить ширину, как в случае с ламинатом или плиткой. Поэтому, когда вы слышите цену за погонный метр, вы фактически покупаете полосу определенной заводской ширины длиной в один метр.</p>
+
+<div class="attention-box attention-tip"><span class="attention-icon">💡</span><p>Всегда уточняйте ширину рулона перед расчетом стоимости. Цена за погонный метр линолеума шириной 2,5 м и 4,0 м при одинаковом качестве будет отличаться почти в два раза.</p></div>
+
+<p>Понимание этой разницы критически важно при сравнении предложений от разных брендов. Один поставщик может хвастаться низкой ценой за квадратный метр, но продавать материал узкими рулонами, что увеличит количество стыков. Другой предложит высокую цену за погонный метр, но это будет сверхширокий рулон, позволяющий застелить комнату без швов.</p>
+
+<h2 id="стандартные-размеры-рулонов-и-их-влияние-на-цену">Стандартные размеры рулонов и их влияние на цену</h2>
+
+<p>Производители напольных покрытий придерживаются определенных стандартов ширины, чтобы оптимизировать производственные линии и логистику. На рынке чаще всего встречаются рулоны шириной 1,5 м, 2,0 м, 2,5 м, 3,0 м, 3,5 м и 4,0 метра. <strong>Бытовой линолеум</strong> чаще всего выпускается в диапазоне от 1,5 до 3 метров, тогда как <em>полукоммерческие</em> и коммерческие серии могут достигать 4 метров и более.</p>
+
+<p>Влияние ширины на цену не всегда линейно. Иногда более широкие рулоны оказываются выгоднее в пересчете на квадратный метр из-за особенностей ценообразования и спроса. Однако, если вам нужно застелить узкий коридор шириной 1,2 метра, покупка рулона шириной 4 метра приведет к огромному количеству отходов, что сделает покупку экономически нецелесообразной, несмотря на привлекательную цену за квадрат.</p>
+
+<div class="poll-widget" id="poll-ec1cb69e"><div class="poll-widget-question">📊 Какая ширина рулона вам нужна?</div><div class="poll-widget-option" data-poll="ec1cb69e" data-idx="0" onclick="pbPollVote(this)"><span class="poll-widget-label">1.5 - 2 метра (узкие помещения)</span><span class="poll-widget-bar"></span><span class="poll-widget-pct"></span></div><div class="poll-widget-option" data-poll="ec1cb69e" data-idx="1" onclick="pbPollVote(this)"><span class="poll-widget-label">2.5 - 3 метра (стандартные комнаты)</span><span class="poll-widget-bar"></span><span class="poll-widget-pct"></span></div><div class="poll-widget-option" data-poll="ec1cb69e" data-idx="2" onclick="pbPollVote(this)"><span class="poll-widget-label">3.5 - 4 метра (большие залы)</span><span class="poll-widget-bar"></span><span class="poll-widget-pct"></span></div><div class="poll-widget-option" data-poll="ec1cb69e" data-idx="3" onclick="pbPollVote(this)"><span class="poll-widget-label">Мне нужен любой размер под заказ</span><span class="poll-widget-bar"></span><span class="poll-widget-pct"></span></div></div>
+
+<p>При выборе материала важно учитывать не только желаемую ширину, но и доступность конкретного размера в нужном вам цвете или декоре. Часто бывает так, что красивый принт доступен только в узком рулоне, а более широкие аналоги имеют ограниченный ассортимент. В таких случаях приходится искать компромисс между эстетикой и экономией.</p>
+
+<p>Ниже приведена таблица, демонстрирующая, как меняется площадь покрытия при покупке одного погонного метра в зависимости от ширины рулона. Это поможет вам визуально оценить разницу.</p>
+
+<table>
+<thead>
+<tr>
+<th>Ширина рулона (м)</th>
+<th>Длина отреза (м)</th>
+<th>Площадь покрытия (кв.м)</th>
+<th>Типичное применение</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1.5</td>
+<td>1</td>
+<td>1.5</td>
+<td>Коридоры, санузлы</td>
+</tr>
+<tr>
+<td>2.0</td>
+<td>1</td>
+<td>2.0</td>
+<td>Малые комнаты, кухни</td>
+</tr>
+<tr>
+<td>2.5</td>
+<td>1</td>
+<td>2.5</td>
+<td>Спальни, гостиные</td>
+</tr>
+<tr>
+<td>3.0</td>
+<td>1</td>
+<td>3.0</td>
+<td>Большие залы, офисы</td>
+</tr>
+<tr>
+<td>4.0</td>
+<td>1</td>
+<td>4.0</td>
+<td>Коммерческие помещения</td>
+</tr>
+</tbody>
+</table>
+
+<h2 id="формула-пересчета-стоимости-от-погонного-к-квадратному">Формула пересчета стоимости: от погонного к квадратному</h2>
+
+<p>Для того чтобы понять реальную стоимость материала, необходимо уметь быстро переводить цену погонного метра в цену квадратного. Формула предельно проста: нужно разделить стоимость одного погонного метра на ширину рулона в метрах. Результатом будет цена одного квадратного метра. Это позволяет сравнивать абсолютно разные предложения на рынке на равных условиях.</p>
+
+<p>Рассмотрим пример. Допустим, вы видите <em>полукоммерческий линолеум</em> шириной 2,5 метра с ценником 800 рублей за погонный метр. Делим 800 на 2,5 и получаем 320 рублей за квадратный метр. Если же другой магазин предлагает аналогичное покрытие шириной 2 метра по цене 700 рублей за погонный метр, то расчет будет таким: 700 делим на 2, получаем 350 рублей за квадрат. Несмотря на меньшую цифру в ценнике за погонный метр во втором случае, первый вариант оказывается выгоднее.</p>
+
+<blockquote>
+<p>⚠️ Внимание: Округление цены продавцом может сыграть с вами злую шутку. Всегда проводите расчеты с точностью до копейки, особенно при покупке больших объемов. Разница в 10 рублей на квадратном метре при покупке 50 метров может составить существенную сумму.</p>
+</blockquote>
+
+<p>Обратный расчет также возможен и часто необходим, когда вы знаете свой бюджет на квадратный метр, но не знаете, сколько это будет стоить в рулоне. Для этого цену за квадратный метр умножают на ширину рулона. Например, если ваш лимит — 400 рублей за квадрат, а ширина рулона 3 метра, то максимальная цена погонного метра для вас составляет 1200 рублей.</p>
+
+<div class="attention-box attention-tip"><span class="attention-icon">💡</span><p>Цена за квадратный метр — это универсальный эквивалент, позволяющий сравнивать стоимость любых рулонных покрытий независимо от их ширины.</p></div>
+
+<h2 id="алгоритм-расчета-количества-материала-для-покупки">Алгоритм расчета количества материала для покупки</h2>
+
+<p>Прежде чем бежать к кассе, необходимо точно определить, сколько погонных метров вам потребуется. Просто измерить площадь комнаты недостаточно, так как линолеум продается полосами фиксированной ширины. Вам нужно нарисовать план помещения и «примерить» на него ширину available рулонов.</p>
+
+<p>Процесс расчета выглядит следующим образом:
+<p>1. Измерьте максимальную длину и ширину комнаты.</p>
+<p>2. Добавьте к измерениям запас на подрезку (обычно 5-10 см с каждой стороны).</p>
+<p>3. Выберите ширину рулона, которая перекроет ширину комнаты (желательно с запасом, чтобы избежать стыков).</p>
+<p>4. Определите необходимую длину отреза.</p></p>
+
+<div class="checklist-block"><h4>☑️ Калькулятор покупки</h4><label class="check-item"><input type="checkbox"><span>Измерить длину стен</span></label><label class="check-item"><input type="checkbox"><span>Выбрать ширину рулона</span></label><label class="check-item"><input type="checkbox"><span>Добавить 10 см запаса</span></label><label class="check-item"><input type="checkbox"><span>Проверить наличие рисунка (раппорт)</span></label><label class="check-item"><input type="checkbox"><span>Рассчитать итоговую сумму</span></label><div class="check-progress">Выполнено: <span class="check-count">0</span> / 5</div></div>
+
+<p>Если комната имеет сложную форму, например, Г-образную, расчет усложняется. В таких случаях часто приходится покупать материал по максимальной ширине и длине, а остатки использовать в менее заметных местах или выбрасывать. <strong>Стыки</strong> линолеума — это слабое место, где со временем может скапливаться грязь и влага, поэтому цельное покрытие всегда предпочтительнее.</p>
+
+<p>Не забывайте учитывать направление рисунка. Если на <em>линолеуме</em> есть текстура дерева или геометрический узор, может потребоваться дополнительный запас на состыковку (раппорт). В этом случае к расчетной длине нужно добавить еще один шаг раппорта, что увеличит итоговый метраж и стоимость.</p>
+
+<h2 id="скрытые-расходы-и-дополнительные-факторы">Скрытые расходы и дополнительные факторы</h2>
+
+<p>Цена, которую вы видите на ценнике, редко является финальной суммой в чеке. Существует ряд дополнительных факторов, которые могут значительно увеличить бюджет. Во-первых, это доставка. Тяжелые рулоны линолеума, особенно коммерческого класса, весят немало, и их транспортировка на этаж без лифта может стоить отдельной статьи расходов.</p>
+
+<p>Во-вторых, услуги по раскрою. Хотя многие магазины предлагают бесплатный рез по размеру, сложные фигурные вырезы под трубы или углы могут тарифицироваться отдельно. Также стоит учесть стоимость сопутствующих материалов: клея, двустороннего скотча, холодной сварки для швов и плинтусов.</p>
+
+<details class="faq-item"><summary>Почему цена в чеке может отличаться от ценника?</summary><div class="faq-answer"><p>Часто цена на сайте или ценнике указана с учетом скидки по карте лояльности или при покупке от определенного объема. В чеке без карты цена может быть выше на 10-15%. Кроме того, акционные товары могут заканчиваться, и вам предложат аналог по полной стоимости.</p></div></details>
+
+<p>Еще один важный момент — это возврат. Если вы ошиблись в расчетах и купили лишнего, сдать обратно отрезанный кусок линолеума по закону о защите прав потребителей часто невозможно, так как это товар, проданный на отрез. Поэтому принцип «семь раз отмерь» здесь работает как никогда.</p>
+
+<blockquote>
+<p>⚠️ Внимание: Храните чек и ярлык с номером партии. Если вам не хватит материала и придется докупать его через месяц, линолеум из другой партии может отличаться оттенком. Номер партии гарантирует идентичность цвета.</p>
+</blockquote>
+
+<h2 id="советы-по-экономии-при-покупке-линолеума">Советы по экономии при покупке линолеума</h2>
+
+<p>Покупка напольного покрытия — это инвестиция, которая окупается годами, но это не значит, что нужно переплачивать. Первый совет: покупайте материал в межсезонье. Осенью и весной спрос на ремонтные материалы падает, и ритейлеры часто объявляют скидки, чтобы освободить склады.</p>
+
+<p>Второй совет — рассматривайте остатки. В крупных магазинах часто остаются куски от рулонов, которые лежат в зале или на складе. Если их размер подходит для вашего санузла, прихожей или небольшой комнаты, вы можете сэкономить до 50% от стоимости. Такие товары часто помечают желтыми ценниками.</p>
+
+<p>Третий совет касается выбора класса износостойкости. Не гонитесь за <em>коммерческим линолеумом</em> 43 класса для обычной спальни. Для жилых помещений вполне достаточно бытового 21-23 класса или легкого полукоммерческого 31-32 класса. Переплата за избыточную прочность в комнате, где ходят в мягких тапочках, не имеет смысла.</p>
+
+<div class="attention-box attention-tip"><span class="attention-icon">💡</span><p>Попросите менеджера показать вам сертификаты соответствия. Иногда менее известный бренд предлагает качество, аналогичное топовым маркам, но без наценки за имя, что делает его идеальным выбором для экономного ремонта.</p></div>
+
+<p>Также стоит обратить внимание на акции «3 по цене 2» или скидки на объем. Если вы делаете ремонт во всей квартире, имеет смысл закупить весь линолеум сразу, даже с запасом на будущее. Это позволит зафиксировать цену и избежать разнотона при последующих докупках.</p>
+
+<div class="attention-box attention-tip"><span class="attention-icon">💡</span><p>Самая большая экономия — это правильный расчет, исключающий перерасход материала. Точный план раскладки спасет ваш бюджет эффективнее любых купонов.</p></div>
+
+<h2 id="часто-задаваемые-вопросы-faq">Часто задаваемые вопросы (FAQ)</h2>
+
+<details>
+<summary>Можно ли купить линолеум менее 1 погонного метра?</summary>
+<p>Технически магазины продают материал с минимальным шагом в 1 погонный метр или даже 0,1 метра, но цена за такой маленький отрез может быть выше или округлена в большую сторону. Однако для полноценного ремонта это редкость, так как минимальная ширина рулона (1,5 м) уже дает 1,5 кв.м площади.</p>
+</details>
+
+<details>
+<summary>Включена ли стоимость работы по укладке в цену погонного метра?</summary>
+<p>Нет, цена за погонный или квадратный метр в магазине относится исключительно к стоимости материала. Услуги по укладке, приклеиванию и сварке швов оплачиваются отдельно мастерам или специализированным фирмам и рассчитываются обычно за квадратный метр готового пола.</p>
+</details>
+
+<details>
+<summary>Что делать, если нужной ширины рулона нет в наличии?</summary>
+<p>Если нет широкого рулона, придется покупать более узкий и делать стык. В этом случае важно рассчитать длину так, чтобы стык пришелся в наименее заметном месте или под мебелью. Также можно рассмотреть вариант сварки двух полос в один широкий кусок, но это требует профессионального оборудования.</p>
+</details>
+
+<details>
+<summary>Как проверить, не обманули ли меня с метражом в магазине?</summary>
+<p>При получении товара требуйте, чтобы продавец отмерил длину при вас. Вы имеете полное право использовать свой измерительный инструмент (рулетку). Погрешность в 1-2 см допустима, но если не хватает 10-20 см на метре — это повод для жалобы и пересчета суммы.</p>
+</details></div>
+                    <!--#include virtual="/ssi/article_after.html" -->
+
+                </article>
+                <aside class="article-sidebar"><!--#include virtual="/ssi/sidebar_top.html" --><nav class="sidebar-search"><div class="sidebar-search-box"><input type="text" id="globalSearchInput" placeholder="🔍 Поиск статей..." autocomplete="off"><div class="search-dropdown" id="globalSearchDropdown"></div></div></nav><!--#include virtual="/ssi/sidebar_before_toc.html" --><nav class="sidebar-toc" id="sidebarToc"><h3>Содержание</h3><ul><li><a href="#разница-между-погонным-и-квадратным-метром">Разница между погонным и квадратным метром</a></li><li><a href="#стандартные-размеры-рулонов-и-их-влияние-на-цену">Стандартные размеры рулонов и их влияние на цену</a></li><li><a href="#формула-пересчета-стоимости-от-погонного-к-квадратному">Формула пересчета стоимости: от погонного к квадратному</a></li><li><a href="#алгоритм-расчета-количества-материала-для-покупки">Алгоритм расчета количества материала для покупки</a></li><li><a href="#скрытые-расходы-и-дополнительные-факторы">Скрытые расходы и дополнительные факторы</a></li><li><a href="#советы-по-экономии-при-покупке-линолеума">Советы по экономии при покупке линолеума</a></li><li><a href="#часто-задаваемые-вопросы-faq">Часто задаваемые вопросы (FAQ)</a></li></ul></nav><!--#include virtual="/ssi/sidebar_before_related.html" --><nav class="sidebar-related"><h3>Похожие статьи</h3><ul><li><a href="/articles/k/ka/kak-izmerit-pol-dlya-linoleuma.html" class="related-card">Как точно измерить пол для линолеума: пошаговая инструкция</a></li><li><a href="/articles/k/ka/kak-poschitat-kv-metr-linoleuma.html" class="related-card">Как посчитать кв метр линолеума: точный расчет</a></li><li><a href="/articles/k/ka/kak-vyschitat-ploshchad-linoleuma-pola-v-kvadratnykh-metrakh.html" class="related-card">Как рассчитать площадь линолеума: точный расчет кв. метров</a></li><li><a href="/articles/k/ka/kak-poschitat-linoleum-na-komnatu-kalkulyator-onlajn.html" class="related-card">Как посчитать линолеум на комнату: калькулятор онлайн и формулы</a></li><li><a href="/articles/k/ka/kak-poschitat-kolichestvo-linoleuma-na-kvartiru.html" class="related-card">Как рассчитать линолеум на комнату: формулы и калькуляция</a></li></ul></nav><!--#include virtual="/ssi/sidebar_after_related.html" --></aside>
+            </div>
+        </div>
+    </main>
+
+    <!--#include virtual="/ssi/before_related_bottom.html" -->
+    <section class="related-bottom">
+        <div class="container">
+            <h2 class="related-bottom-heading">📖 Читайте также</h2>
+            <div class="related-bottom-grid"><a href="/articles/k/ka/kak-izmerit-pol-dlya-linoleuma.html" class="related-bottom-card"><span class="related-bottom-title">Как точно измерить пол для линолеума: пошаговая инструкция</span><span class="related-bottom-desc">Узнайте, как правильно измерить пол для линолеума. Избегайте ошибок при расчетах, учитывайте ниши и </span></a><a href="/articles/k/ka/kak-poschitat-kv-metr-linoleuma.html" class="related-bottom-card"><span class="related-bottom-title">Как посчитать кв метр линолеума: точный расчет</span><span class="related-bottom-desc">Подробная инструкция, как посчитать кв метр линолеума для комнаты. Формулы, таблицы запаса, учет рис</span></a><a href="/articles/k/ka/kak-vyschitat-ploshchad-linoleuma-pola-v-kvadratnykh-metrakh.html" class="related-bottom-card"><span class="related-bottom-title">Как рассчитать площадь линолеума: точный расчет кв. метров</span><span class="related-bottom-desc">Узнайте, как правильно посчитать площадь линолеума в квадратных метрах. Формулы, учет запаса на подр</span></a><a href="/articles/k/ka/kak-poschitat-linoleum-na-komnatu-kalkulyator-onlajn.html" class="related-bottom-card"><span class="related-bottom-title">Как посчитать линолеум на комнату: калькулятор онлайн и формулы</span><span class="related-bottom-desc">Узнайте, как точно посчитать линолеум на комнату. Онлайн калькулятор, учет запаса на усадку, сложные</span></a><a href="/articles/k/ka/kak-poschitat-kolichestvo-linoleuma-na-kvartiru.html" class="related-bottom-card"><span class="related-bottom-title">Как рассчитать линолеум на комнату: формулы и калькуляция</span><span class="related-bottom-desc">Подробная инструкция, как правильно посчитать количество линолеума на квартиру. Учет выступов, припу</span></a><a href="/articles/c/ch/chto-takoe-pogonnyj-metr-i-kak-ego-rasschitat-linoleum.html" class="related-bottom-card"><span class="related-bottom-title">Что такое погонный метр линолеума и как его рассчитать</span><span class="related-bottom-desc">Узнайте, что такое погонный метр линолеума, как правильно рассчитать количество рулона для комнаты и</span></a></div>
+        </div>
+    </section>
+    <!--#include virtual="/ssi/after_related_bottom.html" -->
+
+    <footer class="site-footer-premium">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="footer-brand">🏠 Все о Линолеуме</div>
+                    <p class="footer-about">Полное руководство по выбору, укладке, ремонту и уходу за линолеумом в доме.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Разделы</h4>
+                    <ul><li><a href="/category/vybor-linoleuma/">🧐 Выбор линолеума</a></li>
+<li><a href="/category/podgotovka-pola/">🔨 Подготовка пола</a></li>
+<li><a href="/category/tekhnologiya-ukladki/">📏 Технология укладки</a></li>
+<li><a href="/category/klej-i-svarka/">🧴 Клей и сварка</a></li>
+<li><a href="/category/rezka-i-raskroj/">✂️ Резка и раскрой</a></li>
+<li><a href="/category/styki-i-porogi/">🔗 Стыки и пороги</a></li></ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Информация</h4>
+                    <ul>
+                        <li><a href="/">Главная</a></li>
+                        <li><a href="/about.html">О проекте</a></li>
+                        <li><a href="/categories.html">Все разделы</a></li>
+                        <li><a href="/contact.html">Контакты</a></li>
+                        <li><a href="/privacy.html">Конфиденциальность</a></li>
+                        <li><a href="/sitemap.xml">Карта сайта</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© Все о Линолеуме. Все права защищены.</p>
+                <!--LiveInternet counter--><div style="margin-top:10px;"><a href="https://www.liveinternet.ru/click"
+                target="_blank"><img id="licnt06C4" width="88" height="15" style="border:0" 
+                title="LiveInternet: показано число посетителей за сегодня"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAEALAAAAAABAAEAAAIBTAA7"
+                alt=""/></a><script>(function(d,s){d.getElementById("licnt06C4").src=
+                "https://counter.yadro.ru/hit?t26.5;r"+escape(d.referrer)+
+                ((typeof(s)=="undefined")?"":";s"+s.width+"*"+s.height+"*"+
+                (s.colorDepth?s.colorDepth:s.pixelDepth))+";u"+escape(d.URL)+
+                ";h"+escape(d.title.substring(0,150))+";"+Math.random()})(document,screen)</script></div><!--/LiveInternet-->
+            </div>
+        </div>
+    </footer>
+    <div id="cookie-consent" class="cookie-popup">
+        <div class="cookie-inner">
+            <span>🍪 Мы используем файлы cookie для улучшения работы сайта.</span>
+            <button id="cookie-accept" class="cookie-btn">Принять</button>
+        </div>
+    </div>
+    <script src="/static/js/main.js"></script>
+    <script>
+    (function() {
+        const popup = document.getElementById('cookie-consent');
+        const btn = document.getElementById('cookie-accept');
+        if (popup && btn && !localStorage.getItem('cookie-accepted')) {
+            popup.classList.add('visible');
+            btn.onclick = () => {
+                localStorage.setItem('cookie-accepted', 'true');
+                popup.classList.remove('visible');
+            };
+        }
+    })();
+    </script>
+    <script>
+    function pbPollVote(el) {
+        var poll = el.closest('.poll-widget');
+        if (poll.classList.contains('voted')) return;
+        poll.classList.add('voted');
+        el.classList.add('selected');
+        var opts = poll.querySelectorAll('.poll-widget-option');
+        var n = opts.length;
+        var raw = [];
+        var sum = 0;
+        for (var i = 0; i < n; i++) {
+            var v = Math.random() * 50 + 5;
+            if (opts[i] === el) v += 30;
+            raw.push(v);
+            sum += v;
+        }
+        var pcts = raw.map(function(v) { return Math.round(v / sum * 100); });
+        var diff = 100 - pcts.reduce(function(a,b){ return a+b; }, 0);
+        pcts[Array.from(opts).indexOf(el)] += diff;
+        setTimeout(function() {
+            opts.forEach(function(opt, i) {
+                opt.querySelector('.poll-widget-bar').style.width = pcts[i] + '%';
+                opt.querySelector('.poll-widget-pct').textContent = pcts[i] + '%';
+            });
+        }, 50);
+    }
+    </script>
+    <!--#include virtual="/ssi/body_bottom.html" -->
+    <script src="/static/js/inject.js" defer></script>
+</body>
+</html>

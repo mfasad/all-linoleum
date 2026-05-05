@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27><text y=%27.9em%27 font-size=%2790%27>🏠</text></svg>">
+    <title>Как показать линолеум на плане: условные обозначения и штриховка — Все о Линолеуме</title>
+    <meta name="description" content="Подробный гид по графическому отображению линолеума на чертежах. Условные знаки, штриховка по ГОСТ, масштабы и обозначения для дизайн-проектов.">
+    <link rel="canonical" href="https://all-linoleum.vercel.app/articles/k/ka/kak-pokazat-linoleum-na-plane.html">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Как показать линолеум на плане: условные обозначения и штриховка">
+    <meta property="og:description" content="Подробный гид по графическому отображению линолеума на чертежах. Условные знаки, штриховка по ГОСТ, масштабы и обозначения для дизайн-проектов.">
+    <meta property="og:locale" content="ru_RU">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/style.css?v=1778001477">
+    <style>
+    .site-footer-premium {
+        margin-top: 60px; padding: 40px 0 0; background: #1e293b; color: #94a3b8;
+    }
+    .footer-grid {
+        display: grid; grid-template-columns: 2fr 1fr 1fr; gap: 40px;
+        padding-bottom: 32px; border-bottom: 1px solid #334155;
+    }
+    .footer-brand { font-size: 1.2rem; font-weight: 700; color: #f1f5f9; margin-bottom: 12px; }
+    .footer-about { font-size: 0.9rem; line-height: 1.6; margin-bottom: 8px; }
+    .footer-updated { font-size: 0.8rem; color: #64748b; }
+    .footer-col h4 { color: #f1f5f9; font-size: 0.95rem; margin-bottom: 16px; }
+    .footer-col ul { list-style: none; }
+    .footer-col li { margin-bottom: 8px; }
+    .footer-col a { color: #94a3b8; font-size: 0.9rem; transition: color 0.2s; }
+    .footer-col a:hover { color: #60a5fa; }
+    .footer-bottom { padding: 20px 0; text-align: center; font-size: 0.85rem; }
+    @media (max-width: 640px) {
+        .footer-grid { grid-template-columns: 1fr; gap: 24px; }
+    }
+    .cookie-popup {
+        position: fixed; bottom: 0; left: 0; right: 0; background: #1e293b; color: #fff;
+        padding: 16px; transition: transform 0.5s ease; z-index: 9999; border-top: 2px solid #2563eb;
+        transform: translateY(100%);
+    }
+    .cookie-popup.visible { transform: translateY(0); }
+    .cookie-inner { max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; gap: 16px; font-size: 0.9rem; }
+    .cookie-btn { background: #2563eb; color: #fff; border: none; padding: 8px 20px; border-radius: 8px; font-weight: 600; cursor: pointer; white-space: nowrap; }
+    .cookie-btn:hover { background: #1d4ed8; }
+    @media (max-width: 640px) {
+        .cookie-inner { flex-direction: column; text-align: center; }
+    }
+</style>
+    
+    <!--#include virtual="/ssi/head.html" -->
+</head>
+<body>
+        <!--#include virtual="/ssi/body_top.html" -->
+    <style>
+    .nav-dropdown { position: relative; display: inline-block; }
+    .dropdown-toggle {
+        background: none; border: none; cursor: pointer;
+        font: inherit; color: inherit; padding: 8px 12px;
+        border-radius: 8px; transition: background 0.2s;
+    }
+    .dropdown-toggle:hover { background: rgba(0,0,0,0.05); }
+    .dropdown-menu {
+        display: none; position: absolute; right: 0; top: 100%;
+        min-width: 240px; max-height: 70vh; overflow-y: auto;
+        background: var(--card-bg, #fff); border: 1px solid var(--border, #e5e7eb);
+        border-radius: 12px; box-shadow: 0 12px 40px rgba(0,0,0,0.12);
+        padding: 8px 0; z-index: 1000;
+    }
+    .nav-dropdown::after {
+        content: ''; position: absolute; left: 0; right: 0;
+        top: 100%; height: 12px;
+    }
+    .nav-dropdown:hover .dropdown-menu,
+    .nav-dropdown:focus-within .dropdown-menu { display: block; }
+    .dropdown-item {
+        display: block; padding: 10px 20px; color: var(--text, #1f2937);
+        text-decoration: none; font-size: 0.95rem; transition: background 0.15s;
+        white-space: nowrap;
+    }
+    .dropdown-item:hover { background: rgba(37,99,235,0.06); color: var(--primary, #2563eb); }
+    @media (max-width: 768px) {
+        .main-nav > .nav-link { display: none; }
+        .dropdown-toggle { display: none; }
+        .dropdown-menu {
+            display: block !important; position: static;
+            box-shadow: none; border: none; border-radius: 0;
+            min-width: auto; max-height: none; padding: 0;
+            background: transparent;
+        }
+        .dropdown-item {
+            padding: 8px 0; font-size: 1rem;
+        }
+    }
+    </style>
+    <header class="site-header">
+        <div class="container header-inner">
+            <a href="/" class="logo">
+                <span class="logo-icon">🏠</span>
+                <span>Все о Линолеуме</span>
+            </a>
+            <button class="mobile-menu-btn" aria-label="Меню" id="menuBtn">☰</button>
+            <nav class="main-nav" id="mainNav">
+                <a href="/category/vybor-linoleuma/" class="nav-link">🧐 Выбор линолеума</a>
+<a href="/category/podgotovka-pola/" class="nav-link">🔨 Подготовка пола</a>
+<a href="/category/tekhnologiya-ukladki/" class="nav-link">📏 Технология укладки</a>
+<a href="/category/klej-i-svarka/" class="nav-link">🧴 Клей и сварка</a>
+<div class="nav-dropdown">
+            <button class="nav-link dropdown-toggle">📂 Все разделы ▾</button>
+            <div class="dropdown-menu"><a href="/category/vybor-linoleuma/" class="dropdown-item">🧐 Выбор линолеума</a>
+<a href="/category/podgotovka-pola/" class="dropdown-item">🔨 Подготовка пола</a>
+<a href="/category/tekhnologiya-ukladki/" class="dropdown-item">📏 Технология укладки</a>
+<a href="/category/klej-i-svarka/" class="dropdown-item">🧴 Клей и сварка</a>
+<a href="/category/rezka-i-raskroj/" class="dropdown-item">✂️ Резка и раскрой</a>
+<a href="/category/styki-i-porogi/" class="dropdown-item">🔗 Стыки и пороги</a>
+<a href="/category/ukhod-i-chistka/" class="dropdown-item">🧼 Уход и чистка</a>
+<a href="/category/udalenie-pyaten/" class="dropdown-item">🎨 Удаление пятен</a>
+<a href="/category/remont-povrezhdenij/" class="dropdown-item">🩹 Ремонт повреждений</a>
+<a href="/category/vyravnivanie-polotna/" class="dropdown-item">🌊 Выравнивание полотна</a>
+<a href="/category/linoleum-i-mebel/" class="dropdown-item">🛋️ Линолеум и мебель</a>
+<a href="/category/teplyj-pol/" class="dropdown-item">🔥 Теплый пол</a>
+<a href="/category/raschet-materialov/" class="dropdown-item">📐 Расчет материалов</a>
+<a href="/category/demontazh-pola/" class="dropdown-item">🚜 Демонтаж пола</a>
+<a href="/category/spetsifika-pomeshchenij/" class="dropdown-item">🚿 Специфика помещений</a>
+<a href="/category/problemy-i-zapakh/" class="dropdown-item">👃 Проблемы и запах</a>
+<a href="/category/drugoe/" class="dropdown-item">📁 Другое</a></div>
+        </div>
+            </nav>
+        </div>
+    </header>
+
+    <nav class="breadcrumbs" aria-label="Навигация">
+        <div class="container"><a href="/">Главная</a><span class="breadcrumb-sep">›</span><a href="/category/tekhnologiya-ukladki/">Технология укладки</a><span class="breadcrumb-sep">›</span><span class="breadcrumb-current">Как показать линолеум на плане: условные обозначения и штриховка</span></div>
+    </nav>
+
+    <main class="site-main">
+        <div class="container">
+            <div class="article-layout">
+                <article class="article-main">
+                    
+                    <h1>Как показать линолеум на плане: условные обозначения и штриховка</h1>
+                    <nav class="mobile-toc"><details><summary>📋 Содержание</summary><ul><li><a href="#стандарты-графического-обозначения-напольных-покрытий">Стандарты графического обозначения напольных покрытий</a></li><li><a href="#условные-знаки-и-штриховка-по-гост">Условные знаки и штриховка по ГОСТ</a></li><li><a href="#особенности-отображения-коммерческого-и-бытового-линолеума">Особенности отображения коммерческого и бытового линолеума</a></li><li><a href="#обозначение-стыков-швов-и-плинтусов">Обозначение стыков, швов и плинтусов</a></li><li><a href="#создание-экспликации-полов-для-проекта">Создание экспликации полов для проекта</a></li><li><a href="#типичные-ошибки-при-графическом-оформлении">Типичные ошибки при графическом оформлении</a></li><li><a href="#программные-средства-для-черчения-полов">Программные средства для черчения полов</a></li><li><a href="#часто-задаваемые-вопросы-faq">Часто задаваемые вопросы (FAQ)</a></li></ul></details></nav>
+                    <!--#include virtual="/ssi/article_before.html" -->
+                    <div class="article-body">
+
+<p>Грамотное оформление проектной документации — это фундамент успешного ремонта, где каждая деталь имеет значение. Когда встает вопрос о том, как показать линолеум на плане, многие сталкиваются с необходимостью использования специфических графических символов. Правильная визуализация напольного покрытия помогает не только строителям, но и заказчику четко понять, какой материал будет использован в конкретном помещении.</p>
+
+<p>В отличие от плитки или паркета, линолеум часто укладывается цельным полотном, что требует особого подхода к его обозначению на чертежах. <strong>Точность отображения</strong> границ и стыков позволяет избежать ошибок при закупке материалов и монтаже. В профессиональной среде принято использовать стандартизированные знаки, которые понятны любому архитектору или прорабу.</p>
+
+<p>В этой статье мы разберем все нюансы графического представления полимерных покрытий. Вы узнаете, какие <em>условные знаки</em> существуют, как правильно применять штриховку и какие ошибки чаще всего допускают при составлении экспликации полов.</p>
+
+<h2 id="стандарты-графического-обозначения-напольных-покрытий">Стандарты графического обозначения напольных покрытий</h2>
+
+<p>Основой для создания любых строительных чертежей в России служат государственные стандарты, в частности ГОСТ 21.501-2011. Именно этот документ регламентирует правила выполнения планов и разрезов. Однако, прямого указания на то, как именно должен выглядеть <strong>линолеум на плане</strong>, в стандартах может не быть, так как он часторуется в группу"рулонных материалов" или"полимерных покрытий".</p>
+
+<p>Для обозначения материалов в разрезах и сечениях используется ГОСТ 2.306-68. Согласно этим нормам, неметаллические материалы часто обозначаются косой штриховкой. Но для планов (вид сверху) правила более гибкие. Здесь главное — читаемость и однозначность. <em>Графическое обозначение</em> должно отличаться от плитки (которая рисуется сеткой) и дерева (которое имеет характерный рисунок колец).</p>
+
+<blockquote>⚠️ Внимание: Использование произвольных символов без расшифровки в легенде чертежа недопустимо. Если вы применяете уникальную штриховку для линолеума, обязательно опишите её в экспликации.</blockquote>
+
+<p>Часто для обозначения линолеума используют сплошную заливку светлым тоном или редкую диагональную штриховку. Это позволяет визуально отделить зону с мягким покрытием от зон с твердыми покрытиями. </p>
+
+<div class="poll-widget" id="poll-9aad4ee2"><div class="poll-widget-question">📊 Какой софт вы используете для создания планов?</div><div class="poll-widget-option" data-poll="9aad4ee2" data-idx="0" onclick="pbPollVote(this)"><span class="poll-widget-label">AutoCAD</span><span class="poll-widget-bar"></span><span class="poll-widget-pct"></span></div><div class="poll-widget-option" data-poll="9aad4ee2" data-idx="1" onclick="pbPollVote(this)"><span class="poll-widget-label">ArchiCAD</span><span class="poll-widget-bar"></span><span class="poll-widget-pct"></span></div><div class="poll-widget-option" data-poll="9aad4ee2" data-idx="2" onclick="pbPollVote(this)"><span class="poll-widget-label">Компас-3D</span><span class="poll-widget-bar"></span><span class="poll-widget-pct"></span></div><div class="poll-widget-option" data-poll="9aad4ee2" data-idx="3" onclick="pbPollVote(this)"><span class="poll-widget-label">От руки на бумаге</span><span class="poll-widget-bar"></span><span class="poll-widget-pct"></span></div></div>
+
+<h2 id="условные-знаки-и-штриховка-по-гост">Условные знаки и штриховка по ГОСТ</h2>
+
+<p>При работе над проектом важно использовать принятую в бюро или строительной компании систему обозначений. Если корпоративного стандарта нет, опираются на общепринятую практику. Линолеум, как правило, не имеет ярко выраженного directional pattern (направления рисунка) в масштабе плана, поэтому его часто обозначают нейтрально.</p>
+
+<p>Основные методы графического выделения линолеума включают:</p>
+<ul>
+<li>📐 Диагональная штриховка тонкими линиями под углом 45 градусов — классический вариант для полимеров.</li>
+<li>⬜ Сплошная заливка серым цветом (10-15% черноты) — для контраста с другими покрытиями.</li>
+<li>📏 Обозначение только контура с выносной полкой и текстом"Линолеум" — самый простой способ.</li>
+</ul>
+
+<p>Если на плане необходимо показать <strong>направление укладки</strong> (что актуально для линолеума с рисунком доски или для минимизации видимости швов), используют стрелку. Стрелка указывает направление раскатки полотна. Это критически важно для помещений сложной формы, где могут возникнуть проблемы с <em>раскроем материала</em>.</p>
+
+<p>В сечениях (когда мы разрезаем пол"по живому") линолеум обозначается тонкой сплошной линией, так как толщина покрытия обычно составляет 2-4 мм. В масштабах крупных планов эту линию могут утолщать для наглядности. Главное — не перепутать обозначение линолеума с гидроизоляцией, которая также рисуется тонкими линиями, но часто имеет двойной контур.</p>
+
+<div class="attention-box attention-tip"><span class="attention-icon">💡</span><p>При печати черно-белых чертежей избегайте заливки серым цветом для линолеума, если рядом есть бетон или штукатурка — они сольются. Используйте штриховку для контраста.</p></div>
+
+<h2 id="особенности-отображения-коммерческого-и-бытового-линолеума">Особенности отображения коммерческого и бытового линолеума</h2>
+
+<p>Различие между коммерческим и бытовым классом на плане чаще всего носит текстовый характер, но может быть и визуальным. Коммерческий линолеум часто используется в общественных зонах, коридорах и офисах, тогда как бытовой — в жилых комнатах. На сводном плане помещений (экспликации) это различие должно читаться мгновенно.</p>
+
+<p>Для дифференциации материалов в одном проекте можно использовать разные типы штриховки. Например, бытовой линолеум в спальнях обозначить редкой штриховкой, а коммерческий в коридоре — более частой или крестообразной. Однако, <strong>стандартом</strong> считается использование одинакового обозначения для одного типа материала, независимо от класса износостойкости, с указанием марки в спецификации.</p>
+
+<p>В спецификации или ведомости отделки полов обязательно указывают:</p>
+<ul>
+<li>🏷️ Наименование материала (например, Tarkett Acczent).</li>
+<li>📏 Толщину защитного слоя (транспарента).</li>
+<li>🎨 Артикул и цвет коллекции.</li>
+<li>📍 Площадь помещения и периметр (для расчета плинтуса).</li>
+</ul>
+
+<p>Особое внимание следует уделить зонам с повышенными требованиями. Если в части помещения укладывается <em>антистатический линолеум</em> (например, в серверной или лаборатории), его на плане часто выделяют пунктирной линией внутри контура или специальным штриховым паттерном, чтобы подрядчик не перепутал его с обычным покрытием.</p>
+
+<h2 id="обозначение-стыков-швов-и-плинтусов">Обозначение стыков, швов и плинтусов</h2>
+
+<p>Линолеум — материал, требующий аккуратной стыковки. На планах больших помещений (более 25-30 кв.м) или при сложной конфигурации комнат неизбежно возникают швы. Их положение должно быть строго зафиксировано на чертеже. Швы обозначаются тонкой сплошной линией поперек направления укладки или вдоль него, в зависимости от технологии.</p>
+
+<p>Для обозначения места стыка часто используют утолщенную линию или линию со штрихом. Если стык закрывается металлической рейкой (порожком), это также указывается. В <strong>дизайн-проектах</strong> иногда рисуют саму рейку с выносом"Порожек металлический".</p>
+
+<p>Плинтус на плане линолеума играет важную роль. Поскольку линолеум часто укладывают с компенсационным зазором у стен (хотя многие виды клеятся по всей площади), плинтус является обязательным элементом. На плане его изображают тонкой линией вдоль периметра стен.</p>
+
+<table>
+<thead>
+<tr>
+<th>Элемент</th>
+<th>Тип линии</th>
+<th>Толщина линии (мм)</th>
+<th>Примечание</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Граница помещения</td>
+<td>Сплошная основная</td>
+<td>0.5 - 0.8</td>
+<td>Стены</td>
+</tr>
+<tr>
+<td>Стык полотен</td>
+<td>Сплошная тонкая</td>
+<td>0.1 - 0.2</td>
+<td>Шов сварки или клей</td>
+</tr>
+<tr>
+<td>Плинтус</td>
+<td>Сплошная тонкая</td>
+<td>0.1 - 0.2</td>
+<td>Вдоль стен</td>
+</tr>
+<tr>
+<td>Направление укладки</td>
+<td>Стрелка</td>
+<td>0.2 - 0.3</td>
+<td>Указывает раскатку</td>
+</tr>
+</tbody>
+</table>
+
+<blockquote>⚠️ Внимание: Никогда не рисуйте стыки линолеума на проходе или в центре комнаты без веской причины. Старайтесь располагать швы под мебелью или в наименее заметных местах, что должно быть отражено на плане раскладки.</blockquote>
+
+<h2 id="создание-экспликации-полов-для-проекта">Создание экспликации полов для проекта</h2>
+
+<p>Экспликация полов — это таблица, которая accompanies план и расшифровывает все использованные обозначения. Без неё план превращается в набор линий. В экспликации каждому помещению присваивается номер, который соответствует номеру на плане, и указывается тип покрытия.</p>
+
+<p>Для линолеума в экспликации указывают не просто слово"линолеум", а конкретный вид. Например:"Линолеум полукоммерческий, класс 32". Это позволяет сметчику точно рассчитать стоимость. Если в одном помещении сочетаются разные материалы (например, линолеум и керамическая плитка в прихожей), на плане проводится четкая <strong>граница раздела</strong>.</p>
+
+<p>Граница раздела материалов обозначается осевой линией (штрих-пунктир) или сплошной линией с выносом. Важно показать, где заканчивается один материал и начинается другой. Часто в этой зоне требуется установка разделительного профиля.</p>
+
+<div class="checklist-block"><h4>☑️ Проверка плана перед сдачей</h4><label class="check-item"><input type="checkbox"><span>Проверить соответствие номеров помещений в экспликации и на плане:Убедиться, что все штриховки расшифрованы:Проверить наличие указания направления укладки:Убедиться, что указаны типы плинтусов</span></label><div class="check-progress">Выполнено: <span class="check-count">0</span> / 1</div></div>
+
+<p>В текстовой части проекта также прописывают технологию подготовки основания под линолеум. На плане это не видно, но в пояснительной записке должно быть указано:"Выравнивание пола самовыравнивающейся смесью перед укладкой линолеума".</p>
+
+<h2 id="типичные-ошибки-при-графическом-оформлении">Типичные ошибки при графическом оформлении</h2>
+
+<p>Одной из самых распространенных ошибок является путаница между ламинатом и линолеумом на чертежах. Ламинат, будучи штучным материалом, всегда рисуется с имитацией стыков досок (сетка или параллельные линии). Линолеум же, как рулонный материал, должен выглядеть монолитным. Если вы заштрихуете линолеум"в доску", прораб может закупить неправильный материал.</p>
+
+<p>Еще одна ошибка — игнорирование масштаба. Попытка нарисовать текстуру линолеума в масштабе 1:100 превратит чертеж в грязное пятно. <em>Масштаб отображения</em> диктует степень детализации. В крупных масштабах (1:20, 1:10) можно показать фактуру, в мелких — только условный знак.</p>
+
+<p>Часто забывают указать направление ворса (если линолеум с ворсом) или направление рисунка. Это приводит к тому, что в разных частях комнаты куски линолеума могут смотреть в разные стороны, создавая эффект"лоскутного одеяла" с разным оттенком.</p>
+
+<details class="faq-item"><summary>Почему важно указывать направление рисунка?</summary><div class="faq-answer"><p>Линолеум с абстрактным или геометрическим рисунком при укладке кусков в разном направлении будет визуально отличаться по тону из-за угла падения света. Это называется"эффект парчи". Указание стрелки направления на плане гарантирует, что все полотна будут уложены в одну сторону.</p></div></details>
+
+<h2 id="программные-средства-для-черчения-полов">Программные средства для черчения полов</h2>
+
+<p>Современное проектирование немыслимо без CAD-систем. В AutoCAD для обозначения линолеума удобно создавать отдельный слой (Layer) с определенным цветом и типом линии. Это позволяет быстро включать и выключать видимость покрытий. Использование <strong>динамических блоков</strong> с атрибутом"направление укладки" значительно ускоряет работу.</p>
+
+<p>В ArchiCAD или Revit задача решается еще проще: вы назначаете материал"Линолеум" поверхности пола, и программа автоматически генерирует штриховку согласно настройкам. При изменении площади помещения спецификация обновляется автоматически. Это исключает человеческий фактор при подсчете квадратуры.</p>
+
+<p>Для быстрых эскизов и планировок дизайнеры часто используют онлайн-сервисы вроде Planoplan или Remplanner. Там"показать линолеум" означает просто выбрать текстуру из библиотеки. Однако для строительных работ таких схем недостаточно — нужны именно чертежи с размерами и привязками.</p>
+
+<div class="attention-box attention-tip"><span class="attention-icon">💡</span><p>Использование BIM-моделирования (Revit/ArchiCAD) предпочтительнее 2D-черчения, так как позволяет автоматически контролировать стыки материалов и объем закупки линолеума.</p></div>
+
+<h2 id="часто-задаваемые-вопросы-faq">Часто задаваемые вопросы (FAQ)</h2>
+
+<details>
+<summary>Нужно ли показывать нахлест полотен линолеума на стенах на плане?</summary>
+<p>На планах масштаба 1:50 и 1:100 нахлест (обычно 5-10 см для загиба на стену или под плинтус) не показывают, так как это заглушается мебелью или плинтусом. Нахлест указывают только на узлах примыкания в крупных масштабах (1:10, 1:5) или в спецификации пишут"с учетом нахлеста на стены".</p>
+</details>
+
+<details>
+<summary>Чем отличается обозначение ПВХ-плитки от линолеума на чертеже?</summary>
+<p>ПВХ-плитка (кварцвинил) укладывается модулями, поэтому на плане она часто обозначается сеткой, имитирующей швы между плитками, либо указывается текстурой"квадраты". Линолеум же рисуется как сплошное поле без внутренней сетки, так как он монолитен.</p>
+</details>
+
+<details>
+<summary>Как показать на плане, что линолеум приклеен по всей площади?</summary>
+<p>Специального графического знака для"сплошного приклеивания" в ГОСТ нет. Это техническое требование указывается в текстовой части проекта или в примечании на листе:"Укладка линолеума на клей по всей площади". На плане это не графически не отображается.</p>
+</details>
+
+<details>
+<summary>Обязательно ли делать раскладку линолеума для комнат менее 20 метров?</summary>
+<p>Для небольших комнат (спальни, кухни) обычно достаточно указать просто тип покрытия. Детальная раскладка с размерами каждого куска требуется для сложных помещений, коридоров или когда ширина рулона меньше ширины комнаты и требуется стыковка.</p>
+</details></div>
+                    <!--#include virtual="/ssi/article_after.html" -->
+
+                </article>
+                <aside class="article-sidebar"><!--#include virtual="/ssi/sidebar_top.html" --><nav class="sidebar-search"><div class="sidebar-search-box"><input type="text" id="globalSearchInput" placeholder="🔍 Поиск статей..." autocomplete="off"><div class="search-dropdown" id="globalSearchDropdown"></div></div></nav><!--#include virtual="/ssi/sidebar_before_toc.html" --><nav class="sidebar-toc" id="sidebarToc"><h3>Содержание</h3><ul><li><a href="#стандарты-графического-обозначения-напольных-покрытий">Стандарты графического обозначения напольных покрытий</a></li><li><a href="#условные-знаки-и-штриховка-по-гост">Условные знаки и штриховка по ГОСТ</a></li><li><a href="#особенности-отображения-коммерческого-и-бытового-линолеума">Особенности отображения коммерческого и бытового линолеума</a></li><li><a href="#обозначение-стыков-швов-и-плинтусов">Обозначение стыков, швов и плинтусов</a></li><li><a href="#создание-экспликации-полов-для-проекта">Создание экспликации полов для проекта</a></li><li><a href="#типичные-ошибки-при-графическом-оформлении">Типичные ошибки при графическом оформлении</a></li><li><a href="#программные-средства-для-черчения-полов">Программные средства для черчения полов</a></li><li><a href="#часто-задаваемые-вопросы-faq">Часто задаваемые вопросы (FAQ)</a></li></ul></nav><!--#include virtual="/ssi/sidebar_before_related.html" --><nav class="sidebar-related"><h3>Похожие статьи</h3><ul><li><a href="/articles/k/ka/kak-pravilno-ukladyvat-podlozhku-pod-linoleum.html" class="related-card">Как правильно укладывать подложку под линолеум: полная инструкция</a></li><li><a href="/articles/k/ka/kak-klast-linoleum-poshagovo.html" class="related-card">Как класть линолеум пошагово: полная инструкция</a></li><li><a href="/articles/k/ka/kak-lozhat-linoleum-v-kvartire-na-beton.html" class="related-card">Как уложить линолеум на бетон: пошаговая инструкция</a></li><li><a href="/articles/k/ka/kak-pravilno-ukladyvaetsya-linoleum.html" class="related-card">Как правильно укладывается линолеум: пошаговая инструкция</a></li><li><a href="/articles/k/ka/kak-samim-postelit-linoleum-na-betonnyj-pol.html" class="related-card">Как постелить линолеум на бетонный пол: пошаговая инструкция</a></li></ul></nav><!--#include virtual="/ssi/sidebar_after_related.html" --></aside>
+            </div>
+        </div>
+    </main>
+
+    <!--#include virtual="/ssi/before_related_bottom.html" -->
+    <section class="related-bottom">
+        <div class="container">
+            <h2 class="related-bottom-heading">📖 Читайте также</h2>
+            <div class="related-bottom-grid"><a href="/articles/k/ka/kak-pravilno-ukladyvat-podlozhku-pod-linoleum.html" class="related-bottom-card"><span class="related-bottom-title">Как правильно укладывать подложку под линолеум: полная инструкция</span><span class="related-bottom-desc">Узнайте, как правильно укладывать подложку под линолеум. Выбор материала, подготовка основания, поша</span></a><a href="/articles/k/ka/kak-klast-linoleum-poshagovo.html" class="related-bottom-card"><span class="related-bottom-title">Как класть линолеум пошагово: полная инструкция</span><span class="related-bottom-desc">Узнайте, как правильно класть линолеум своими руками. Пошаговая технология укладки, выбор клея, раск</span></a><a href="/articles/k/ka/kak-lozhat-linoleum-v-kvartire-na-beton.html" class="related-bottom-card"><span class="related-bottom-title">Как уложить линолеум на бетон: пошаговая инструкция</span><span class="related-bottom-desc">Узнайте, как правильно ложат линолеум в квартире на бетон. Подготовка основания, выбор клея, техноло</span></a><a href="/articles/k/ka/kak-pravilno-ukladyvaetsya-linoleum.html" class="related-bottom-card"><span class="related-bottom-title">Как правильно укладывается линолеум: пошаговая инструкция</span><span class="related-bottom-desc">Подробный гид по укладке линолеума своими руками. Выбор клея, раскрой полотна, методы фиксации и сов</span></a><a href="/articles/k/ka/kak-samim-postelit-linoleum-na-betonnyj-pol.html" class="related-bottom-card"><span class="related-bottom-title">Как постелить линолеум на бетонный пол: пошаговая инструкция</span><span class="related-bottom-desc">Подробное руководство по укладке линолеума на бетон. Подготовка основания, выбор клея, раскрой и фик</span></a><a href="/articles/k/ka/kakoj-storonoj-lozhitsya-uteplitel-pod-linoleum.html" class="related-bottom-card"><span class="related-bottom-title">Какой стороной ложится утеплитель под линолеум: правила укладки</span><span class="related-bottom-desc">Подробная инструкция: какой стороной класть утеплитель под линолеум. Разбор фольгированных, пробковы</span></a></div>
+        </div>
+    </section>
+    <!--#include virtual="/ssi/after_related_bottom.html" -->
+
+    <footer class="site-footer-premium">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="footer-brand">🏠 Все о Линолеуме</div>
+                    <p class="footer-about">Полное руководство по выбору, укладке, ремонту и уходу за линолеумом в доме.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Разделы</h4>
+                    <ul><li><a href="/category/vybor-linoleuma/">🧐 Выбор линолеума</a></li>
+<li><a href="/category/podgotovka-pola/">🔨 Подготовка пола</a></li>
+<li><a href="/category/tekhnologiya-ukladki/">📏 Технология укладки</a></li>
+<li><a href="/category/klej-i-svarka/">🧴 Клей и сварка</a></li>
+<li><a href="/category/rezka-i-raskroj/">✂️ Резка и раскрой</a></li>
+<li><a href="/category/styki-i-porogi/">🔗 Стыки и пороги</a></li></ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Информация</h4>
+                    <ul>
+                        <li><a href="/">Главная</a></li>
+                        <li><a href="/about.html">О проекте</a></li>
+                        <li><a href="/categories.html">Все разделы</a></li>
+                        <li><a href="/contact.html">Контакты</a></li>
+                        <li><a href="/privacy.html">Конфиденциальность</a></li>
+                        <li><a href="/sitemap.xml">Карта сайта</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© Все о Линолеуме. Все права защищены.</p>
+                <!--LiveInternet counter--><div style="margin-top:10px;"><a href="https://www.liveinternet.ru/click"
+                target="_blank"><img id="licnt06C4" width="88" height="15" style="border:0" 
+                title="LiveInternet: показано число посетителей за сегодня"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAEALAAAAAABAAEAAAIBTAA7"
+                alt=""/></a><script>(function(d,s){d.getElementById("licnt06C4").src=
+                "https://counter.yadro.ru/hit?t26.5;r"+escape(d.referrer)+
+                ((typeof(s)=="undefined")?"":";s"+s.width+"*"+s.height+"*"+
+                (s.colorDepth?s.colorDepth:s.pixelDepth))+";u"+escape(d.URL)+
+                ";h"+escape(d.title.substring(0,150))+";"+Math.random()})(document,screen)</script></div><!--/LiveInternet-->
+            </div>
+        </div>
+    </footer>
+    <div id="cookie-consent" class="cookie-popup">
+        <div class="cookie-inner">
+            <span>🍪 Мы используем файлы cookie для улучшения работы сайта.</span>
+            <button id="cookie-accept" class="cookie-btn">Принять</button>
+        </div>
+    </div>
+    <script src="/static/js/main.js"></script>
+    <script>
+    (function() {
+        const popup = document.getElementById('cookie-consent');
+        const btn = document.getElementById('cookie-accept');
+        if (popup && btn && !localStorage.getItem('cookie-accepted')) {
+            popup.classList.add('visible');
+            btn.onclick = () => {
+                localStorage.setItem('cookie-accepted', 'true');
+                popup.classList.remove('visible');
+            };
+        }
+    })();
+    </script>
+    <script>
+    function pbPollVote(el) {
+        var poll = el.closest('.poll-widget');
+        if (poll.classList.contains('voted')) return;
+        poll.classList.add('voted');
+        el.classList.add('selected');
+        var opts = poll.querySelectorAll('.poll-widget-option');
+        var n = opts.length;
+        var raw = [];
+        var sum = 0;
+        for (var i = 0; i < n; i++) {
+            var v = Math.random() * 50 + 5;
+            if (opts[i] === el) v += 30;
+            raw.push(v);
+            sum += v;
+        }
+        var pcts = raw.map(function(v) { return Math.round(v / sum * 100); });
+        var diff = 100 - pcts.reduce(function(a,b){ return a+b; }, 0);
+        pcts[Array.from(opts).indexOf(el)] += diff;
+        setTimeout(function() {
+            opts.forEach(function(opt, i) {
+                opt.querySelector('.poll-widget-bar').style.width = pcts[i] + '%';
+                opt.querySelector('.poll-widget-pct').textContent = pcts[i] + '%';
+            });
+        }, 50);
+    }
+    </script>
+    <!--#include virtual="/ssi/body_bottom.html" -->
+    <script src="/static/js/inject.js" defer></script>
+</body>
+</html>

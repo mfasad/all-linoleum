@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27><text y=%27.9em%27 font-size=%2790%27>🏠</text></svg>">
+    <title>Как удалить линолеум в Симс 4: полный гид по полу — Все о Линолеуме</title>
+    <meta name="description" content="Подробная инструкция, как удалить линолеум в Симс 4. Разбираем баги, режим строительства и альтернативные способы смены напольного покрытия.">
+    <link rel="canonical" href="https://all-linoleum.vercel.app/articles/k/ka/kak-udalit-linoleum-v-sims-4.html">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Как удалить линолеум в Симс 4: полный гид по полу">
+    <meta property="og:description" content="Подробная инструкция, как удалить линолеум в Симс 4. Разбираем баги, режим строительства и альтернативные способы смены напольного покрытия.">
+    <meta property="og:locale" content="ru_RU">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/style.css?v=1778001477">
+    <style>
+    .site-footer-premium {
+        margin-top: 60px; padding: 40px 0 0; background: #1e293b; color: #94a3b8;
+    }
+    .footer-grid {
+        display: grid; grid-template-columns: 2fr 1fr 1fr; gap: 40px;
+        padding-bottom: 32px; border-bottom: 1px solid #334155;
+    }
+    .footer-brand { font-size: 1.2rem; font-weight: 700; color: #f1f5f9; margin-bottom: 12px; }
+    .footer-about { font-size: 0.9rem; line-height: 1.6; margin-bottom: 8px; }
+    .footer-updated { font-size: 0.8rem; color: #64748b; }
+    .footer-col h4 { color: #f1f5f9; font-size: 0.95rem; margin-bottom: 16px; }
+    .footer-col ul { list-style: none; }
+    .footer-col li { margin-bottom: 8px; }
+    .footer-col a { color: #94a3b8; font-size: 0.9rem; transition: color 0.2s; }
+    .footer-col a:hover { color: #60a5fa; }
+    .footer-bottom { padding: 20px 0; text-align: center; font-size: 0.85rem; }
+    @media (max-width: 640px) {
+        .footer-grid { grid-template-columns: 1fr; gap: 24px; }
+    }
+    .cookie-popup {
+        position: fixed; bottom: 0; left: 0; right: 0; background: #1e293b; color: #fff;
+        padding: 16px; transition: transform 0.5s ease; z-index: 9999; border-top: 2px solid #2563eb;
+        transform: translateY(100%);
+    }
+    .cookie-popup.visible { transform: translateY(0); }
+    .cookie-inner { max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; gap: 16px; font-size: 0.9rem; }
+    .cookie-btn { background: #2563eb; color: #fff; border: none; padding: 8px 20px; border-radius: 8px; font-weight: 600; cursor: pointer; white-space: nowrap; }
+    .cookie-btn:hover { background: #1d4ed8; }
+    @media (max-width: 640px) {
+        .cookie-inner { flex-direction: column; text-align: center; }
+    }
+</style>
+    
+    <!--#include virtual="/ssi/head.html" -->
+</head>
+<body>
+        <!--#include virtual="/ssi/body_top.html" -->
+    <style>
+    .nav-dropdown { position: relative; display: inline-block; }
+    .dropdown-toggle {
+        background: none; border: none; cursor: pointer;
+        font: inherit; color: inherit; padding: 8px 12px;
+        border-radius: 8px; transition: background 0.2s;
+    }
+    .dropdown-toggle:hover { background: rgba(0,0,0,0.05); }
+    .dropdown-menu {
+        display: none; position: absolute; right: 0; top: 100%;
+        min-width: 240px; max-height: 70vh; overflow-y: auto;
+        background: var(--card-bg, #fff); border: 1px solid var(--border, #e5e7eb);
+        border-radius: 12px; box-shadow: 0 12px 40px rgba(0,0,0,0.12);
+        padding: 8px 0; z-index: 1000;
+    }
+    .nav-dropdown::after {
+        content: ''; position: absolute; left: 0; right: 0;
+        top: 100%; height: 12px;
+    }
+    .nav-dropdown:hover .dropdown-menu,
+    .nav-dropdown:focus-within .dropdown-menu { display: block; }
+    .dropdown-item {
+        display: block; padding: 10px 20px; color: var(--text, #1f2937);
+        text-decoration: none; font-size: 0.95rem; transition: background 0.15s;
+        white-space: nowrap;
+    }
+    .dropdown-item:hover { background: rgba(37,99,235,0.06); color: var(--primary, #2563eb); }
+    @media (max-width: 768px) {
+        .main-nav > .nav-link { display: none; }
+        .dropdown-toggle { display: none; }
+        .dropdown-menu {
+            display: block !important; position: static;
+            box-shadow: none; border: none; border-radius: 0;
+            min-width: auto; max-height: none; padding: 0;
+            background: transparent;
+        }
+        .dropdown-item {
+            padding: 8px 0; font-size: 1rem;
+        }
+    }
+    </style>
+    <header class="site-header">
+        <div class="container header-inner">
+            <a href="/" class="logo">
+                <span class="logo-icon">🏠</span>
+                <span>Все о Линолеуме</span>
+            </a>
+            <button class="mobile-menu-btn" aria-label="Меню" id="menuBtn">☰</button>
+            <nav class="main-nav" id="mainNav">
+                <a href="/category/vybor-linoleuma/" class="nav-link">🧐 Выбор линолеума</a>
+<a href="/category/podgotovka-pola/" class="nav-link">🔨 Подготовка пола</a>
+<a href="/category/tekhnologiya-ukladki/" class="nav-link">📏 Технология укладки</a>
+<a href="/category/klej-i-svarka/" class="nav-link">🧴 Клей и сварка</a>
+<div class="nav-dropdown">
+            <button class="nav-link dropdown-toggle">📂 Все разделы ▾</button>
+            <div class="dropdown-menu"><a href="/category/vybor-linoleuma/" class="dropdown-item">🧐 Выбор линолеума</a>
+<a href="/category/podgotovka-pola/" class="dropdown-item">🔨 Подготовка пола</a>
+<a href="/category/tekhnologiya-ukladki/" class="dropdown-item">📏 Технология укладки</a>
+<a href="/category/klej-i-svarka/" class="dropdown-item">🧴 Клей и сварка</a>
+<a href="/category/rezka-i-raskroj/" class="dropdown-item">✂️ Резка и раскрой</a>
+<a href="/category/styki-i-porogi/" class="dropdown-item">🔗 Стыки и пороги</a>
+<a href="/category/ukhod-i-chistka/" class="dropdown-item">🧼 Уход и чистка</a>
+<a href="/category/udalenie-pyaten/" class="dropdown-item">🎨 Удаление пятен</a>
+<a href="/category/remont-povrezhdenij/" class="dropdown-item">🩹 Ремонт повреждений</a>
+<a href="/category/vyravnivanie-polotna/" class="dropdown-item">🌊 Выравнивание полотна</a>
+<a href="/category/linoleum-i-mebel/" class="dropdown-item">🛋️ Линолеум и мебель</a>
+<a href="/category/teplyj-pol/" class="dropdown-item">🔥 Теплый пол</a>
+<a href="/category/raschet-materialov/" class="dropdown-item">📐 Расчет материалов</a>
+<a href="/category/demontazh-pola/" class="dropdown-item">🚜 Демонтаж пола</a>
+<a href="/category/spetsifika-pomeshchenij/" class="dropdown-item">🚿 Специфика помещений</a>
+<a href="/category/problemy-i-zapakh/" class="dropdown-item">👃 Проблемы и запах</a>
+<a href="/category/drugoe/" class="dropdown-item">📁 Другое</a></div>
+        </div>
+            </nav>
+        </div>
+    </header>
+
+    <nav class="breadcrumbs" aria-label="Навигация">
+        <div class="container"><a href="/">Главная</a><span class="breadcrumb-sep">›</span><a href="/category/demontazh-pola/">Демонтаж пола</a><span class="breadcrumb-sep">›</span><span class="breadcrumb-current">Как удалить линолеум в Симс 4: полный гид по полу</span></div>
+    </nav>
+
+    <main class="site-main">
+        <div class="container">
+            <div class="article-layout">
+                <article class="article-main">
+                    
+                    <h1>Как удалить линолеум в Симс 4: решаем проблемы строительства</h1>
+                    <nav class="mobile-toc"><details><summary>📋 Содержание</summary><ul><li><a href="#использование-инструмента-sledgehammer-для-удаления-пола">Использование инструмента Sledgehammer для удаления пола</a></li><li><a href="#работа-с-режимами-пола-и-инструментом-room-tool">Работа с режимами пола и инструментом Room Tool</a></li><li><a href="#консольные-команды-и-код-bbmoveobjects">Консольные команды и код bb.moveobjects</a></li><li><a href="#проблемы-с-участками-из-галереи-и-заблокированные-объекты">Проблемы с участками из Галереи и заблокированные объекты</a></li><li><a href="#альтернативные-методы-замена-и-маскировка">Альтернативные методы: замена и маскировка</a></li><li><a href="#часто-задаваемые-вопросы-faq">Часто задаваемые вопросы (FAQ)</a></li></ul></details></nav>
+                    <!--#include virtual="/ssi/article_before.html" -->
+                    <div class="article-body">
+<p>Виртуальное строительство в популярной игре The Sims 4 часто сталкивается с неожиданными техническими сложностями, которые могут сбить с толку даже опытных игроков. Одной из самых распространенных и раздражающих проблем является невозможность сменить или полностью убрать напольное покрытие, выбранное по умолчанию в шаблоне участка. Когда вы пытаетесь кликнуть на плитку пола, чтобы изменить её текстуру или выбрать опцию"удалить", игра может просто игнорировать ваши действия, оставляя старый <strong>линолеум</strong> на месте. Это явление особенно характерно для готовых домов из галереи или участков с предустановленной архитектурой, где разработчики заблокировали возможность изменения базовых элементов для сохранения целостности дизайна.</p>
+<p>Существует несколько проверенных способов обойти это ограничение и успешно выполнить демонтаж старого покрытия. Чаще всего проблема кроется не в баге, а в особенностях игрового движка, который требует использования специфических инструментов или активации консольных команд. Понимание механики работы <em>режима строительства</em> и знание горячих клавиш позволят вам быстро избавиться от ненужного слоя пола и заменить его на более подходящий для вашего проекта материал. В этой статье мы подробно разберем все методы, от простых кликов мышкой до сложных манипуляций с кодами.</p>
+<p>Прежде чем приступать к радикальным мерам, необходимо убедиться, что вы находитесь в правильном режиме и используете актуальные инструменты интерфейса. Иногда игрокам кажется, что пол нельзя удалить, хотя на самом деле они просто не активировали нужный инструмент или не выделили правильную область. <mark>Ключевым моментом является использование инструмента"Sledgehammer" (Кувалка) в сочетании с зажатой клавишей Shift для принудительного удаления объектов.</mark> Если стандартные методы не работают, потребуется более глубокое вмешательство в структуру участка.</p>
+
+<h2 id="использование-инструмента-sledgehammer-для-удаления-пола">Использование инструмента Sledgehammer для удаления пола</h2>
+<p>Самым первым и очевидным шагом, который должен предпринять любой симовод, является использование стандартного инструмента сноса. В режиме строительства, который вызывается нажатием клавиши <code>F2</code> или кликом по соответствующей иконке молотка в верхнем меню, находится панель инструментов. Вам нужно выбрать инструмент <strong>Sledgehammer</strong> (Кувалка), который обычно имеет иконку молотка. После активации этого инструмента наведите курсор на плитку линолеума, которую хотите удалить. Если пол является обычным объектом, не защищенным скриптами, он исчезнет сразу после клика, оставив после себя голую бетонную плиту или землю.</p>
+<p>Однако в случае с"заблокированным" линолеумом простой клик может не сработать. Здесь на помощь приходит комбинация клавиш. Зажмите клавишу <code>Shift</code> на клавиатуре и, не отпуская её, кликните инструментом сноса по полу. Этот метод часто позволяет удалять объекты, которые обычно защищены от случайного удаления. Важно отметить, что при удалении пола большими участками игра может временно зависнуть, поэтому рекомендуется действовать последовательно, убирая покрытие по комнатам или секторам. Если и это не помогло, возможно, пол является частью <em>стиля комнаты</em> или связан с другим объектом.</p>
+<p>Стоит также обратить внимание на то, что инструмент сноса может удалять не только пол, но и стены, если вы заденете их курсором. Будьте внимательны при работе в тесных помещениях, чтобы не нарушить структуру здания. В некоторых случаях, особенно на участках из галереи, пол может быть частью"террейна" (рельефа), и тогда обычный молоток не поможет. Для таких ситуаций существуют более продвинутые техники, о которых мы поговорим далее.</p>
+<div class="attention-box attention-tip"><span class="attention-icon">💡</span><p>Если инструмент сноса не удаляет пол, попробуйте сначала заменить его на другой тип покрытия, а уже затем удалить новое покрытие. Иногда это"разблокирует" ячейку.</p></div>
+
+<h2 id="работа-с-режимами-пола-и-инструментом-room-tool">Работа с режимами пола и инструментом Room Tool</h2>
+<p>Часто проблема невозможности удалить линолеум связана с тем, что игрок пытается работать с ним как с отдельной плиткой, тогда как в The Sims 4 пол является частью <strong>комнаты</strong>. Чтобы корректно управлять напольным покрытием, необходимо использовать инструмент <em>Build a Room</em> (Построить комнату) или <em>Room Tool</em>. Перейдите в режим строительства и выберите вкладку с иконкой комнаты. Наведите курсор на комнату, в которой лежит проблемный линолеум. Если пол выделится вместе со стенами, значит, он привязан к геометрии комнаты.</p>
+<p>В этом режиме вы можете не только удалить пол, но и легко заменить его. Кликните по полу внутри выделенной комнаты, чтобы открыть меню выбора текстур. Даже если вы не можете удалить старый слой, вы всегда можете"перекрасить" его или заменить на другой материал, просто выбрав новую текстуру из каталога. Если же ваша цель — именно оставить пол пустым (например, для создания террасы или патио), вам нужно найти в палитре текстур вариант с прозрачным покрытием или просто удалить стены, если пол является частью крыльца.</p>
+<p>Иногда линолеум оказывается"зашит" в стиль всей комнаты. В таких случаях изменение текстуры одной плитки меняет покрытие во всем помещении. Это сделано для удобства, но может мешать при создании сложных дизайнов. Используйте клавишу <code>Alt</code> при перетаскивании текстуры, чтобы применить её только к одной плитке, минуя автоматическое заполнение всей площади. Это дает больше контроля над процессом <strong>демонтажа</strong> и замены.</p>
+<div class="poll-widget" id="poll-00843039"><div class="poll-widget-question">📊 С каким типом пола вы сталкиваетесь чаще всего?</div><div class="poll-widget-option" data-poll="00843039" data-idx="0" onclick="pbPollVote(this)"><span class="poll-widget-label">Обычный линолеум</span><span class="poll-widget-bar"></span><span class="poll-widget-pct"></span></div><div class="poll-widget-option" data-poll="00843039" data-idx="1" onclick="pbPollVote(this)"><span class="poll-widget-label">Плитка из галереи</span><span class="poll-widget-bar"></span><span class="poll-widget-pct"></span></div><div class="poll-widget-option" data-poll="00843039" data-idx="2" onclick="pbPollVote(this)"><span class="poll-widget-label">Заблокированный пол</span><span class="poll-widget-bar"></span><span class="poll-widget-pct"></span></div><div class="poll-widget-option" data-poll="00843039" data-idx="3" onclick="pbPollVote(this)"><span class="poll-widget-label">Пол на террасе</span><span class="poll-widget-bar"></span><span class="poll-widget-pct"></span></div></div>
+
+<h2 id="консольные-команды-и-код-bbmoveobjects">Консольные команды и код bb.moveobjects</h2>
+<p>Когда стандартные инструменты строительства оказываются бессильны перед упрямым линолеумом, на сцену выходят консольные команды. Это мощный инструмент для продвинутых пользователей, позволяющий обходить многие ограничения игрового движка. Для начала необходимо активировать консоль разработчика. Нажмите одновременно клавиши <code>Ctrl</code> + <code>Shift</code> + <code>C</code> (на Mac: <code>Cmd</code> + <code>Shift</code> + <code>C</code>). В появившемся в верхнем левом углу поле ввода наберите команду <code>testingcheats true</code> и нажмите <code>Enter</code>. Это включит режим отладки.</p>
+<p>После активации читов введите команду <code>bb.moveobjects on</code>. Эта команда, известная как <em>MoveObjects</em>, снимает ограничения на размещение и удаление объектов, позволяя двигать их сквозь другие предметы и удалять то, что обычно заблокировано. После ввода команды снова нажмите <code>Enter</code>. Теперь вернитесь к проблемному линолеуму и попробуйте удалить его инструментом сноса. В большинстве случаев это решает проблему мгновенно.</p>
+<p> Если после удаления пола с включенным <code>bb.moveobjects</code> вы заметили артефакты или провалы текстур, попробуйте перезагрузить участок. Также не забудьте выключить чит, введя <code>bb.moveobjects off</code>, если планируете заниматься обычным строительством, чтобы избежать случайного смещения мебели.</p>
+<div class="checklist-block"><h4>☑️ Проверка перед использованием читов</h4><label class="check-item"><input type="checkbox"><span>Сохранить игру</span></label><label class="check-item"><input type="checkbox"><span>Активировать консоль</span></label><label class="check-item"><input type="checkbox"><span>Ввести testingcheats true</span></label><label class="check-item"><input type="checkbox"><span>Ввести bb.moveobjects on</span></label><div class="check-progress">Выполнено: <span class="check-count">0</span> / 4</div></div>
+
+<h2 id="проблемы-с-участками-из-галереи-и-заблокированные-объекты">Проблемы с участками из Галереи и заблокированные объекты</h2>
+<p>Особую категорию проблем составляют участки, скачанные из Галереи. Авторы таких домов часто используют специальные техники для фиксации дизайна, делая пол неотъемлемой частью лота. В таких случаях обычный линолеум может вести себя как единый монолитный объект, который невозможно разделить на плитки. Попытка удалить часть пола может привести к удалению всего покрытия на этаже или, наоборот, ни к чему не привести.</p>
+<p>Для решения этой проблемы существует метод"перекрытия". Суть его заключается в том, что вы строите поверх старого пола новый слой стен или фундамента, а затем удаляете их. Иногда это заставляет движок игры пересчитать текстуры и"отпустить" заблокированный пол. Другой вариант — использовать инструмент <strong>Foundations</strong> (Фундамент). Поднимите уровень фундамента под домом, а затем опустите его обратно. Эта манипуляция часто сбрасывает параметры пола.</p>
+<p>Если дом был создан с использованием модов, блокирующих изменение, стандартные методы могут не сработать. В таблице ниже приведены основные типы блокировок и способы их обхода.</p>
+
+<table>
+<thead>
+<tr>
+<th>Тип блокировки</th>
+<th>Симптом</th>
+<th>Решение</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Стандартный пол</td>
+<td>Удаляется с первого клика</td>
+<td>Инструмент Sledgehammer</td>
+</tr>
+<tr>
+<td>Пол из Галереи</td>
+<td>Не реагирует на клики</td>
+<td>Код bb.moveobjects on</td>
+</tr>
+<tr>
+<td>Терраса/Патио</td>
+<td>Сливается с ландшафтом</td>
+<td>Инструмент Terrain Tools</td>
+</tr>
+<tr>
+<td>Часть комнаты</td>
+<td>Меняется весь этаж</td>
+<td>Использовать Room Tool</td>
+</tr>
+</tbody>
+</table>
+
+<details class="faq-item"><summary>Почему пол из галереи заблокирован?</summary><div class="faq-answer"><p>Авторы блокируют пол, чтобы игроки не нарушали задуманный дизайн. Часто это делается через скрытые объекты или специальные скрипты, которые предотвращают изменение базовых текстур.</p></div></details>
+
+<h2 id="альтернативные-методы-замена-и-маскировка">Альтернативные методы: замена и маскировка</h2>
+<p>Если удалить линолеум никак не удается, и он продолжает мозолить глаза своим устаревшим видом, можно прибегнуть к хитрости и просто замаскировать его. В The Sims 4 существует огромное количество ковров, rugs и напольных покрытий, которые можно положить поверх существующего пола. Выберите в каталоге раздел"Decorations" ->"Rugs" и найдите ковер, который полностью перекроет видимую часть старого линолеума.</p>
+<p>Еще один эффективный метод — использование <em>стилей</em>. Вы можете перекрасить problematic линолеум в цвет, максимально близкий к цвету фундамента или земли, сделав его визуально незаметным. Для этого используйте пипетку в режиме выбора цвета и возьмите образец с соседней текстуры. Хотя технически пол останется, визуально он сольется с окружением, и игроки не будут замечать разницы.</p>
+<p>Также можно попробовать изменить высоту этажа. Если вы опустите уровень пола или, наоборот, приподнимете его, текстура может перерисоваться, и баг с удалением исчезнет. Иногда помогает удаление всех стен в комнате, после чего пол становится доступным для редактирования, и тогда его можно спокойно убрать, а стены восстановить.</p>
+<div class="attention-box attention-tip"><span class="attention-icon">💡</span><p>Если удаление невозможно, лучшая стратегия — качественная маскировка или полная перестройка комнаты с нуля.</p></div>
+
+<h2 id="часто-задаваемые-вопросы-faq">Часто задаваемые вопросы (FAQ)</h2>
+<details>
+<summary>Почему я не могу удалить пол только в одной комнате?</summary>
+<p>Скорее всего, ваши комнаты объединены в одно пространство с точки зрения движка игры, или пол был залит как единая текстура. Попробуйте разделить комнаты стенами, чтобы изолировать зону, или используйте инструмент"Комната" для выделения конкретного сегмента.</p>
+</details>
+<details>
+<summary>Безопасно ли использовать код bb.moveobjects?</summary>
+<p>Да, этот код безопасен и широко используется игроками. Однако он может привести к тому, что объекты будут размещены в невалидных позициях (например, парить в воздухе), что может вызвать баги при взаимодействии симов. Используйте его с осторожностью.</p>
+</details>
+<details>
+<summary>Можно ли удалить пол на готовом участке без потери мебели?</summary>
+<p>Да, удаление пола не затрагивает мебель, стоящую на нем. Однако, если пол является частью сложной конструкции (например, подиума), мебель может сместиться. Рекомендуется сделать сохранение перед началом работ.</p>
+</details>
+<details>
+<summary>Что делать, если после удаления пола образовалась дыра?</summary>
+<p>Если под полом не было фундамента, вы увидите землю или нижний этаж. Чтобы закрыть дыру, используйте инструмент"Фундамент" или залейте новую текстуру пола из каталога. Убедитесь, что вы находитесь на правильном уровне этажа.</p>
+</details>
+
+<blockquote>
+<p>⚠️ <strong>Внимание:</strong> При удалении пола на верхних этажах без наличия пола на нижнем уровне ваши симы могут упасть сквозь текстуры или застрять. Всегда проверяйте, что под удаляемым слоем есть твердая основа или фундамент.</p>
+</blockquote>
+
+<blockquote>
+<p>⚠️ <strong>Внимание:</strong> Использование читов и модов может повлиять на получение достижений (ачивок) в игре. Если вы коллекционируете трофеи, активируйте их только после получения всех наград или используйте моды, разблокирующие ачивки.</p>
+</blockquote>
+
+<p>В заключение, удаление линолеума в The Sims 4 — задача решаемая, требующая лишь правильного подхода и набора инструментов. Будь то простая кувалка, умное использование режимов комнаты или мощные консольные команды, вы обязательно сможете освободить пространство для нового дизайна. Экспериментируйте с методами, делайте резервные копии сохранений и не бойтесь ломать виртуальные стены (и полы) ради идеального дома для ваших симов. Помните, что творческий подход часто важнее соблюдения первоначальных ограничений шаблона.</p></div>
+                    <!--#include virtual="/ssi/article_after.html" -->
+
+                </article>
+                <aside class="article-sidebar"><!--#include virtual="/ssi/sidebar_top.html" --><nav class="sidebar-search"><div class="sidebar-search-box"><input type="text" id="globalSearchInput" placeholder="🔍 Поиск статей..." autocomplete="off"><div class="search-dropdown" id="globalSearchDropdown"></div></div></nav><!--#include virtual="/ssi/sidebar_before_toc.html" --><nav class="sidebar-toc" id="sidebarToc"><h3>Содержание</h3><ul><li><a href="#использование-инструмента-sledgehammer-для-удаления-пола">Использование инструмента Sledgehammer для удаления пола</a></li><li><a href="#работа-с-режимами-пола-и-инструментом-room-tool">Работа с режимами пола и инструментом Room Tool</a></li><li><a href="#консольные-команды-и-код-bbmoveobjects">Консольные команды и код bb.moveobjects</a></li><li><a href="#проблемы-с-участками-из-галереи-и-заблокированные-объекты">Проблемы с участками из Галереи и заблокированные объекты</a></li><li><a href="#альтернативные-методы-замена-и-маскировка">Альтернативные методы: замена и маскировка</a></li><li><a href="#часто-задаваемые-вопросы-faq">Часто задаваемые вопросы (FAQ)</a></li></ul></nav><!--#include virtual="/ssi/sidebar_before_related.html" --><nav class="sidebar-related"><h3>Похожие статьи</h3><ul><li><a href="/articles/c/ch/chem-udalit-klej-ot-starogo-linoleuma.html" class="related-card">Чем удалить клей от линолеума: проверенные методы и средства</a></li><li><a href="/articles/k/ka/kak-snyat-staryj-linoleum-s-derevyannogo-pola.html" class="related-card">Как снять старый линолеум с деревянного пола: пошаговая инструкция</a></li><li><a href="/articles/c/ch/chem-otorvat-prikleennyj-linoleum.html" class="related-card">Чем оторвать приклеенный линолеум: проверенные методы демонтажа</a></li><li><a href="/articles/k/ka/kak-pravilno-menyat-linoleum.html" class="related-card">Как правильно менять линолеум: пошаговая инструкция</a></li><li><a href="/articles/k/kt/kto-otdaet-linoleum.html" class="related-card">Кто отдает линолеум бесплатно: списки организаций и правила</a></li></ul></nav><!--#include virtual="/ssi/sidebar_after_related.html" --></aside>
+            </div>
+        </div>
+    </main>
+
+    <!--#include virtual="/ssi/before_related_bottom.html" -->
+    <section class="related-bottom">
+        <div class="container">
+            <h2 class="related-bottom-heading">📖 Читайте также</h2>
+            <div class="related-bottom-grid"><a href="/articles/c/ch/chem-udalit-klej-ot-starogo-linoleuma.html" class="related-bottom-card"><span class="related-bottom-title">Чем удалить клей от линолеума: проверенные методы и средства</span><span class="related-bottom-desc">Эффективные способы удаления старого клея с пола. Обзор растворителей, механических методов и профес</span></a><a href="/articles/k/ka/kak-snyat-staryj-linoleum-s-derevyannogo-pola.html" class="related-bottom-card"><span class="related-bottom-title">Как снять старый линолеум с деревянного пола: пошаговая инструкция</span><span class="related-bottom-desc">Узнайте, как правильно снять старый линолеум с деревянного пола. Секреты удаления клея, подготовка о</span></a><a href="/articles/c/ch/chem-otorvat-prikleennyj-linoleum.html" class="related-bottom-card"><span class="related-bottom-title">Чем оторвать приклеенный линолеум: проверенные методы демонтажа</span><span class="related-bottom-desc">Эффективные способы и инструменты для удаления старого линолеума. Как снять покрытие, приклеенное на</span></a><a href="/articles/k/ka/kak-pravilno-menyat-linoleum.html" class="related-bottom-card"><span class="related-bottom-title">Как правильно менять линолеум: пошаговая инструкция</span><span class="related-bottom-desc">Узнайте, как грамотно заменить старый линолеум на новый. Полный гид по демонтажу, подготовке основан</span></a><a href="/articles/k/kt/kto-otdaet-linoleum.html" class="related-bottom-card"><span class="related-bottom-title">Кто отдает линолеум бесплатно: списки организаций и правила</span><span class="related-bottom-desc">Кто отдает линолеум бесплатно? Полный гид: строительные площадки, магазины, объявления. Как найти б/</span></a><a href="/articles/k/ka/kak-menyat-linoleum-v-koridore.html" class="related-bottom-card"><span class="related-bottom-title">Как менять линолеум в коридоре: пошаговая инструкция</span><span class="related-bottom-desc">Пошаговое руководство по замене линолеума в коридоре. Демонтаж старого покрытия, подготовка основани</span></a></div>
+        </div>
+    </section>
+    <!--#include virtual="/ssi/after_related_bottom.html" -->
+
+    <footer class="site-footer-premium">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="footer-brand">🏠 Все о Линолеуме</div>
+                    <p class="footer-about">Полное руководство по выбору, укладке, ремонту и уходу за линолеумом в доме.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Разделы</h4>
+                    <ul><li><a href="/category/vybor-linoleuma/">🧐 Выбор линолеума</a></li>
+<li><a href="/category/podgotovka-pola/">🔨 Подготовка пола</a></li>
+<li><a href="/category/tekhnologiya-ukladki/">📏 Технология укладки</a></li>
+<li><a href="/category/klej-i-svarka/">🧴 Клей и сварка</a></li>
+<li><a href="/category/rezka-i-raskroj/">✂️ Резка и раскрой</a></li>
+<li><a href="/category/styki-i-porogi/">🔗 Стыки и пороги</a></li></ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Информация</h4>
+                    <ul>
+                        <li><a href="/">Главная</a></li>
+                        <li><a href="/about.html">О проекте</a></li>
+                        <li><a href="/categories.html">Все разделы</a></li>
+                        <li><a href="/contact.html">Контакты</a></li>
+                        <li><a href="/privacy.html">Конфиденциальность</a></li>
+                        <li><a href="/sitemap.xml">Карта сайта</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© Все о Линолеуме. Все права защищены.</p>
+                <!--LiveInternet counter--><div style="margin-top:10px;"><a href="https://www.liveinternet.ru/click"
+                target="_blank"><img id="licnt06C4" width="88" height="15" style="border:0" 
+                title="LiveInternet: показано число посетителей за сегодня"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAEALAAAAAABAAEAAAIBTAA7"
+                alt=""/></a><script>(function(d,s){d.getElementById("licnt06C4").src=
+                "https://counter.yadro.ru/hit?t26.5;r"+escape(d.referrer)+
+                ((typeof(s)=="undefined")?"":";s"+s.width+"*"+s.height+"*"+
+                (s.colorDepth?s.colorDepth:s.pixelDepth))+";u"+escape(d.URL)+
+                ";h"+escape(d.title.substring(0,150))+";"+Math.random()})(document,screen)</script></div><!--/LiveInternet-->
+            </div>
+        </div>
+    </footer>
+    <div id="cookie-consent" class="cookie-popup">
+        <div class="cookie-inner">
+            <span>🍪 Мы используем файлы cookie для улучшения работы сайта.</span>
+            <button id="cookie-accept" class="cookie-btn">Принять</button>
+        </div>
+    </div>
+    <script src="/static/js/main.js"></script>
+    <script>
+    (function() {
+        const popup = document.getElementById('cookie-consent');
+        const btn = document.getElementById('cookie-accept');
+        if (popup && btn && !localStorage.getItem('cookie-accepted')) {
+            popup.classList.add('visible');
+            btn.onclick = () => {
+                localStorage.setItem('cookie-accepted', 'true');
+                popup.classList.remove('visible');
+            };
+        }
+    })();
+    </script>
+    <script>
+    function pbPollVote(el) {
+        var poll = el.closest('.poll-widget');
+        if (poll.classList.contains('voted')) return;
+        poll.classList.add('voted');
+        el.classList.add('selected');
+        var opts = poll.querySelectorAll('.poll-widget-option');
+        var n = opts.length;
+        var raw = [];
+        var sum = 0;
+        for (var i = 0; i < n; i++) {
+            var v = Math.random() * 50 + 5;
+            if (opts[i] === el) v += 30;
+            raw.push(v);
+            sum += v;
+        }
+        var pcts = raw.map(function(v) { return Math.round(v / sum * 100); });
+        var diff = 100 - pcts.reduce(function(a,b){ return a+b; }, 0);
+        pcts[Array.from(opts).indexOf(el)] += diff;
+        setTimeout(function() {
+            opts.forEach(function(opt, i) {
+                opt.querySelector('.poll-widget-bar').style.width = pcts[i] + '%';
+                opt.querySelector('.poll-widget-pct').textContent = pcts[i] + '%';
+            });
+        }, 50);
+    }
+    </script>
+    <!--#include virtual="/ssi/body_bottom.html" -->
+    <script src="/static/js/inject.js" defer></script>
+</body>
+</html>

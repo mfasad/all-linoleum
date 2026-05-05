@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27><text y=%27.9em%27 font-size=%2790%27>🏠</text></svg>">
+    <title>Стыки и пороги — страница 62 — Все о Линолеуме</title>
+    <meta name="description" content="Как соединить линолеум с плиткой или ламинатом, установка порожков и скрытие швов.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/style.css?v=1778001477">
+    <style>
+        .cat-hero {
+            background: linear-gradient(135deg, #1e293b 0%, #334155 50%, #1e3a5f 100%);
+            border-bottom: none;
+            padding: 48px 0 40px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        .cat-hero::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle at 30% 40%, rgba(37,99,235,0.15) 0%, transparent 50%),
+                        radial-gradient(circle at 70% 60%, rgba(139,92,246,0.1) 0%, transparent 50%);
+            animation: heroShimmer 8s ease-in-out infinite alternate;
+        }
+        @keyframes heroShimmer {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(3deg); }
+        }
+        .cat-hero .container { position: relative; z-index: 1; }
+        .cat-hero-icon {
+            font-size: 3.5rem; display: block; margin-bottom: 16px;
+            filter: drop-shadow(0 4px 12px rgba(0,0,0,0.3));
+        }
+        .cat-hero h1 {
+            font-size: 2rem; font-weight: 800; color: #f1f5f9;
+            margin-bottom: 10px; letter-spacing: -0.02em;
+        }
+        .cat-hero p {
+            color: #94a3b8; font-size: 1.05rem; max-width: 600px;
+            margin: 0 auto; line-height: 1.6;
+        }
+        .cat-benefits {
+            display: flex; justify-content: center; gap: 12px;
+            margin-top: 24px; flex-wrap: wrap;
+        }
+        .cat-benefit {
+            display: flex; align-items: center; gap: 8px;
+            background: rgba(255,255,255,0.08); backdrop-filter: blur(8px);
+            border: 1px solid rgba(255,255,255,0.12);
+            border-radius: 10px; padding: 8px 18px;
+            font-size: 0.88rem; color: #e2e8f0; font-weight: 500;
+            transition: all 0.25s;
+        }
+        .cat-benefit:hover {
+            background: rgba(255,255,255,0.15);
+            border-color: rgba(255,255,255,0.25);
+            transform: translateY(-2px);
+        }
+        .benefit-icon { font-size: 1.15em; }
+
+        .cat-grid {
+            display: grid; grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+            gap: 16px; padding: 32px 0 24px;
+        }
+        .article-home-card {
+            background: #fff; border: 1px solid #e2e8f0; border-radius: 12px;
+            padding: 0; text-decoration: none; color: #1e293b;
+            transition: all 0.25s ease; display: flex; flex-direction: column;
+            overflow: hidden; position: relative;
+        }
+        .article-home-card:hover {
+            border-color: #bfdbfe;
+            box-shadow: 0 8px 24px rgba(37,99,235,0.1);
+            transform: translateY(-4px);
+        }
+        .card-top {
+            display: flex; justify-content: space-between; align-items: center;
+            padding: 14px 20px 0;
+        }
+        .card-icon {
+            font-size: 1.4em;
+            background: linear-gradient(135deg, #eff6ff, #e0f2fe);
+            width: 36px; height: 36px; border-radius: 10px;
+            display: flex; align-items: center; justify-content: center;
+            box-shadow: 0 2px 6px rgba(37,99,235,0.1);
+        }
+        .card-read-time {
+            font-size: 0.78rem; color: #94a3b8; font-weight: 500;
+        }
+        .article-home-title {
+            font-weight: 600; font-size: 0.97rem; line-height: 1.4;
+            padding: 12px 20px 0; transition: color 0.2s;
+        }
+        .article-home-card:hover .article-home-title { color: #2563eb; }
+        .article-home-desc {
+            font-size: 0.84rem; color: #64748b; line-height: 1.5;
+            padding: 6px 20px 0; flex: 1;
+        }
+        .card-footer {
+            display: flex; justify-content: flex-end; align-items: center;
+            padding: 12px 20px; margin-top: auto;
+            border-top: 1px solid #f1f5f9;
+        }
+        .card-read-more {
+            font-size: 0.82rem; font-weight: 600; color: #94a3b8;
+            transition: all 0.2s;
+        }
+        .article-home-card:hover .card-read-more {
+            color: #2563eb; letter-spacing: 0.02em;
+        }
+
+        .pagination {
+            display: flex; justify-content: center; gap: 6px;
+            padding: 8px 0 48px; flex-wrap: wrap; align-items: center;
+        }
+        .pag-link {
+            padding: 10px 16px; border-radius: 10px; border: 1px solid #e2e8f0;
+            color: #64748b; font-size: 0.9rem; text-decoration: none;
+            transition: all 0.2s; font-weight: 500;
+        }
+        .pag-link:hover { border-color: #2563eb; color: #2563eb; background: #eff6ff; }
+        .pag-active {
+            background: linear-gradient(135deg, #2563eb, #3b82f6);
+            color: #fff !important; border-color: #2563eb;
+            box-shadow: 0 3px 10px rgba(37,99,235,0.3);
+        }
+        .pag-edge { font-size: 1rem; font-weight: 700; }
+        .pag-dots { color: #94a3b8; padding: 0 4px; }
+
+        
+    .site-footer-premium {
+        margin-top: 60px; padding: 40px 0 0; background: #1e293b; color: #94a3b8;
+    }
+    .footer-grid {
+        display: grid; grid-template-columns: 2fr 1fr 1fr; gap: 40px;
+        padding-bottom: 32px; border-bottom: 1px solid #334155;
+    }
+    .footer-brand { font-size: 1.2rem; font-weight: 700; color: #f1f5f9; margin-bottom: 12px; }
+    .footer-about { font-size: 0.9rem; line-height: 1.6; margin-bottom: 8px; }
+    .footer-updated { font-size: 0.8rem; color: #64748b; }
+    .footer-col h4 { color: #f1f5f9; font-size: 0.95rem; margin-bottom: 16px; }
+    .footer-col ul { list-style: none; }
+    .footer-col li { margin-bottom: 8px; }
+    .footer-col a { color: #94a3b8; font-size: 0.9rem; transition: color 0.2s; }
+    .footer-col a:hover { color: #60a5fa; }
+    .footer-bottom { padding: 20px 0; text-align: center; font-size: 0.85rem; }
+    @media (max-width: 640px) {
+        .footer-grid { grid-template-columns: 1fr; gap: 24px; }
+    }
+    .cookie-popup {
+        position: fixed; bottom: 0; left: 0; right: 0; background: #1e293b; color: #fff;
+        padding: 16px; transition: transform 0.5s ease; z-index: 9999; border-top: 2px solid #2563eb;
+        transform: translateY(100%);
+    }
+    .cookie-popup.visible { transform: translateY(0); }
+    .cookie-inner { max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; gap: 16px; font-size: 0.9rem; }
+    .cookie-btn { background: #2563eb; color: #fff; border: none; padding: 8px 20px; border-radius: 8px; font-weight: 600; cursor: pointer; white-space: nowrap; }
+    .cookie-btn:hover { background: #1d4ed8; }
+    @media (max-width: 640px) {
+        .cookie-inner { flex-direction: column; text-align: center; }
+    }
+
+        @media (max-width: 640px) {
+            .cat-grid { grid-template-columns: 1fr; }
+            .cat-hero h1 { font-size: 1.5rem; }
+        }
+    </style>
+    <!--#include virtual="/ssi/head.html" -->
+</head>
+<body>
+        <!--#include virtual="/ssi/body_top.html" -->
+    <style>
+    .nav-dropdown { position: relative; display: inline-block; }
+    .dropdown-toggle {
+        background: none; border: none; cursor: pointer;
+        font: inherit; color: inherit; padding: 8px 12px;
+        border-radius: 8px; transition: background 0.2s;
+    }
+    .dropdown-toggle:hover { background: rgba(0,0,0,0.05); }
+    .dropdown-menu {
+        display: none; position: absolute; right: 0; top: 100%;
+        min-width: 240px; max-height: 70vh; overflow-y: auto;
+        background: var(--card-bg, #fff); border: 1px solid var(--border, #e5e7eb);
+        border-radius: 12px; box-shadow: 0 12px 40px rgba(0,0,0,0.12);
+        padding: 8px 0; z-index: 1000;
+    }
+    .nav-dropdown::after {
+        content: ''; position: absolute; left: 0; right: 0;
+        top: 100%; height: 12px;
+    }
+    .nav-dropdown:hover .dropdown-menu,
+    .nav-dropdown:focus-within .dropdown-menu { display: block; }
+    .dropdown-item {
+        display: block; padding: 10px 20px; color: var(--text, #1f2937);
+        text-decoration: none; font-size: 0.95rem; transition: background 0.15s;
+        white-space: nowrap;
+    }
+    .dropdown-item:hover { background: rgba(37,99,235,0.06); color: var(--primary, #2563eb); }
+    @media (max-width: 768px) {
+        .main-nav > .nav-link { display: none; }
+        .dropdown-toggle { display: none; }
+        .dropdown-menu {
+            display: block !important; position: static;
+            box-shadow: none; border: none; border-radius: 0;
+            min-width: auto; max-height: none; padding: 0;
+            background: transparent;
+        }
+        .dropdown-item {
+            padding: 8px 0; font-size: 1rem;
+        }
+    }
+    </style>
+    <header class="site-header">
+        <div class="container header-inner">
+            <a href="/" class="logo">
+                <span class="logo-icon">🏠</span>
+                <span>Все о Линолеуме</span>
+            </a>
+            <button class="mobile-menu-btn" aria-label="Меню" id="menuBtn">☰</button>
+            <nav class="main-nav" id="mainNav">
+                <a href="/category/vybor-linoleuma/" class="nav-link">🧐 Выбор линолеума</a>
+<a href="/category/podgotovka-pola/" class="nav-link">🔨 Подготовка пола</a>
+<a href="/category/tekhnologiya-ukladki/" class="nav-link">📏 Технология укладки</a>
+<a href="/category/klej-i-svarka/" class="nav-link">🧴 Клей и сварка</a>
+<div class="nav-dropdown">
+            <button class="nav-link dropdown-toggle">📂 Все разделы ▾</button>
+            <div class="dropdown-menu"><a href="/category/vybor-linoleuma/" class="dropdown-item">🧐 Выбор линолеума</a>
+<a href="/category/podgotovka-pola/" class="dropdown-item">🔨 Подготовка пола</a>
+<a href="/category/tekhnologiya-ukladki/" class="dropdown-item">📏 Технология укладки</a>
+<a href="/category/klej-i-svarka/" class="dropdown-item">🧴 Клей и сварка</a>
+<a href="/category/rezka-i-raskroj/" class="dropdown-item">✂️ Резка и раскрой</a>
+<a href="/category/styki-i-porogi/" class="dropdown-item">🔗 Стыки и пороги</a>
+<a href="/category/ukhod-i-chistka/" class="dropdown-item">🧼 Уход и чистка</a>
+<a href="/category/udalenie-pyaten/" class="dropdown-item">🎨 Удаление пятен</a>
+<a href="/category/remont-povrezhdenij/" class="dropdown-item">🩹 Ремонт повреждений</a>
+<a href="/category/vyravnivanie-polotna/" class="dropdown-item">🌊 Выравнивание полотна</a>
+<a href="/category/linoleum-i-mebel/" class="dropdown-item">🛋️ Линолеум и мебель</a>
+<a href="/category/teplyj-pol/" class="dropdown-item">🔥 Теплый пол</a>
+<a href="/category/raschet-materialov/" class="dropdown-item">📐 Расчет материалов</a>
+<a href="/category/demontazh-pola/" class="dropdown-item">🚜 Демонтаж пола</a>
+<a href="/category/spetsifika-pomeshchenij/" class="dropdown-item">🚿 Специфика помещений</a>
+<a href="/category/problemy-i-zapakh/" class="dropdown-item">👃 Проблемы и запах</a>
+<a href="/category/drugoe/" class="dropdown-item">📁 Другое</a></div>
+        </div>
+            </nav>
+        </div>
+    </header>
+
+    <nav class="breadcrumbs" aria-label="Навигация">
+        <div class="container">
+            <a href="/">Главная</a>
+            <span class="breadcrumb-sep">›</span>
+            <span class="breadcrumb-current">Стыки и пороги</span>
+        </div>
+    </nav>
+
+    <section class="cat-hero">
+        <div class="container">
+            <span class="cat-hero-icon">🔗</span>
+            <h1>Стыки и пороги</h1>
+            <p>Как соединить линолеум с плиткой или ламинатом, установка порожков и скрытие швов. · страница 62 из 74</p>
+            <div class="cat-benefits"><div class="cat-benefit"><span class="benefit-icon">📖</span><span>Понятные инструкции</span></div><div class="cat-benefit"><span class="benefit-icon">✅</span><span>Проверенные решения</span></div><div class="cat-benefit"><span class="benefit-icon">⚡</span><span>Без лишних слов</span></div></div>
+        </div>
+    </section>
+
+    <main class="site-main">
+        <div class="container">
+            <div class="cat-grid">
+            <a href="/articles/k/ka/kak-skleivat-linoleum-na-stykakh-video.html" class="article-home-card">
+                <div class="card-top">
+                    <span class="card-icon">🔗</span>
+                    <span class="card-read-time">⏱ 10 мин</span>
+                </div>
+                <div class="article-home-title">Как склеивать линолеум на стыках: видео и инструкции</div>
+                <div class="article-home-desc">Пошаговое руководство по холодной сварке линолеума. Выбор клея, технология работы, советы по устранению дефектов швов и </div>
+                <div class="card-footer">
+                    <span class="card-read-more">Читать →</span>
+                </div>
+            </a>
+            <a href="/articles/k/ka/kak-soedinit-kafel-i-linoleum-na-polu.html" class="article-home-card">
+                <div class="card-top">
+                    <span class="card-icon">🔗</span>
+                    <span class="card-read-time">⏱ 10 мин</span>
+                </div>
+                <div class="article-home-title">Как соединить кафель и линолеум: 5 лучших способов стыковки</div>
+                <div class="article-home-desc">Узнайте, как идеально соединить кафель и линолеум на полу. Обзор методов: пороги, герметики, жидкая пробка. Инструкция п</div>
+                <div class="card-footer">
+                    <span class="card-read-more">Читать →</span>
+                </div>
+            </a>
+            <a href="/articles/k/ka/kak-soedinit-kafel-i-linoleum.html" class="article-home-card">
+                <div class="card-top">
+                    <span class="card-icon">🔗</span>
+                    <span class="card-read-time">⏱ 10 мин</span>
+                </div>
+                <div class="article-home-title">Как соединить кафель и линолеум: методы и пороги</div>
+                <div class="article-home-desc">Полный гид по оформлению стыка плитки и линолеума. Выбор порога, клея или герметика для идеального шва без ошибок.</div>
+                <div class="card-footer">
+                    <span class="card-read-more">Читать →</span>
+                </div>
+            </a>
+            <a href="/articles/k/ka/kak-soedinit-laminat-s-linoleumom-mezhdu-komnatami.html" class="article-home-card">
+                <div class="card-top">
+                    <span class="card-icon">🔗</span>
+                    <span class="card-read-time">⏱ 10 мин</span>
+                </div>
+                <div class="article-home-title">Стык ламината и линолеума: способы соединения и пороги</div>
+                <div class="article-home-desc">Как сделать стык между ламинатом и линолеумом в дверном проеме. Обзор профилей, методы без порожков, герметизация шва и </div>
+                <div class="card-footer">
+                    <span class="card-read-more">Читать →</span>
+                </div>
+            </a>
+            <a href="/articles/k/ka/kak-soedinit-linoleum-bez-svarki.html" class="article-home-card">
+                <div class="card-top">
+                    <span class="card-icon">🔗</span>
+                    <span class="card-read-time">⏱ 11 мин</span>
+                </div>
+                <div class="article-home-title">Как соединить линолеум без сварки: клей, скотч и пороги</div>
+                <div class="article-home-desc">Подробная инструкция: как соединить линолеум без сварки. Обзор клея, скотча и порогов. Секреты идеального стыка и выбор </div>
+                <div class="card-footer">
+                    <span class="card-read-more">Читать →</span>
+                </div>
+            </a>
+            <a href="/articles/k/ka/kak-soedinyat-styki-linoleuma-pri-ukladke.html" class="article-home-card">
+                <div class="card-top">
+                    <span class="card-icon">🔗</span>
+                    <span class="card-read-time">⏱ 12 мин</span>
+                </div>
+                <div class="article-home-title">Как соединять стыки линолеума: методы и инструменты</div>
+                <div class="article-home-desc">Полное руководство: как соединять стыки линолеума при укладке. Сварка, клей, пороги. Секреты идеального шва своими рукам</div>
+                <div class="card-footer">
+                    <span class="card-read-more">Читать →</span>
+                </div>
+            </a>
+            <a href="/articles/k/ka/kak-soedinyayut-linoleum-video.html" class="article-home-card">
+                <div class="card-top">
+                    <span class="card-icon">🔗</span>
+                    <span class="card-read-time">⏱ 10 мин</span>
+                </div>
+                <div class="article-home-title">Как соединяют линолеум: видео-инструкция и секреты</div>
+                <div class="article-home-desc">Подробный разбор технологий стыковки линолеума. Холодная сварка, пороги и пайка. Видео-уроки для новичков и профи. Узнай</div>
+                <div class="card-footer">
+                    <span class="card-read-more">Читать →</span>
+                </div>
+            </a>
+            <a href="/articles/k/ka/kak-sostykovat-kuski-linoleuma.html" class="article-home-card">
+                <div class="card-top">
+                    <span class="card-icon">🔗</span>
+                    <span class="card-read-time">⏱ 12 мин</span>
+                </div>
+                <div class="article-home-title">Как состыковать линолеум: методы сварки и склейки</div>
+                <div class="article-home-desc">Подробная инструкция, как качественно соединить куски линолеума. Обзор холодной и горячей сварки, выбор клея и правила с</div>
+                <div class="card-footer">
+                    <span class="card-read-more">Читать →</span>
+                </div>
+            </a>
+            <a href="/articles/k/ka/kak-sostykovat-linoleum-polukrugom.html" class="article-home-card">
+                <div class="card-top">
+                    <span class="card-icon">🔗</span>
+                    <span class="card-read-time">⏱ 10 мин</span>
+                </div>
+                <div class="article-home-title">Как состыковать линолеум полукругом: пошаговая инструкция</div>
+                <div class="article-home-desc">Подробный гид по созданию полукруглого стыка линолеума. Холодная сварка, раскрой, выбор клея и секреты идеального шва в </div>
+                <div class="card-footer">
+                    <span class="card-read-more">Читать →</span>
+                </div>
+            </a>
+            <a href="/articles/k/ka/kak-sostykovat-plitku-i-linoleum-na-polu.html" class="article-home-card">
+                <div class="card-top">
+                    <span class="card-icon">🔗</span>
+                    <span class="card-read-time">⏱ 8 мин</span>
+                </div>
+                <div class="article-home-title">Как состыковать плитку и линолеум: методы и материалы</div>
+                <div class="article-home-desc">Подробная инструкция: как качественно оформить стык плитки и линолеума. Обзор порожек, жидкого пробки и герметиков. Сове</div>
+                <div class="card-footer">
+                    <span class="card-read-more">Читать →</span>
+                </div>
+            </a>
+            <a href="/articles/k/ka/kak-sovmestit-risunok-na-linoleume.html" class="article-home-card">
+                <div class="card-top">
+                    <span class="card-icon">🔗</span>
+                    <span class="card-read-time">⏱ 10 мин</span>
+                </div>
+                <div class="article-home-title">Как совместить рисунок на линолеуме: пошаговая инструкция</div>
+                <div class="article-home-desc">Подробное руководство, как совместить рисунок на линолеуме при укладке. Секреты раскроя, выбор клея и сварка швов для ид</div>
+                <div class="card-footer">
+                    <span class="card-read-more">Читать →</span>
+                </div>
+            </a>
+            <a href="/articles/k/ka/kak-spryatat-styk-linoleuma.html" class="article-home-card">
+                <div class="card-top">
+                    <span class="card-icon">🔗</span>
+                    <span class="card-read-time">⏱ 9 мин</span>
+                </div>
+                <div class="article-home-title">Как спрятать стык линолеума: способы и материалы</div>
+                <div class="article-home-desc">Узнайте, как качественно скрыть и заделать стыки линолеума. Обзор методов: сварка, порожки, мастика. Советы по выбору кл</div>
+                <div class="card-footer">
+                    <span class="card-read-more">Читать →</span>
+                </div>
+            </a>
+            <a href="/articles/k/ka/kak-stavit-porozhki-na-linoleum.html" class="article-home-card">
+                <div class="card-top">
+                    <span class="card-icon">🔗</span>
+                    <span class="card-read-time">⏱ 11 мин</span>
+                </div>
+                <div class="article-home-title">Как ставить порожки на линолеум: виды, монтаж и нюансы</div>
+                <div class="article-home-desc">Подробная инструкция: как правильно ставить порожки на линолеум. Виды профилей, выбор крепежа, скрытый и открытый монтаж</div>
+                <div class="card-footer">
+                    <span class="card-read-more">Читать →</span>
+                </div>
+            </a>
+            <a href="/articles/k/ka/kak-stelit-linoleum-mezhdu-dveryami.html" class="article-home-card">
+                <div class="card-top">
+                    <span class="card-icon">🔗</span>
+                    <span class="card-read-time">⏱ 9 мин</span>
+                </div>
+                <div class="article-home-title">Как стелить линолеум между дверями: идеальные стыки</div>
+                <div class="article-home-desc">Профессиональная инструкция по укладке линолеума в дверном проеме. Как скрыть шов, выбрать порог и сделать незаметный ст</div>
+                <div class="card-footer">
+                    <span class="card-read-more">Читать →</span>
+                </div>
+            </a>
+            <a href="/articles/k/ka/kak-stelit-linoleum-so-stykom.html" class="article-home-card">
+                <div class="card-top">
+                    <span class="card-icon">🔗</span>
+                    <span class="card-read-time">⏱ 11 мин</span>
+                </div>
+                <div class="article-home-title">Как стелить линолеум со стыком: полная инструкция</div>
+                <div class="article-home-desc">Узнайте, как правильно стелить линолеум со стыком. Пошаговая технология холодной сварки, выбор инструментов и секреты ид</div>
+                <div class="card-footer">
+                    <span class="card-read-more">Читать →</span>
+                </div>
+            </a>
+            <a href="/articles/k/ka/kak-stykovat-linoleum-mezhdu-soboj-bez-styka-s-pomoshchyu-kholodnoj-svarki.html" class="article-home-card">
+                <div class="card-top">
+                    <span class="card-icon">🔗</span>
+                    <span class="card-read-time">⏱ 9 мин</span>
+                </div>
+                <div class="article-home-title">Стыковка линолеума без шва: холодная сварка своими руками</div>
+                <div class="article-home-desc">Как соединить линолеум без порожка холодной сваркой. Подробная инструкция, выбор клея, секреты идеального шва и устранен</div>
+                <div class="card-footer">
+                    <span class="card-read-more">Читать →</span>
+                </div>
+            </a>
+            <a href="/articles/k/ka/kak-stykuyut-linoleum-mezhdu-komnatami-bez-porogov.html" class="article-home-card">
+                <div class="card-top">
+                    <span class="card-icon">🔗</span>
+                    <span class="card-read-time">⏱ 11 мин</span>
+                </div>
+                <div class="article-home-title">Стыковка линолеума без порогов: 3 проверенных метода</div>
+                <div class="article-home-desc">Узнайте, как профессионально соединить линолеум в дверном проеме без порога. Методы холодной сварки, стыковки встык и со</div>
+                <div class="card-footer">
+                    <span class="card-read-more">Читать →</span>
+                </div>
+            </a>
+            <a href="/articles/k/ka/kak-ukladyvat-plintus-na-linoleum-video.html" class="article-home-card">
+                <div class="card-top">
+                    <span class="card-icon">🔗</span>
+                    <span class="card-read-time">⏱ 12 мин</span>
+                </div>
+                <div class="article-home-title">Как укладывать плинтус на линолеум: видео и инструкции</div>
+                <div class="article-home-desc">Подробное руководство, как правильно укладывать плинтус на линолеум. Выбор типа, монтаж, видео-инструкции и советы по ск</div>
+                <div class="card-footer">
+                    <span class="card-read-more">Читать →</span>
+                </div>
+            </a>
+            <a href="/articles/k/ka/kak-ulozhit-linoleum-so-shvom.html" class="article-home-card">
+                <div class="card-top">
+                    <span class="card-icon">🔗</span>
+                    <span class="card-read-time">⏱ 11 мин</span>
+                </div>
+                <div class="article-home-title">Как уложить линолеум со швом: полная инструкция</div>
+                <div class="article-home-desc">Подробное руководство: как уложить линолеум со швом правильно. Технологии сварки, выбор клея и инструменты для идеальног</div>
+                <div class="card-footer">
+                    <span class="card-read-more">Читать →</span>
+                </div>
+            </a>
+            <a href="/articles/k/ka/kak-zakrepit-kraj-linoleuma-plankoj.html" class="article-home-card">
+                <div class="card-top">
+                    <span class="card-icon">🔗</span>
+                    <span class="card-read-time">⏱ 11 мин</span>
+                </div>
+                <div class="article-home-title">Как закрепить край линолеума планкой: пошаговая инструкция</div>
+                <div class="article-home-desc">Узнайте, как надежно закрепить край линолеума планкой. Выбор порожков, способы монтажа и советы по фиксации стыков и кро</div>
+                <div class="card-footer">
+                    <span class="card-read-more">Читать →</span>
+                </div>
+            </a>
+            <a href="/articles/l/la/laminat-i-linoleum-kak-sovmestit-v-kvartire.html" class="article-home-card">
+                <div class="card-top">
+                    <span class="card-icon">🔗</span>
+                    <span class="card-read-time">⏱ 9 мин</span>
+                </div>
+                <div class="article-home-title">Ламинат и линолеум в одной квартире: как совместить покрытия?</div>
+                <div class="article-home-desc">Грамотное зонирование квартиры ламинатом и линолеумом. Секреты стыковки, выбор порогов и нюансы укладки разных напольных</div>
+                <div class="card-footer">
+                    <span class="card-read-more">Читать →</span>
+                </div>
+            </a>
+            <a href="/articles/m/me/mezhdu-linoleumom-i-laminatom-kak-nazyvaetsya.html" class="article-home-card">
+                <div class="card-top">
+                    <span class="card-icon">🔗</span>
+                    <span class="card-read-time">⏱ 11 мин</span>
+                </div>
+                <div class="article-home-title">Переход между линолеумом и ламинатом: как называется и выбор</div>
+                <div class="article-home-desc">Как называется стык между линолеумом и ламинатом? Виды порогов, методы монтажа без щелей, выбор материалов и советы по о</div>
+                <div class="card-footer">
+                    <span class="card-read-more">Читать →</span>
+                </div>
+            </a>
+            <a href="/articles/p/pe/perekhod-linoleum-laminat-kak-sdelat.html" class="article-home-card">
+                <div class="card-top">
+                    <span class="card-icon">🔗</span>
+                    <span class="card-read-time">⏱ 12 мин</span>
+                </div>
+                <div class="article-home-title">Стык линолеума и ламината: как сделать правильно и красиво</div>
+                <div class="article-home-desc">Подробная инструкция: как сделать стык между линолеумом и ламинатом. Методы оформления шва, выбор порожка или герметика,</div>
+                <div class="card-footer">
+                    <span class="card-read-more">Читать →</span>
+                </div>
+            </a>
+            <a href="/articles/c/ch/chem-luchshe-zadelat-styk-mezhdu-linoleumom.html" class="article-home-card">
+                <div class="card-top">
+                    <span class="card-icon">🔗</span>
+                    <span class="card-read-time">⏱ 11 мин</span>
+                </div>
+                <div class="article-home-title">Чем заделать стык линолеума: холодная сварка или порог?</div>
+                <div class="article-home-desc">Подробный гид по методам герметизации швов. Сравнение холодной сварки, горячей пайки и порогов. Как выбрать клей для сты</div>
+                <div class="card-footer">
+                    <span class="card-read-more">Читать →</span>
+                </div>
+            </a>
+            <a href="/articles/c/ch/chem-prizhat-linoleum-vmesto-plintusa.html" class="article-home-card">
+                <div class="card-top">
+                    <span class="card-icon">🔗</span>
+                    <span class="card-read-time">⏱ 11 мин</span>
+                </div>
+                <div class="article-home-title">Чем прижать линолеум вместо плинтуса: 6 надежных решений</div>
+                <div class="article-home-desc">Ищете альтернативу стандартному плинтусу? Узнайте, чем прижать линолеум у стены, чтобы избежать вздутия. Обзор профилей,</div>
+                <div class="card-footer">
+                    <span class="card-read-more">Читать →</span>
+                </div>
+            </a>
+            <a href="/articles/c/ch/chem-prokleit-styki-na-linoleume.html" class="article-home-card">
+                <div class="card-top">
+                    <span class="card-icon">🔗</span>
+                    <span class="card-read-time">⏱ 9 мин</span>
+                </div>
+                <div class="article-home-title">Чем проклеить стыки линолеума: клей, холодная сварка</div>
+                <div class="article-home-desc">Полный гид по склейке швов линолеума. Выбор клея, технология холодной сварки, инструменты и секреты мастеров для идеальн</div>
+                <div class="card-footer">
+                    <span class="card-read-more">Читать →</span>
+                </div>
+            </a>
+            <a href="/articles/c/ch/chem-skleit-kraya-linoleuma.html" class="article-home-card">
+                <div class="card-top">
+                    <span class="card-icon">🔗</span>
+                    <span class="card-read-time">⏱ 12 мин</span>
+                </div>
+                <div class="article-home-title">Чем склеить края линолеума: методы и материалы</div>
+                <div class="article-home-desc">Подробный гид по склеиванию краев линолеума. Сравнение холодной сварки, клея и порога. Инструкция по ремонту стыков свои</div>
+                <div class="card-footer">
+                    <span class="card-read-more">Читать →</span>
+                </div>
+            </a>
+            <a href="/articles/c/ch/chem-soedinit-plitku-i-linoleum-na-polu-bez-porozhka.html" class="article-home-card">
+                <div class="card-top">
+                    <span class="card-icon">🔗</span>
+                    <span class="card-read-time">⏱ 11 мин</span>
+                </div>
+                <div class="article-home-title">Стык плитки и линолеума без порожка: 5 лучших способов</div>
+                <div class="article-home-desc">Как соединить плитку и линолеум на полу без порожка. Обзор методов: жидкая пробка, профили П-образные, герметики. Инстру</div>
+                <div class="card-footer">
+                    <span class="card-read-more">Читать →</span>
+                </div>
+            </a>
+            <a href="/articles/c/ch/chem-stykuetsya-linoleum.html" class="article-home-card">
+                <div class="card-top">
+                    <span class="card-icon">🔗</span>
+                    <span class="card-read-time">⏱ 11 мин</span>
+                </div>
+                <div class="article-home-title">Чем стыкуется линолеум: выбор порога, клея или сварки</div>
+                <div class="article-home-desc">Подробный гид: чем и как стыкуется линолеум. Сравнение холодной сварки, горячего метода, порогов и профилей. Технология </div>
+                <div class="card-footer">
+                    <span class="card-read-more">Читать →</span>
+                </div>
+            </a>
+            <a href="/articles/c/ch/chem-zakryt-srez-linoleuma.html" class="article-home-card">
+                <div class="card-top">
+                    <span class="card-icon">🔗</span>
+                    <span class="card-read-time">⏱ 11 мин</span>
+                </div>
+                <div class="article-home-title">Чем закрыть срез линолеума: лучшие способы и материалы</div>
+                <div class="article-home-desc">Полный обзор методов обработки края линолеума: холодная сварка, пороги, плинтусы. Инструкция по выбору и монтажу для дол</div>
+                <div class="card-footer">
+                    <span class="card-read-more">Читать →</span>
+                </div>
+            </a></div>
+            <nav class="pagination" aria-label="Страницы"><a href="/category/styki-i-porogi/" class="pag-link pag-edge" title="В начало">«</a><a href="/category/styki-i-porogi/page/61/" class="pag-link">← Назад</a><a href="/category/styki-i-porogi/" class="pag-link">1</a><span class="pag-dots">…</span><a href="/category/styki-i-porogi/page/59/" class="pag-link">59</a><a href="/category/styki-i-porogi/page/60/" class="pag-link">60</a><a href="/category/styki-i-porogi/page/61/" class="pag-link">61</a><a href="/category/styki-i-porogi/page/62/" class="pag-link pag-active">62</a><a href="/category/styki-i-porogi/page/63/" class="pag-link">63</a><a href="/category/styki-i-porogi/page/64/" class="pag-link">64</a><a href="/category/styki-i-porogi/page/65/" class="pag-link">65</a><span class="pag-dots">…</span><a href="/category/styki-i-porogi/page/74/" class="pag-link">74</a><a href="/category/styki-i-porogi/page/63/" class="pag-link">Далее →</a><a href="/category/styki-i-porogi/page/74/" class="pag-link pag-edge" title="В конец">»</a></nav>
+        </div>
+    </main>
+
+    <footer class="site-footer-premium">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="footer-brand">🏠 Все о Линолеуме</div>
+                    <p class="footer-about">Полное руководство по выбору, укладке, ремонту и уходу за линолеумом в доме.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Разделы</h4>
+                    <ul><li><a href="/category/vybor-linoleuma/">🧐 Выбор линолеума</a></li>
+<li><a href="/category/podgotovka-pola/">🔨 Подготовка пола</a></li>
+<li><a href="/category/tekhnologiya-ukladki/">📏 Технология укладки</a></li>
+<li><a href="/category/klej-i-svarka/">🧴 Клей и сварка</a></li>
+<li><a href="/category/rezka-i-raskroj/">✂️ Резка и раскрой</a></li>
+<li><a href="/category/styki-i-porogi/">🔗 Стыки и пороги</a></li></ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Информация</h4>
+                    <ul>
+                        <li><a href="/">Главная</a></li>
+                        <li><a href="/about.html">О проекте</a></li>
+                        <li><a href="/categories.html">Все разделы</a></li>
+                        <li><a href="/contact.html">Контакты</a></li>
+                        <li><a href="/privacy.html">Конфиденциальность</a></li>
+                        <li><a href="/sitemap.xml">Карта сайта</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© Все о Линолеуме. Все права защищены.</p>
+                <!--LiveInternet counter--><div style="margin-top:10px;"><a href="https://www.liveinternet.ru/click"
+                target="_blank"><img id="licnt06C4" width="88" height="15" style="border:0" 
+                title="LiveInternet: показано число посетителей за сегодня"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAEALAAAAAABAAEAAAIBTAA7"
+                alt=""/></a><script>(function(d,s){d.getElementById("licnt06C4").src=
+                "https://counter.yadro.ru/hit?t26.5;r"+escape(d.referrer)+
+                ((typeof(s)=="undefined")?"":";s"+s.width+"*"+s.height+"*"+
+                (s.colorDepth?s.colorDepth:s.pixelDepth))+";u"+escape(d.URL)+
+                ";h"+escape(d.title.substring(0,150))+";"+Math.random()})(document,screen)</script></div><!--/LiveInternet-->
+            </div>
+        </div>
+    </footer>
+    <div id="cookie-consent" class="cookie-popup">
+        <div class="cookie-inner">
+            <span>🍪 Мы используем файлы cookie для улучшения работы сайта.</span>
+            <button id="cookie-accept" class="cookie-btn">Принять</button>
+        </div>
+    </div>
+    <script>
+    document.getElementById('menuBtn')?.addEventListener('click', () => {
+        document.getElementById('mainNav')?.classList.toggle('open');
+    });
+    </script>
+    <!--#include virtual="/ssi/body_bottom.html" -->
+    <script src="/static/js/inject.js" defer></script>
+</body>
+</html>

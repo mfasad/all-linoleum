@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27><text y=%27.9em%27 font-size=%2790%27>🏠</text></svg>">
+    <title>Как рассчитать шнур для сварки линолеума: точная формула — Все о Линолеуме</title>
+    <meta name="description" content="Полный гид по расчету длины сварочного шнура для линолеума. Формулы, коэффициент усадки, выбор диаметра и правила закупки материала для идеального шва.">
+    <link rel="canonical" href="https://all-linoleum.vercel.app/articles/k/ka/kak-rasschitat-shnur-dlya-linoleuma.html">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Как рассчитать шнур для сварки линолеума: точная формула">
+    <meta property="og:description" content="Полный гид по расчету длины сварочного шнура для линолеума. Формулы, коэффициент усадки, выбор диаметра и правила закупки материала для идеального шва.">
+    <meta property="og:locale" content="ru_RU">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/style.css?v=1778001477">
+    <style>
+    .site-footer-premium {
+        margin-top: 60px; padding: 40px 0 0; background: #1e293b; color: #94a3b8;
+    }
+    .footer-grid {
+        display: grid; grid-template-columns: 2fr 1fr 1fr; gap: 40px;
+        padding-bottom: 32px; border-bottom: 1px solid #334155;
+    }
+    .footer-brand { font-size: 1.2rem; font-weight: 700; color: #f1f5f9; margin-bottom: 12px; }
+    .footer-about { font-size: 0.9rem; line-height: 1.6; margin-bottom: 8px; }
+    .footer-updated { font-size: 0.8rem; color: #64748b; }
+    .footer-col h4 { color: #f1f5f9; font-size: 0.95rem; margin-bottom: 16px; }
+    .footer-col ul { list-style: none; }
+    .footer-col li { margin-bottom: 8px; }
+    .footer-col a { color: #94a3b8; font-size: 0.9rem; transition: color 0.2s; }
+    .footer-col a:hover { color: #60a5fa; }
+    .footer-bottom { padding: 20px 0; text-align: center; font-size: 0.85rem; }
+    @media (max-width: 640px) {
+        .footer-grid { grid-template-columns: 1fr; gap: 24px; }
+    }
+    .cookie-popup {
+        position: fixed; bottom: 0; left: 0; right: 0; background: #1e293b; color: #fff;
+        padding: 16px; transition: transform 0.5s ease; z-index: 9999; border-top: 2px solid #2563eb;
+        transform: translateY(100%);
+    }
+    .cookie-popup.visible { transform: translateY(0); }
+    .cookie-inner { max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; gap: 16px; font-size: 0.9rem; }
+    .cookie-btn { background: #2563eb; color: #fff; border: none; padding: 8px 20px; border-radius: 8px; font-weight: 600; cursor: pointer; white-space: nowrap; }
+    .cookie-btn:hover { background: #1d4ed8; }
+    @media (max-width: 640px) {
+        .cookie-inner { flex-direction: column; text-align: center; }
+    }
+</style>
+    
+    <!--#include virtual="/ssi/head.html" -->
+</head>
+<body>
+        <!--#include virtual="/ssi/body_top.html" -->
+    <style>
+    .nav-dropdown { position: relative; display: inline-block; }
+    .dropdown-toggle {
+        background: none; border: none; cursor: pointer;
+        font: inherit; color: inherit; padding: 8px 12px;
+        border-radius: 8px; transition: background 0.2s;
+    }
+    .dropdown-toggle:hover { background: rgba(0,0,0,0.05); }
+    .dropdown-menu {
+        display: none; position: absolute; right: 0; top: 100%;
+        min-width: 240px; max-height: 70vh; overflow-y: auto;
+        background: var(--card-bg, #fff); border: 1px solid var(--border, #e5e7eb);
+        border-radius: 12px; box-shadow: 0 12px 40px rgba(0,0,0,0.12);
+        padding: 8px 0; z-index: 1000;
+    }
+    .nav-dropdown::after {
+        content: ''; position: absolute; left: 0; right: 0;
+        top: 100%; height: 12px;
+    }
+    .nav-dropdown:hover .dropdown-menu,
+    .nav-dropdown:focus-within .dropdown-menu { display: block; }
+    .dropdown-item {
+        display: block; padding: 10px 20px; color: var(--text, #1f2937);
+        text-decoration: none; font-size: 0.95rem; transition: background 0.15s;
+        white-space: nowrap;
+    }
+    .dropdown-item:hover { background: rgba(37,99,235,0.06); color: var(--primary, #2563eb); }
+    @media (max-width: 768px) {
+        .main-nav > .nav-link { display: none; }
+        .dropdown-toggle { display: none; }
+        .dropdown-menu {
+            display: block !important; position: static;
+            box-shadow: none; border: none; border-radius: 0;
+            min-width: auto; max-height: none; padding: 0;
+            background: transparent;
+        }
+        .dropdown-item {
+            padding: 8px 0; font-size: 1rem;
+        }
+    }
+    </style>
+    <header class="site-header">
+        <div class="container header-inner">
+            <a href="/" class="logo">
+                <span class="logo-icon">🏠</span>
+                <span>Все о Линолеуме</span>
+            </a>
+            <button class="mobile-menu-btn" aria-label="Меню" id="menuBtn">☰</button>
+            <nav class="main-nav" id="mainNav">
+                <a href="/category/vybor-linoleuma/" class="nav-link">🧐 Выбор линолеума</a>
+<a href="/category/podgotovka-pola/" class="nav-link">🔨 Подготовка пола</a>
+<a href="/category/tekhnologiya-ukladki/" class="nav-link">📏 Технология укладки</a>
+<a href="/category/klej-i-svarka/" class="nav-link">🧴 Клей и сварка</a>
+<div class="nav-dropdown">
+            <button class="nav-link dropdown-toggle">📂 Все разделы ▾</button>
+            <div class="dropdown-menu"><a href="/category/vybor-linoleuma/" class="dropdown-item">🧐 Выбор линолеума</a>
+<a href="/category/podgotovka-pola/" class="dropdown-item">🔨 Подготовка пола</a>
+<a href="/category/tekhnologiya-ukladki/" class="dropdown-item">📏 Технология укладки</a>
+<a href="/category/klej-i-svarka/" class="dropdown-item">🧴 Клей и сварка</a>
+<a href="/category/rezka-i-raskroj/" class="dropdown-item">✂️ Резка и раскрой</a>
+<a href="/category/styki-i-porogi/" class="dropdown-item">🔗 Стыки и пороги</a>
+<a href="/category/ukhod-i-chistka/" class="dropdown-item">🧼 Уход и чистка</a>
+<a href="/category/udalenie-pyaten/" class="dropdown-item">🎨 Удаление пятен</a>
+<a href="/category/remont-povrezhdenij/" class="dropdown-item">🩹 Ремонт повреждений</a>
+<a href="/category/vyravnivanie-polotna/" class="dropdown-item">🌊 Выравнивание полотна</a>
+<a href="/category/linoleum-i-mebel/" class="dropdown-item">🛋️ Линолеум и мебель</a>
+<a href="/category/teplyj-pol/" class="dropdown-item">🔥 Теплый пол</a>
+<a href="/category/raschet-materialov/" class="dropdown-item">📐 Расчет материалов</a>
+<a href="/category/demontazh-pola/" class="dropdown-item">🚜 Демонтаж пола</a>
+<a href="/category/spetsifika-pomeshchenij/" class="dropdown-item">🚿 Специфика помещений</a>
+<a href="/category/problemy-i-zapakh/" class="dropdown-item">👃 Проблемы и запах</a>
+<a href="/category/drugoe/" class="dropdown-item">📁 Другое</a></div>
+        </div>
+            </nav>
+        </div>
+    </header>
+
+    <nav class="breadcrumbs" aria-label="Навигация">
+        <div class="container"><a href="/">Главная</a><span class="breadcrumb-sep">›</span><a href="/category/raschet-materialov/">Расчет материалов</a><span class="breadcrumb-sep">›</span><span class="breadcrumb-current">Как рассчитать шнур для сварки линолеума: точная формула</span></div>
+    </nav>
+
+    <main class="site-main">
+        <div class="container">
+            <div class="article-layout">
+                <article class="article-main">
+                    
+                    <h1>Как рассчитать шнур для линолеума: формулы и нюансы</h1>
+                    <nav class="mobile-toc"><details><summary>📋 Содержание</summary><ul><li><a href="#базовая-формула-расчета-длины-шнура">Базовая формула расчета длины шнура</a></li><li><a href="#учет-коэффициента-усадки-при-сварке">Учет коэффициента усадки при сварке</a></li><li><a href="#влияние-типа-линолеума-на-расход-материала">Влияние типа линолеума на расход материала</a></li><li><a href="#расчет-для-сложных-конфигураций-и-рисунков">Расчет для сложных конфигураций и рисунков</a></li><li><a href="#технологические-потери-и-запас-на-брак">Технологические потери и запас на брак</a></li><li><a href="#инструменты-для-точного-замера-и-резки">Инструменты для точного замера и резки</a></li><li><a href="#часто-задаваемые-вопросы-faq">Часто задаваемые вопросы (FAQ)</a></li></ul></details></nav>
+                    <!--#include virtual="/ssi/article_before.html" -->
+                    <div class="article-body">
+
+<p>Качественная укладка линолеума требует не только ровного основания и правильного клея, но и герметичного соединения швов, которое невозможно представить без сварочного шнура. Многие мастера-новички совершают ошибку, покупая материал «на глаз», что часто приводит к нехватке расходников в самый ответственный момент или к лишним тратам на остатки. Точный расчет длины <strong>сварочного шнура</strong> — это первый шаг к созданию монолитного покрытия, устойчивого к влаге и механическим нагрузкам.</p>
+
+<p>Процесс вычисления необходимого метража базируется на простой геометрии, однако требует учета нескольких критических факторов, таких как коэффициент усадки и глубина прорезки шва. Игнорирование этих деталей может привести к тому, что шов получится слабым или, наоборот, будет слишком сильно выступать над поверхностью. В этой статье мы разберем алгоритм действий, который позволит вам закупить ровно столько материала, сколько нужно для профессионального результата.</p>
+
+<p>Для начала вам потребуется рулетка, калькулятор и план помещения или возможность пройтись по уже уложенному покрытию. Мы рассмотрим как ручные методы подсчета, так и особенности работы с различными типами покрытий, где расход может существенно отличаться. Понимание физики процесса сварки поможет избежать распространенных ошибок при формировании запаса.</p>
+
+<h2 id="базовая-формула-расчета-длины-шнура">Базовая формула расчета длины шнура</h2>
+
+<p>Основой всех вычислений является простая формула, которая учитывает общую длину всех швов и необходимый запас материала. Стандартный подход гласит, что длина шнура должна равняться длине шва, умноженной на коэффициент запаса. Для большинства коммерческих и бытовых задач этот коэффициент составляет 1.05–1.10, то есть необходимо добавить 5–10% к общей длине.</p>
+
+<p>Однако просто добавить процент — это лишь половина дела. Необходимо понимать, что <strong>расход шнура</strong> напрямую зависит от ширины и глубины прорезанной канавки. Если вы используете фрезу диаметром 2 мм, то и шнур должен быть соответствующего диаметра, обычно 3–4 мм, чтобы обеспечить достаточный объем расплавленного материала внутри шва. При использовании более широких фрез для толстых коммерческих покрытий расход автоматически возрастает.</p>
+
+<div class="poll-widget" id="poll-4015e15c"><div class="poll-widget-question">📊 Какой тип линолеума вы укладываете?</div><div class="poll-widget-option" data-poll="4015e15c" data-idx="0" onclick="pbPollVote(this)"><span class="poll-widget-label">Бытовой (тонкий)</span><span class="poll-widget-bar"></span><span class="poll-widget-pct"></span></div><div class="poll-widget-option" data-poll="4015e15c" data-idx="1" onclick="pbPollVote(this)"><span class="poll-widget-label">Полукоммерческий</span><span class="poll-widget-bar"></span><span class="poll-widget-pct"></span></div><div class="poll-widget-option" data-poll="4015e15c" data-idx="2" onclick="pbPollVote(this)"><span class="poll-widget-label">Коммерческий (толстый)</span><span class="poll-widget-bar"></span><span class="poll-widget-pct"></span></div><div class="poll-widget-option" data-poll="4015e15c" data-idx="3" onclick="pbPollVote(this)"><span class="poll-widget-label">Гетерогенный</span><span class="poll-widget-bar"></span><span class="poll-widget-pct"></span></div></div>
+
+<p> На практике же вам придется делать остановки, перерывы и переходы между комнатами, что увеличивает количество обрезков. Поэтому при расчете общей длины всегда округляйте полученное значение в большую сторону до целого числа или до длины одной бухты, если речь идет о крупных объектах.</p>
+
+<h2 id="учет-коэффициента-усадки-при-сварке">Учет коэффициента усадки при сварке</h2>
+
+<p>Одним из самых коварных свойств поливинилхлорида (ПВХ), из которого изготовлен шнур, является термическая усадка. При нагревании термофеном материал размягчается и растягивается, но после остывания он сжимается, становясь короче своей первоначальной длины. Если не учесть этот фактор при расчете, в шве могут образоваться разрывы или углубления, которые испортят внешний вид покрытия.</p>
+
+<p>Средний коэффициент усадки качественного шнура составляет от 1% до 3%, однако для перфекционистов и при работе с длинными швами в промышленных масштабах этот показатель может быть решающим. Профессионалы рекомендуют закладывать дополнительный запас именно на этот параметр, особенно если вы работаете с дешевыми материалами, где процент усадки часто выше заявленного производителем.</p>
+
+<blockquote>
+<p>⚠️ Внимание: Никогда не натягивайте шнур в желобок силой при укладке. Он должен лежать свободно, иначе при остывании он стянется и вырвет края линолеума, образовав щель.</p>
+</blockquote>
+
+<p>Для компенсации усадки существует простой эмпирический метод: на каждые 10 метров шва добавляйте еще 15–20 сантиметров шнура сверх стандартного запаса. Это позволит вам иметь небольшой хвостик в конце прохода, который можно аккуратно обрезать, убедившись, что шов полностью заполнен и не имеет втянутостей после остывания.</p>
+
+<div class="attention-box attention-tip"><span class="attention-icon">💡</span><p>Проверьте партию шнура перед началом работ: сварите тестовый кусок длиной 1 метр, остудите его и измерьте линейкой. Разница покажет реальный процент усадки именно этого материала.</p></div>
+
+<h2 id="влияние-типа-линолеума-на-расход-материала">Влияние типа линолеума на расход материала</h2>
+
+<p>Расход сварочного шнура существенно варьируется в зависимости от типа напольного покрытия. Тонкий бытовой линолеум требует минимального количества материала, так как прорезь в нем делается неглубокой, чтобы не повредить основу. В то же время гетерогенный коммерческий линолеум имеет толщину до 3 мм и более, что требует глубокой и широкой канавки для обеспечения прочности соединения.</p>
+
+<p>При работе с гетерогенными покрытиями часто используется шнур увеличенного диаметра или двойной проход, что увеличивает расход почти в полтора раза по сравнению с гомогенными материалами. Кроме того, структура поверхности влияет на сцепку: шероховатый линолеум может потребовать более тщательного заполнения неровностей краев, что также ведет к увеличению потребления ПВХ-материала.</p>
+
+<p>Ниже приведена таблица, демонстрирующая примерный расход шнура в зависимости от типа покрытия и толщины прорезки:</p>
+
+<table>
+<thead>
+<tr>
+<th>Тип линолеума</th>
+<th>Толщина покрытия (мм)</th>
+<th>Диаметр фрезы (мм)</th>
+<th>Примерный расход на 10 м.п.</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Бытовой</td>
+<td>1.5 – 2.0</td>
+<td>2.0</td>
+<td>10.5 – 10.8 метра</td>
+</tr>
+<tr>
+<td>Полукоммерческий</td>
+<td>2.5 – 3.0</td>
+<td>2.5</td>
+<td>11.0 – 11.5 метра</td>
+</tr>
+<tr>
+<td>Коммерческий гомогенный</td>
+<td>2.0 – 2.5</td>
+<td>3.0</td>
+<td>11.5 – 12.0 метра</td>
+</tr>
+<tr>
+<td>Коммерческий гетерогенный</td>
+<td>3.0 – 4.0</td>
+<td>3.5 – 4.0</td>
+<td>12.0 – 13.0 метра</td>
+</tr>
+</tbody>
+</table>
+
+<p>Использование <strong>правильной фрезы</strong> — это залог экономии. Если вы возьмете фрезу большего диаметра, чем требуется для данного типа линолеума, вы не только испортите покрытие, но и потратите значительно больше дорогостоящего шнура. Всегда сверяйтесь с рекомендациями производителя напольного покрытия относительно инструмента для расшивки шва.</p>
+
+<h2 id="расчет-для-сложных-конфигураций-и-рисунков">Расчет для сложных конфигураций и рисунков</h2>
+
+<p>Ситуация кардинально меняется, когда речь заходит не о прямых швах, а о сложных дизайнерских решениях, таких как аппликации, розетки или имитация плитки. В таких случаях длина шва увеличивается многократно, и расчет «по периметру комнаты» уже не работает. Здесь необходимо детально проектировать каждый элемент.</p>
+
+<p>Для фигурной резки и сварки расход шнура может вырасти на 20–30% из-за большого количества поворотов, обрезков и технологических потерь. Каждый поворот фрезы и термофена требует запаса материала, который затем удаляется. Кроме того, при создании рисунков часто используются шнуры разных цветов, и расчет нужно вести для каждого цвета отдельно, учитывая длину конкретного элемента узора.</p>
+
+<details class="faq-item"><summary>Секрет экономии на сложных рисунках</summary><div class="faq-answer"><p>При создании геометрических узоров (квадраты, ромбы) старайтесь проектировать их так, чтобы длина сторон была кратна стандартной длине бухты шнура или хотя бы позволяла минимизировать остатки.</p></div></details>
+
+<p>При работе с криволинейными швами важно учитывать радиус изгиба. Слишком крутые повороты могут потребовать более частой остановки и подрезки шнура, что ведет к перерасходу. В таких случаях опытные мастера рекомендуют покупать шнур с запасом не менее 15% от расчетной длины всех линий реза.</p>
+
+<h2 id="технологические-потери-и-запас-на-брак">Технологические потери и запас на брак</h2>
+
+<p>Ни один профессиональный расчет не обходится без учета технологических потерь. К ним относятся обрезки шнура при начале и конце работы, кусочки, оставшиеся в сопле фена, и материал, который мог перегреться и стать непригодным. Даже у опытного мастера процент брака составляет около 3–5%, у новичков он может достигать 10%.</p>
+
+<p>Особое внимание стоит уделить началу работы. Первые сантиметры шнура часто приходится выбрасывать, пока не стабилизируется температура потока воздуха и не начнется равномерное плавление. Также стоит учитывать человеческий фактор: дрожание руки, случайные рывки или необходимость перекурить в процессе длинного шва могут привести к порче участка, который придется переваривать.</p>
+
+<ul>
+<li>📏 Всегда измеряйте длину шва с точностью до сантиметра, используя лазерную рулетку для больших помещений.</li>
+<li>🔥 Учитывайте длину «хвоста», который остается в сопле фена после завершения работы (примерно 10–15 см).</li>
+<li>🎨 Если вы используете цветной шнур, берите одну дополнительную бухту на каждый цвет для страховки, так как партии могут отличаться оттенком.</li>
+</ul>
+
+<p>Закупая материал, задайте себе вопрос: что хуже, переплатить 500 рублей за лишнюю бухту или остановить работу на полдня, ожидая доставку недостающего метра? В профессиональной сфере простой времени стоит гораздо дороже стоимости материала, поэтому <strong>запас прочности</strong> в расчетах обязателен.</p>
+
+<h2 id="инструменты-для-точного-замера-и-резки">Инструменты для точного замера и резки</h2>
+
+<p>Для того чтобы расчеты воплотились в реальность, необходим правильный инструмент. Обычного строительного ножа здесь недостаточно, так как он не даст ровной канавки одинаковой глубины. Основным инструментом является specialized фреза (ручная или электрическая), которая снимает фаску под нужным углом.</p>
+
+<p>Электрическая фреза значительно ускоряет процесс и обеспечивает стабильную глубину реза, что напрямую влияет на равномерность расхода шнура. При использовании ручного инструмента глубина может «гулять», что приведет либо к перерасходу, либо к слабому шву. Также для замера больших площадей незаменима лазерная рулетка, позволяющая избежать ошибок при суммировании длин.</p>
+
+<div class="checklist-block"><h4>☑️ Проверка готовности к расчетам</h4><label class="check-item"><input type="checkbox"><span>Измерена общая длина всех швов:Определен тип и толщина линолеума:Подобрана фреза соответствующего диаметра:Заложен запас на усадку и брак (минимум 10%)</span></label><div class="check-progress">Выполнено: <span class="check-count">0</span> / 1</div></div>
+
+<p>Не забывайте про чистоту шва перед сваркой. Если в канавке останется пыль или крошки от резки, объем полезного пространства уменьшится, и шнур ляжет неправильно. Поэтому к стоимости материалов косвенно добавляется и время на качественную подготовку, что тоже является частью технологического процесса.</p>
+
+<h2 id="часто-задаваемые-вопросы-faq">Часто задаваемые вопросы (FAQ)</h2>
+
+<details>
+<summary>Можно ли использовать один шнур для разных типов линолеума?</summary>
+<p>Технически можно, если диаметр шнура соответствует ширине прорезанной канавки. Однако цвет и фактура шнура должны идеально совпадать с покрытием. Для гетерогенного линолеума лучше использовать специализированные шнуры с добавками, обеспечивающими лучшую эластичность.</p>
+</details>
+
+<details>
+<summary>Что делать, если шнур закончился посередине шва?</summary>
+<p>Нельзя просто приставить новый кусок. Необходимо сделать перекрытие: новый шнур накладывается на конец предыдущего с нахлестом в 2–3 см, прогревается, и затем ножом срезается лишнее, создавая монолитное соединение без видимого стыка.</p>
+</details>
+
+<details>
+<summary>Как хранить остатки сварочного шнура?</summary>
+<p>Остатки следует сматывать в кольца диаметром не менее 15 см, чтобы избежать заломов. Хранить их нужно в сухом месте, вдали от прямых солнечных лучей и отопительных приборов, иначе материал потеряет эластичность.</p>
+</details>
+
+<details>
+<summary>Влияет ли температура в помещении на расход шнура?</summary>
+<p>Да, в холодном помещении шнур остывает быстрее, что может потребовать снижения скорости ведения фена или увеличения температуры, что косвенно влияет на усадку и расход. Оптимальная температура для сварки — от +15 до +25 °C.</p>
+</details>
+
+<div class="attention-box attention-tip"><span class="attention-icon">💡</span><p>Точный расчет шнура для линолеума — это баланс между геометрией шва, свойствами материала и технологическим запасом на усадку и ошибки.</p></div></div>
+                    <!--#include virtual="/ssi/article_after.html" -->
+
+                </article>
+                <aside class="article-sidebar"><!--#include virtual="/ssi/sidebar_top.html" --><nav class="sidebar-search"><div class="sidebar-search-box"><input type="text" id="globalSearchInput" placeholder="🔍 Поиск статей..." autocomplete="off"><div class="search-dropdown" id="globalSearchDropdown"></div></div></nav><!--#include virtual="/ssi/sidebar_before_toc.html" --><nav class="sidebar-toc" id="sidebarToc"><h3>Содержание</h3><ul><li><a href="#базовая-формула-расчета-длины-шнура">Базовая формула расчета длины шнура</a></li><li><a href="#учет-коэффициента-усадки-при-сварке">Учет коэффициента усадки при сварке</a></li><li><a href="#влияние-типа-линолеума-на-расход-материала">Влияние типа линолеума на расход материала</a></li><li><a href="#расчет-для-сложных-конфигураций-и-рисунков">Расчет для сложных конфигураций и рисунков</a></li><li><a href="#технологические-потери-и-запас-на-брак">Технологические потери и запас на брак</a></li><li><a href="#инструменты-для-точного-замера-и-резки">Инструменты для точного замера и резки</a></li><li><a href="#часто-задаваемые-вопросы-faq">Часто задаваемые вопросы (FAQ)</a></li></ul></nav><!--#include virtual="/ssi/sidebar_before_related.html" --><nav class="sidebar-related"><h3>Похожие статьи</h3><ul><li><a href="/articles/s/sk/skolko-klast-linoleum.html" class="related-card">Сколько класть линолеум на пол: нормы расхода и запаса</a></li><li><a href="/articles/k/ka/kak-pokupat-linoleum-v-kvadratnykh-metrakh-kalkulyator-onlajn.html" class="related-card">Калькулятор линолеума: расчет площади в метрах онлайн и советы</a></li><li><a href="/articles/k/ka/kak-izmerit-kvartiru-dlya-linoleuma.html" class="related-card">Как измерить квартиру для линолеума: точная инструкция</a></li><li><a href="/articles/k/ka/kak-perevesti-pogonnye-metry-linoleuma-v-kvadratnye.html" class="related-card">Как перевести погонные метры линолеума в квадратные: формула и примеры</a></li><li><a href="/articles/s/sk/skolko-vesit-linoleum-1-kv-m.html" class="related-card">Сколько весит линолеум 1 кв м: вес, плотность и расчет</a></li></ul></nav><!--#include virtual="/ssi/sidebar_after_related.html" --></aside>
+            </div>
+        </div>
+    </main>
+
+    <!--#include virtual="/ssi/before_related_bottom.html" -->
+    <section class="related-bottom">
+        <div class="container">
+            <h2 class="related-bottom-heading">📖 Читайте также</h2>
+            <div class="related-bottom-grid"><a href="/articles/s/sk/skolko-klast-linoleum.html" class="related-bottom-card"><span class="related-bottom-title">Сколько класть линолеум на пол: нормы расхода и запаса</span><span class="related-bottom-desc">Узнайте точно, сколько нужно линолеума на комнату. Расчет запаса на усадку, подрезку и припуски. Таб</span></a><a href="/articles/k/ka/kak-pokupat-linoleum-v-kvadratnykh-metrakh-kalkulyator-onlajn.html" class="related-bottom-card"><span class="related-bottom-title">Калькулятор линолеума: расчет площади в метрах онлайн и советы</span><span class="related-bottom-desc">Как правильно рассчитать линолеум в квадратных метрах? Онлайн калькулятор, формулы расчета, таблица </span></a><a href="/articles/k/ka/kak-izmerit-kvartiru-dlya-linoleuma.html" class="related-bottom-card"><span class="related-bottom-title">Как измерить квартиру для линолеума: точная инструкция</span><span class="related-bottom-desc">Пошаговое руководство, как правильно измерить комнату для линолеума. Расчет запаса на усадку, обходы</span></a><a href="/articles/k/ka/kak-perevesti-pogonnye-metry-linoleuma-v-kvadratnye.html" class="related-bottom-card"><span class="related-bottom-title">Как перевести погонные метры линолеума в квадратные: формула и примеры</span><span class="related-bottom-desc">Узнайте, как точно перевести погонные метры линолеума в квадратные. Простые формулы, таблица пересче</span></a><a href="/articles/s/sk/skolko-vesit-linoleum-1-kv-m.html" class="related-bottom-card"><span class="related-bottom-title">Сколько весит линолеум 1 кв м: вес, плотность и расчет</span><span class="related-bottom-desc">Узнайте, сколько весит линолеум 1 кв м разных типов. Таблица плотности, влияние толщины и основы на </span></a><a href="/articles/c/ch/chto-kupit-deshevle-linoleum-ili-laminat.html" class="related-bottom-card"><span class="related-bottom-title">Что дешевле: линолеум или ламинат? Сравнение цен</span><span class="related-bottom-desc">Подробный расчет стоимости: что выгоднее купить, линолеум или ламинат? Сравниваем цены на материалы,</span></a></div>
+        </div>
+    </section>
+    <!--#include virtual="/ssi/after_related_bottom.html" -->
+
+    <footer class="site-footer-premium">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="footer-brand">🏠 Все о Линолеуме</div>
+                    <p class="footer-about">Полное руководство по выбору, укладке, ремонту и уходу за линолеумом в доме.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Разделы</h4>
+                    <ul><li><a href="/category/vybor-linoleuma/">🧐 Выбор линолеума</a></li>
+<li><a href="/category/podgotovka-pola/">🔨 Подготовка пола</a></li>
+<li><a href="/category/tekhnologiya-ukladki/">📏 Технология укладки</a></li>
+<li><a href="/category/klej-i-svarka/">🧴 Клей и сварка</a></li>
+<li><a href="/category/rezka-i-raskroj/">✂️ Резка и раскрой</a></li>
+<li><a href="/category/styki-i-porogi/">🔗 Стыки и пороги</a></li></ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Информация</h4>
+                    <ul>
+                        <li><a href="/">Главная</a></li>
+                        <li><a href="/about.html">О проекте</a></li>
+                        <li><a href="/categories.html">Все разделы</a></li>
+                        <li><a href="/contact.html">Контакты</a></li>
+                        <li><a href="/privacy.html">Конфиденциальность</a></li>
+                        <li><a href="/sitemap.xml">Карта сайта</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© Все о Линолеуме. Все права защищены.</p>
+                <!--LiveInternet counter--><div style="margin-top:10px;"><a href="https://www.liveinternet.ru/click"
+                target="_blank"><img id="licnt06C4" width="88" height="15" style="border:0" 
+                title="LiveInternet: показано число посетителей за сегодня"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAEALAAAAAABAAEAAAIBTAA7"
+                alt=""/></a><script>(function(d,s){d.getElementById("licnt06C4").src=
+                "https://counter.yadro.ru/hit?t26.5;r"+escape(d.referrer)+
+                ((typeof(s)=="undefined")?"":";s"+s.width+"*"+s.height+"*"+
+                (s.colorDepth?s.colorDepth:s.pixelDepth))+";u"+escape(d.URL)+
+                ";h"+escape(d.title.substring(0,150))+";"+Math.random()})(document,screen)</script></div><!--/LiveInternet-->
+            </div>
+        </div>
+    </footer>
+    <div id="cookie-consent" class="cookie-popup">
+        <div class="cookie-inner">
+            <span>🍪 Мы используем файлы cookie для улучшения работы сайта.</span>
+            <button id="cookie-accept" class="cookie-btn">Принять</button>
+        </div>
+    </div>
+    <script src="/static/js/main.js"></script>
+    <script>
+    (function() {
+        const popup = document.getElementById('cookie-consent');
+        const btn = document.getElementById('cookie-accept');
+        if (popup && btn && !localStorage.getItem('cookie-accepted')) {
+            popup.classList.add('visible');
+            btn.onclick = () => {
+                localStorage.setItem('cookie-accepted', 'true');
+                popup.classList.remove('visible');
+            };
+        }
+    })();
+    </script>
+    <script>
+    function pbPollVote(el) {
+        var poll = el.closest('.poll-widget');
+        if (poll.classList.contains('voted')) return;
+        poll.classList.add('voted');
+        el.classList.add('selected');
+        var opts = poll.querySelectorAll('.poll-widget-option');
+        var n = opts.length;
+        var raw = [];
+        var sum = 0;
+        for (var i = 0; i < n; i++) {
+            var v = Math.random() * 50 + 5;
+            if (opts[i] === el) v += 30;
+            raw.push(v);
+            sum += v;
+        }
+        var pcts = raw.map(function(v) { return Math.round(v / sum * 100); });
+        var diff = 100 - pcts.reduce(function(a,b){ return a+b; }, 0);
+        pcts[Array.from(opts).indexOf(el)] += diff;
+        setTimeout(function() {
+            opts.forEach(function(opt, i) {
+                opt.querySelector('.poll-widget-bar').style.width = pcts[i] + '%';
+                opt.querySelector('.poll-widget-pct').textContent = pcts[i] + '%';
+            });
+        }, 50);
+    }
+    </script>
+    <!--#include virtual="/ssi/body_bottom.html" -->
+    <script src="/static/js/inject.js" defer></script>
+</body>
+</html>
